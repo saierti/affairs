@@ -7,9 +7,138 @@ html,body{
     width: 100%;
     height: 100%;
     font-family: "幼圆";
-    font-size: 20px;
+    font-size: 20px; 
+    overflow: hidden;
 } 
+<<<<<<< HEAD
+input{
+    border:none;
+}
+/****顶部栏***/
+header{
+    z-index: 100;
+    width: 100%;
+    height: 67px;
+=======
+/****顶部栏***/
+header{
+    z-index: 2;
+    width: 100%;
+    height: 10vh;
+>>>>>>> master
+    background: linear-gradient(to right,#040309,#858484);
+    overflow: hidden;
+    font-size: 0;
+    position: fixed;
+    top:0;
+}
+<<<<<<< HEAD
+header > div{
+    display:inline-block;
 
+    width: 50%;
+    height: 67px;
+}
+header p{
+=======
+#mainhead > div{
+    display:inline-block;
+    width: 50%;
+    height: 67px;
+}
+#mainhead p{
+>>>>>>> master
+    font-family: 'Youyuan' ,sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 4.5vw;
+    color: #ffffff;
+    transition: font-size ,0.2s;
+}
+#header1{
+    font-size:5.2vw;
+    color: #fbf6c1;
+}
+.line{
+    height: 0;
+    margin: 5px 30% 0 41%;
+    border-radius: 45px;
+    border-bottom: 2px solid #fffbc4;
+    width: 0;
+}
+<<<<<<< HEAD
+=======
+#otherhead{
+    width: 100%;
+    text-align: center;
+}
+#otherhead p{
+    font-family: 'Youyuan' ,sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 5vw;
+    color: #fbf6c1;
+}
+/****首页***/
+.mainbox{
+    width:351px;
+    height: 244px;
+    border-radius:7px;
+    background-color: aliceblue;
+    margin-top:25px; 
+}
+#main{
+    overflow: scroll;
+    z-index: 1;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    position: fixed;
+top: 10%;
+}
+.mainImg{
+    width: 100%;
+    height: 190px;
+    background:url(../img/test.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-mask-image:-webkit-gradient(linear,right top,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7)));
+}
+.mainboxtop{
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    position: relative;
+}
+.label{
+    display: table-cell;
+    width: 47px;
+    height: 21px;
+    border: 2px solid #FFF16E;
+    border-radius:6px;
+    font-size: 15px;
+    overflow: hidden;
+    color: #FFF16E;
+}
+.date,.time{
+    font-size: 15px;
+    color: #ffffff;
+    position: absolute;
+    top: 8px;
+}
+.date{
+    right: 55px;
+}
+.time{
+    right: 10px;
+}
+>>>>>>> master
+/****背景***/
 #background{
     background-image: url('../img/bg.jpg');
     width: 100%;
@@ -18,11 +147,12 @@ html,body{
 }
 /******************/
 #footer{
+    z-index: 100;
     position: fixed;
     display: flex;
     align-items: center;
     /* justify-content: space-around; */
-    height: 65px;
+    height: 10vh;
     width: 100%;
     bottom: 0;
     background-color: #fff;
