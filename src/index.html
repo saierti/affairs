@@ -7,6 +7,7 @@
     <title>主页</title>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/newCard.css">
     <!-- <script type="text/javascript" src="js/index.js"></script> -->
     <script src="js/index.js"></script>
     <script src = "js/header.js"></script>
@@ -40,7 +41,19 @@
 
 
     <!-- 嘉俊 -->
-
+    <div class="card1">
+        <!-- <div class="make-card"> -->
+            <form action="" class="make-card" onsubmit="return Check()">
+                <p>新建我的卡片</p>
+                <input name="title" type="text" placeholder="请输入标题（必填）">
+                <textarea name="dcb" cols="30" rows="4" placeholder="请输入具体描述...（选填）"></textarea>
+                <span class="add-img">添加照片</span>
+                <div class="label">
+                    标签：
+                </div>
+            </form>
+        <!-- </div> -->
+    </div>
 
 </body>
 </html>
