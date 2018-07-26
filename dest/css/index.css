@@ -2,26 +2,117 @@
     margin: 0;
     padding: 0;
 }
-
 html,body{
     width: 100%;
     height: 100%;
     font-family: "幼圆";
     font-size: 20px;
+    background-color: black;
 } 
 
 #background{
     background-image: url('../img/bg.jpg');
     width: 100%;
-    height: 100%;
+    height: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-position: 100% ,50%; */
     background-size: contain;
 }
+#midPart{
+    width: 100%;
+    height: 46%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: middle;
+    flex-wrap: wrap;
+}
+#midPart>div{
+    width: 50%;
+    height: 50%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#midPart>div>div{
+    /* height: 55%; */
+    width: 70px;
+    text-align: center;
+}
+#midPart>div>div>img{
+    margin: 10%;
+    display: inline-block;
+}
+#midPart>div>div>p{
+    display:inline-block
+}
+.div1>div>img{
+    width: 30px;
+    height: 38px;
+}
+.div1>div>p{
+    font-size: 0.8rem;
+    color:#FFFFFF;
+    font-family: 'youyuan';
+}
+.div2>div>p{
+    font-size: 0.8rem;
+    color:#FFFFFF;
+    font-family: 'youyuan';
+}
+.div2{
+    background-color: #555649;
+}
+.div2>div>img{
+    width: 45px;
+    height: 38px;
+}
+.div3{
+    background-color: #FFEE50;
+}
+.div3>div>img{
+    width: 38px;
+    height: 38px;
+}
+.div3>div>p{
+    font-size: 0.8rem;
+    font-family: 'youyuan';
+}
+.div4{
+    background-color: #FFF7AE;;
+}
+.div4>div>img{
+    width: 38px;
+    height: 38px;
+}
+.div4>div>p{
+    font-size: 0.8rem;
+    font-family: 'youyuan';
+}
+/******************/
+#background>p{
+    display: inline-block;
+    font-family: Segoe Script;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 4%;
+}
+#background>p>span{
+    color: #FFF16E;
+}
+/* #background>img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+} */
 /******************/
 #footer{
     position: fixed;
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
     height: 65px;
     width: 100%;
     bottom: 0;
@@ -32,7 +123,7 @@ html,body{
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    font-size: 0.6em;
+    font-size: 0.6rem;
     color: #959191;
     text-align: center;
     width: 100%;
@@ -40,9 +131,14 @@ html,body{
 a{
     text-decoration: none;
     display: block;
-    vertical-align: baseline;
 }
-.img1{
+#footerFlex img{
+    display: block;
+    height: 20px;
+    width: 25px;
+    margin: 5px;
+}
+/* .img1{
     width: 25px;
     height: 23px;
     display: block;
@@ -66,7 +162,7 @@ a{
     height: 23px;
     display: block;
     margin: 5px;
-}
+} */
 #footerRad>div{
     border-radius: 50%;
     height: 36px;
