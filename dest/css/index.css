@@ -2,26 +2,197 @@
     margin: 0;
     padding: 0;
 }
-
 html,body{
     width: 100%;
     height: 100%;
     font-family: "幼圆";
     font-size: 20px;
+    background-color: black;
 } 
+/****顶部栏*******/
+header{
+    width: 100%;
+    height: 67px;
+    background: linear-gradient(to right,#040309,#858484);
+    overflow: hidden;
+    font-size: 0;
+    position: fixed;
+    top:0;
+}
+header > div{
+    display:inline-block;
 
-#background{
+    width: 50%;
+    height: 67px;
+}
+header p{
+    font-family: 'Youyuan' ,sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 4.5vw;
+    color: #ffffff;
+    transition: font-size ,0.2s;
+}
+#header1{
+    font-size:5.2vw;
+    color: #fbf6c1;
+}
+.line{
+    height: 0;
+    margin: 5px 30% 0 41%;
+    border-radius: 45px;
+    border-bottom: 2px solid #fffbc4;
+    width: 0;
+}
+/****背景********/
+#background1{
     background-image: url('../img/bg.jpg');
     width: 100%;
-    height: 100%;
+    height: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-size: contain;
 }
-/******************/
+#background1>p{
+    display: inline-block;
+    font-family: Segoe Script;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 4%;
+}
+#background1>p>span{
+    color: #FFF16E;
+}
+/*****我   中间部分******/
+#midPart{
+    width: 100%;
+    height: 46%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: middle;
+    flex-wrap: wrap;
+}
+#midPart>div{
+    width: 50%;
+    height: 50%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#midPart>div>div{
+    width: 70px;
+    text-align: center;
+}
+#midPart>div>div>img{
+    margin: 10%;
+    display: inline-block;
+}
+#midPart>div>div>p{
+    display:inline-block
+}
+.div1>div>img{
+    width: 30px;
+    height: 38px;
+}
+.div1>div>p{
+    font-size: 0.8rem;
+    color:#FFFFFF;
+    font-family: 'youyuan';
+}
+.div2>div>p{
+    font-size: 0.8rem;
+    color:#FFFFFF;
+    font-family: 'youyuan';
+}
+.div2{
+    background-color: #555649;
+}
+.div2>div>img{
+    width: 45px;
+    height: 38px;
+}
+.div3{
+    background-color: #FFEE50;
+}
+.div3>div>img{
+    width: 38px;
+    height: 38px;
+}
+.div3>div>p{
+    font-size: 0.8rem;
+    font-family: 'youyuan';
+}
+.div4{
+    background-color: #FFF7AE;;
+}
+.div4>div>img{
+    width: 38px;
+    height: 38px;
+}
+.div4>div>p{
+    font-size: 0.8rem;
+    font-family: 'youyuan';
+}
+/*******我的事务  中间部分****/
+#background{
+    background-image: url('../img/background.jpg');
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-size: contain;
+}
+#part2{
+    /* margin-top: 67px;
+    margin-bottom: 65px; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#background>section{
+    width: 100%;
+    height: 100%;
+
+}
+#myLine{
+    width: 1px;
+    height: 50%;
+    background-color: #fff;
+    margin-left: 10%;
+    position: absolute;
+    top:50%;
+    margin-top: -50%;
+}
+
+.smallRad{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFF16E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******底部***********/
+
 #footer{
     position: fixed;
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
     height: 65px;
     width: 100%;
     bottom: 0;
@@ -32,7 +203,7 @@ html,body{
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    font-size: 0.6em;
+    font-size: 0.6rem;
     color: #959191;
     text-align: center;
     width: 100%;
@@ -40,33 +211,14 @@ html,body{
 a{
     text-decoration: none;
     display: block;
-    vertical-align: baseline;
 }
-.img1{
-    width: 25px;
-    height: 23px;
+#footerFlex img{
     display: block;
+    height: 20px;
+    width: 25px;
     margin: 5px;
+}
 
-}
-.img2{
-    width: 25px;
-    height: 20px;
-    display: block;
-    margin: 5px;
-}
-.img3{
-    width: 25px;
-    height: 20px;
-    display: block;
-    margin: 5px;
-}
-.img4{
-    width: 28px;
-    height: 23px;
-    display: block;
-    margin: 5px;
-}
 #footerRad>div{
     border-radius: 50%;
     height: 36px;
