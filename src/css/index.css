@@ -33,7 +33,7 @@ header{
     color: #ffffff;
     transition: font-size ,0.2s;
 }
-#header1{
+#mainhead #header1{
     font-size:5.2vw;
     color: #fbf6c1;
 }
@@ -57,62 +57,20 @@ header{
 }
 /****首页***/
 .mainbox{
-    width:351px;
-    height: 244px;
-    border-radius:7px;
+    width: 90vw;
+    height: 36.5vh;
+    border-radius: 7px;
     background-color: aliceblue;
-    margin-top:25px; 
+    margin-top: 4vh;
 }
-#main{
-    overflow: scroll;
-    z-index: 1;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.container{
     background-image: url(../img/bg.jpg);
     background-size: cover;
     position: fixed;
-top: 10%;
-}
-.mainImg{
     width: 100%;
-    height: 190px;
-    background:url(../img/test.jpg);
-    background-size: cover;
-    background-position: center;
-    -webkit-mask-image:-webkit-gradient(linear,right top,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7)));
+    height: 80vh;
 }
-.mainboxtop{
-    height: 30px;
-    text-align: center;
-    padding-top: 5px;
-    padding-left: 4px;
-    position: relative;
-}
-.label{
-    display: table-cell;
-    width: 47px;
-    height: 21px;
-    border: 2px solid #FFF16E;
-    border-radius:6px;
-    font-size: 15px;
-    overflow: hidden;
-    color: #FFF16E;
-}
-.date,.time{
-    font-size: 15px;
-    color: #ffffff;
-    position: absolute;
-    top: 8px;
-}
-.date{
-    right: 55px;
-}
-.time{
-    right: 10px;
-}
+
 /****背景***/
 #background{
     background-image: url('../img/bg.jpg');
