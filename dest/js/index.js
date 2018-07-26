@@ -46,6 +46,11 @@ $('document').ready(function(){
         }
     })
 })
+
+
+
+
+
     // $('.img1').parent().click(function(){
     //     $('.img1').attr('src',"img/a2.png"),$('.img1').parent().css('color','black');
     //     $('.img2').attr('src',"img/b1.png"),$('.img2').parent().css('color','#959191');
