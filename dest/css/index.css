@@ -9,7 +9,46 @@ html,body{
     font-family: "幼圆";
     font-size: 20px;
 } 
+input{
+    border:none;
+}
+/****顶部栏***/
+header{
+    z-index: 100;
+    width: 100%;
+    height: 67px;
+    background: linear-gradient(to right,#040309,#858484);
+    overflow: hidden;
+    font-size: 0;
+    position: fixed;
+    top:0;
+}
+header > div{
+    display:inline-block;
 
+    width: 50%;
+    height: 67px;
+}
+header p{
+    font-family: 'Youyuan' ,sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 4.5vw;
+    color: #ffffff;
+    transition: font-size ,0.2s;
+}
+#header1{
+    font-size:5.2vw;
+    color: #fbf6c1;
+}
+.line{
+    height: 0;
+    margin: 5px 30% 0 41%;
+    border-radius: 45px;
+    border-bottom: 2px solid #fffbc4;
+    width: 0;
+}
+/****背景***/
 #background{
     background-image: url('../img/bg.jpg');
     width: 100%;
@@ -18,6 +57,7 @@ html,body{
 }
 /******************/
 #footer{
+    z-index: 100;
     position: fixed;
     display: flex;
     align-items: center;

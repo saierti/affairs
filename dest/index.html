@@ -7,13 +7,23 @@
     <title>主页</title>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/newCard.css">
     <!-- <script type="text/javascript" src="js/index.js"></script> -->
     <script src="js/index.js"></script>
-
+    <script src = "js/header.js"></script>
 </head>
 <body>
-    <head></head>
-    <div id="background"></div>
+    <header>
+        <div>
+            <p id="header1">待领取</p>
+            <div class="line"></div>
+        </div>
+        <div>
+            <p>待完成</p>
+            <div class="line"></div>
+        </div>
+    </header>
+    <div style="width: 100%;height: 100%;"></div><!--删除-->
     <footer id="footer">
         <ul id="footerFlex">
             <a><img  class="img1" src="img/b0.png" alt="">首页</a>
@@ -23,5 +33,34 @@
             <a><img  class="img4" src="img/a4.png" alt="">我</a>
         </ul>
     </footer>
+
+
+    <!-- 阳宁 -->
+
+    <!-- 屹彬 -->
+
+
+    <!-- 嘉竣 -->
+    <div class="card1">
+        <!-- <div class="make-card"> -->
+            <form action="" class="make-card" onsubmit="return Check()">
+                <p>新建我的卡片</p>
+                <input name="title" type="text" placeholder="请输入标题（必填）">
+                <textarea name="dcb" cols="30" rows="4" placeholder="请输入具体描述...（选填）"></textarea>
+                <span class="add-img">添加照片</span>
+                <input type="hidden" name="tag" value="" id="tag">
+                <div class="label">
+                    标签：<span>生活</span>
+                    <span>工作</span>
+                    <span>学习</span>
+                </div>
+                <hr>
+                <div class="card1-2">
+                    选择面向小组
+                </div>
+            </form>
+        <!-- </div> -->
+    </div>
+
 </body>
 </html>

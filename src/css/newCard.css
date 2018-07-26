@@ -9,9 +9,11 @@ html,body{
     background-image:url(../img/bg.jpg);
     font-family: "幼圆";
 }
+/* ::-webkit-scrollbar {
+    display: none;
+} */
 input{
     border:none;
-
 }
 .card1{
     display: block;
@@ -22,7 +24,7 @@ input{
     background-size: 100% 100%;
 }
 .make-card{
-    width:90%;
+    width:90vw;
     height: 420px;
     background-color: white;
     position: absolute;
@@ -88,6 +90,24 @@ input{
 }
 /* 标签 */
 .label{
-    background-color: pink;
-    height: 20vh;
+    margin:6px 7%;
+    font-size: 12px;
+    /* background-color: pink; */
+    /* height: 20px; */
+}
+.label > span{
+    margin-left:10px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 6px;
+    line-height: 18px;
+    padding: 0 6px;
+}
+hr{
+    margin: 12px 0 0 0;
+}
+/* 横线下的第二块 */
+.card1-2{
+    padding: 16px 20px;
+    font-size:14px;
 }
