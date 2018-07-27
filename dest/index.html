@@ -7,7 +7,8 @@
     <title>主页</title>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="css/index.css">	<!-- 头部 底部 背景 公用 -->
-	<link rel="stylesheet" href="css/main.css">   	 <!-- 阳宁首页 -->
+    <link rel="stylesheet" href="css/main.css">   	 <!-- 阳宁首页 -->
+    <link rel="stylesheet" href="css/carddetail.css"> <!--阳宁卡片详情-->
 	<link rel="stylesheet" href="css/me.css">		<!-- 屹彬  我 -->
 	<link rel="stylesheet" href="css/myBusiness.css">	<!-- 屹彬 我的事务 -->
     <link rel="stylesheet" href="css/social.css"> 	<!-- 屹彬  社交 -->
@@ -18,7 +19,7 @@
 	<script src="js/newCard.js"></script>  	<!-- 嘉俊 卡片 -->
 </head>
 <body>
-	<!-- 头部 -->
+	<!-- 头部 header -->
 	<header style="display: block" id="header">
 		<div id="mainhead" style="display:block">
 			<div>
@@ -35,11 +36,11 @@
 			<p id="header2">社交</p>
 		</div>
 	</header>
-
+  
 	<!-- 阳宁 -->
 	
 	<!--首页-->
-    <div id="main" class="container" style="display:block;">
+    <div id="main" class="container" style="display:none;">
     	<div class="mainbox">
 			<div class="blackbox"></div>
 			<div class="mainImg">
@@ -99,7 +100,43 @@
 				<div class="btnDiscuss"></div>
 			</div>
 		</div>
-	</div>
+    </div>
+    
+    <!--首页完结-->
+
+    <!--卡片详情-->
+    <!---对应css为carddetail.css-->
+    <div class="container" id="carddetail">
+        <div id="headcontain">
+            <div id="detailhead"></div>
+            <!--进度条区域-->
+            <div class="barbox">
+                <!--领取进度条-->
+                <div class="bararea">
+                    <span class="barhead">领取进度</span>
+                    <div class="barbox-1">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                </div>
+                <div class="headarea">
+                    <div class="userhead"></div>
+                    <div class="userhead"></div> 
+                    <div class="userhead"></div>    
+                </div>
+                <!--完成进度条-->
+                <div class="bararea">
+                    <span class="barhead">完成进度</span>
+                    <div class="barbox-2">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="percent">50%</span>
+                </div>    
+            </div>    
+        </div>
+    </div>
+
+    <!--卡片详情完结-->
 	
 
 
@@ -279,7 +316,8 @@
 	</div>
 
 
-    <!-- 嘉竣 -->
+	<!-- 嘉竣 -->
+	
     <!-- 新建我的卡片 -->
     <div class="container" style="display: none;">
         <!-- <div class="make-card"> -->
@@ -321,6 +359,7 @@
             </form>
         <!-- </div> -->
 	</div> 
+	<!-- aaaa -->
 	
 
 

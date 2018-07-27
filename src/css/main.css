@@ -61,6 +61,13 @@
     filter: blur(1px);
     border-radius: 7px;
 }
+.mainbox{
+    width: 90vw;
+    height: 36.5vh;
+    border-radius: 7px;
+    background-color: aliceblue;
+    margin-top: 4vh;
+}
 .mainboxmid{
     width: 100%;
     height: 22.8vh;
