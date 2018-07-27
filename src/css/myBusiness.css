@@ -1,0 +1,112 @@
+/* 屹彬 我的事务 */
+
+#myBusiness{
+    position: relative;
+    overflow: scroll;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#myBusiness>section{
+    width: 100vw;
+    height: 80vh;
+    vertical-align: middle;
+}  
+#myBusiness>section p{
+    font-size: 3.5vw;
+    color: #fff;
+    display: inline-block;
+   height: 20px;
+   line-height: 20px;
+} 
+#myBusiness>section span{
+    font-size: 2.5vw;
+    color: #fff;
+    display: inline-block;
+    margin-left: 20vw;
+}
+#myBusiness>section>div{
+    width: 100vw;
+    height: 30vh;
+    position: relative;
+    padding-top: 5vh;
+
+}
+.myLine{
+    width: 1px;
+    height: 35vh;
+    background-color: #fff;
+    margin-left: 6vw;
+    margin-top: 3vh;
+    left:10px;
+    position: absolute;
+}
+
+.smallRad{
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-color: #FFF16E;
+    border: 2px solid black
+}
+.bigRad{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFF16E;
+    /* padding-top: 2px;
+    padding-left: 2px; */
+    margin-left: 6vw;
+ 
+  
+}
+.myDiv{
+
+    width: 78vw;
+    height: 28vw;
+    position: absolute;
+    left: 50%;
+    margin-left: -39vw;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    /* opacity: 0.8; */
+    border-radius: 5px;
+    background: linear-gradient(to left,#040309,#3d3c3c);
+}
+.myLeft{
+    display: inline-block;
+    background-image: url('../img/test.jpg');
+    width: 22vw;
+    height: 20vw;
+    border-radius: 50%;
+    margin-left: 5vw;
+    background-size: cover;
+    background-position: center;
+
+}
+.myRight{
+    display: inline-block;
+    width: 45vw;
+    height: 20vw;
+    margin-left: 5vw;
+}
+.myRight>p>b{
+    margin-left: 2vw;
+    height: 20px;
+    line-height: 20px;
+    font-size: 2.5vw;
+    
+}
+.myRight>p>i{
+    margin-left:0 ;
+    height: 20px;
+    line-height: 20px;
+    font-size: 2.5vw;
+    
+}

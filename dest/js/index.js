@@ -1,7 +1,119 @@
 $('document').ready(function(){
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /***************页面跳转测试部分************************** */
+
     $('.img1').parent().css('color','black');
     var  aA = $('#footerFlex > a');
+
+
+
+
+
+
+
+
+
+    /**************************/ 
+    var oHeader = $('#header');
+
+    var oDiv1 = $('#main');
+    var oDiv2 = $('#social');
+    var oDiv5 = $('#me');
+    var oDiv51 = $('#myBusiness');
+
+    oDiv1.css('display','flex');
+
+    $(aA[0]).click(function(){
+    
+        oDiv1.css('display','flex');
+        $('#header').css('display','block')
+        $('#header1').text('待领取')
+        $('#mainhead').css('display','block')
+        $('#otherhead').css('display','none')
+
+        oDiv2.css('display','none');
+        oDiv5.css('display','none');
+        oDiv51.css('display','none');
+
+    })
+    $(aA[1]).click(function(){
+          
+        oDiv2.css('display','block');
+        $('#header').css('display','block')
+        $('#header2').text('社交')
+        $('#mainhead').css('display','none')
+        $('#otherhead').css('display','block')
+
+        oDiv1.css('display','none');
+        oDiv5.css('display','none');
+        oDiv51.css('display','none');
+
+    })
+    $(aA[4]).click(function(){
+
+        oDiv5.css('display','block');
+        $('#header').css('display','none')
+
+        oDiv1.css('display','none');
+        oDiv2.css('display','none');
+        oDiv51.css('display','none');
+
+    })
+
+    $('.div1').click(function(){
+
+        oDiv51.css('display','block');
+        $('#header').css('display','block')
+        $('#header2').text('我的事务')
+        $('#mainhead').css('display','none')
+        $('#otherhead').css('display','block')
+
+        oDiv1.css('display','none');
+        oDiv2.css('display','none');
+        oDiv5.css('display','none');
+
+    })
+
+
+
+
+
+
+
+    /***************************/ 
 
     aA.click(function(ev){
 
@@ -45,44 +157,13 @@ $('document').ready(function(){
 
         }
     })
+    /************************* */
 })
 
 
 
 
 
-    // $('.img1').parent().click(function(){
-    //     $('.img1').attr('src',"img/a2.png"),$('.img1').parent().css('color','black');
-    //     $('.img2').attr('src',"img/b1.png"),$('.img2').parent().css('color','#959191');
-    //     $('.img3').attr('src',"img/d1.png"),$('.img3').parent().css('color','#959191');
-    //     $('.img4').attr('src',"img/e1.png"),$('.img4').parent().css('color','#959191');
-    // })
-
-    // $('.img2').parent().click(function(){
-    //     $('.img1').attr('src',"img/a1.png"),$('.img1').parent().css('color','#959191');
-    //     $('.img2').attr('src',"img/b2.png"),$('.img2').parent().css('color','black');
-    //     $('.img3').attr('src',"img/d1.png"),$('.img3').parent().css('color','#959191');
-    //     $('.img4').attr('src',"img/e1.png"),$('.img4').parent().css('color','#959191');
-    // })
-    // $('.img3').parent().click(function(){
-    //     $('.img1').attr('src',"img/a1.png"),$('.img1').parent().css('color','#959191');
-    //     $('.img2').attr('src',"img/b1.png"),$('.img2').parent().css('color','#959191');
-    //     $('.img3').attr('src',"img/d2.png"),$('.img3').parent().css('color','black');
-    //     $('.img4').attr('src',"img/e1.png"),$('.img4').parent().css('color','#959191');
-    // })
-
-    // $('.img4').parent().click(function(){
-    //     $('.img1').attr('src',"img/a1.png"),$('.img1').parent().css('color','#959191');
-    //     $('.img2').attr('src',"img/b1.png"),$('.img2').parent().css('color','#959191');
-    //     $('.img3').attr('src',"img/d1.png"),$('.img3').parent().css('color','#959191');
-    //     $('.img4').attr('src',"img/e2.png"),$('.img4').parent().css('color','black');
-    // })
-    // $('#footerRad').click(function(){
-    //     $('.img1').attr('src',"img/a1.png"),$('.img1').parent().css('color','#959191');
-    //     $('.img2').attr('src',"img/b1.png"),$('.img2').parent().css('color','#959191');
-    //     $('.img3').attr('src',"img/d1.png"),$('.img3').parent().css('color','#959191');
-    //     $('.img4').attr('src',"img/e1.png"),$('.img4').parent().css('color','#959191');
-    // })
 
     
 
