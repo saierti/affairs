@@ -1,0 +1,60 @@
+#carddetail{
+    height: 90vh;
+    top: 0;
+    bottom: 10vh;
+}
+#headcontain{
+    width: 100%;
+    height: 38vh;
+    overflow: hidden;
+    text-align: center;
+}
+#detailhead{
+    width: 143px;
+    height: 143px;
+    border-radius: 90px;
+    display: inline-block;
+    background-image: url(../img/test.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 3vh;
+}
+.barbox{
+    width: 100%;
+    height: 15vh;
+}
+.bararea{
+    display: block;
+    text-align: left;
+    padding-left: 14vw;
+}
+.barbox-1,.barbox-2{
+    width:40vw;
+    height: 3px;
+    background-color: blue;
+    margin-top: 2vh;
+    display: inline-block;
+}
+.barhead{
+    font-size: 12px;
+    height: 2vh;
+    margin-top: 1.1vh;
+    margin-right: 3vw;
+    color: #FFF16E;
+    border-left: 3px solid bisque;
+    padding-left: 2vw;
+    font-family: 'simsun',sans-serif;
+}
+.percent{
+    font-size: 12px;
+    height: 2vh;
+    margin-top: 1.1vh;
+    margin-right: 3vw;
+    color: #FFF16E;
+    padding-left: 2vw;
+    font-family: 'simsun',sans-serif;
+}
+.headarea{
+    width: 50vw;
+    height: 10vh;
+}

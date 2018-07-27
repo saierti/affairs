@@ -8,6 +8,7 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carddetail.css">
     <!-- <script type="text/javascript" src="js/index.js"></script> -->
     <script src="js/index.js"></script>
     <script src = "js/header.js"></script>
@@ -15,8 +16,8 @@
     <script src="js/newCard.js"></script>
 </head>
 <body>
-    <header>
-        <div id="mainhead" style="display:block">
+    <header  style="display:none">
+        <div id="mainhead">
             <div>
                 <p id="header1">待领取</p>
                 <div class="line"></div>
@@ -33,6 +34,7 @@
     <!-- 阳宁 -->
     <!--首页-->
     <div id="main" class="container" style="display:none;">
+        <!--首页小卡片-->
         <div class="mainbox">
             <div class="blackbox"></div>
             <div class="mainImg">
@@ -46,8 +48,11 @@
                 </div>
             </div>
             <div class="mainboxbottom">
+                <!--头像-->
                 <div class="mainhead"><div class="headimg"></div><span>jio雯婷</span></span></div>
+                <!--点赞-->
                 <div class="btnPick"></div>
+                <!--评论键-->
                 <div class="btnDiscuss"></div>
             </div>
         </div>
@@ -89,6 +94,41 @@
                 </div>
 
     </div>
+    <!--首页完结-->
+
+    <!--卡片详情-->
+    <!---对应css为carddetail.css-->
+    <div class="container" id="carddetail">
+        <div id="headcontain">
+            <div id="detailhead"></div>
+            <!--进度条区域-->
+            <div class="barbox">
+                <!--领取进度条-->
+                <div class="bararea">
+                    <span class="barhead">领取进度</span>
+                    <div class="barbox-1">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                </div>
+                <div class="headarea">
+                    <div class="userhead"></div>
+                    <div class="userhead"></div> 
+                    <div class="userhead"></div>    
+                </div>
+                <!--完成进度条-->
+                <div class="bararea">
+                    <span class="barhead">完成进度</span>
+                    <div class="barbox-2">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="percent">50%</span>
+                </div>    
+            </div>    
+        </div>
+    </div>
+
+    <!--卡片详情完结-->
     <!-- 屹彬 -->
 
 

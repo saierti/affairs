@@ -60,13 +60,7 @@ header{
     color: #fbf6c1;
 }
 /****首页***/
-.mainbox{
-    width: 90vw;
-    height: 36.5vh;
-    border-radius: 7px;
-    background-color: aliceblue;
-    margin-top: 4vh;
-}
+
 .container{
     background-image: url(../img/bg.jpg);
     background-size: cover;
