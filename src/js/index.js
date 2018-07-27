@@ -86,7 +86,7 @@ $('document').ready(function(){
 
             if( i != 2){
                 $(aA[i]).children().attr('src',function(){
-                    return '../img/a'+i+'.png';
+                    return 'img/a'+i+'.png';
                 });
                 $(aA[i]).css('color','#959191');
             } 
@@ -100,7 +100,7 @@ $('document').ready(function(){
 
                 if( target.parentNode == aA[i] ){
 
-                    $(target).attr('src', '../img/b'+i+'.png');
+                    $(target).attr('src', 'img/b'+i+'.png');
                 }
             }   
         }
@@ -112,7 +112,7 @@ $('document').ready(function(){
 
                 if( target == aA[i] ){
 
-                    $(target).children().attr('src', '../img/b'+i+'.png');
+                    $(target).children().attr('src', 'img/b'+i+'.png');
 
                 }
             }   
