@@ -6,78 +6,282 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>主页</title>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/newCard.css">
-    <script src="js/index.js"></script>
-    <script src="js/newCard.js"></script>
-    <script src="js/header.js"></script>
+	<link rel="stylesheet" href="css/index.css">	<!-- 头部 底部 背景 公用 -->
+	<link rel="stylesheet" href="css/main.css">   	 <!-- 阳宁首页 -->
+	<link rel="stylesheet" href="css/me.css">		<!-- 屹彬  我 -->
+	<link rel="stylesheet" href="css/myBusiness.css">	<!-- 屹彬 我的事务 -->
+    <link rel="stylesheet" href="css/social.css"> 	<!-- 屹彬  社交 -->
+    <link rel="stylesheet" href="css/newCard.css">   <!--嘉竣 卡片-->
+	<script src="js/index.js"></script>	   <!-- 底部 -->
+	<script src = "js/header.js"></script>	<!-- 头部 -->
+    <script src = "js/main.js"></script>     <!-- 阳宁首页 -->
+	<script src="js/newCard.js"></script>  	<!-- 嘉俊 卡片 -->
 </head>
 <body>
-    <header>
-        <div id="mainhead" style="display:block">
-            <div>
-                <p id="header1">待领取</p>
-                <div class="line"></div>
-            </div>
-            <div>
-                <p>待完成</p>
-                <div class="line"></div>
-            </div>
-        </div>
-        <div id="otherhead" style="display: none">
-            <p>我的事务</p>
-        </div>
-    </header>
-    <!-- 阳宁 -->
-    <!--首页-->
-    <div id="main" class="container" style="display:none;">
-        <div class="mainbox">
-            <div class="mainImg">
-                <div class="mainboxtop">
-                    <div class="label">工作</div>
-                    <div class="date">7月16日</div>
-                    <div class="time">17:35</div>
-                </div>
-            </div>
-            <div></div>
-        </div>
-        <div class="mainbox">
-                <div class="mainImg">
-                    <div class="mainboxtop">
-                        <div class="label">工作</div>
-                        <div class="date">7月16日</div>
-                        <div class="time">17:35</div>
-                    </div>
-                </div>
-                <div></div>
-            </div>
-            <div class="mainbox">
-                    <div class="mainImg">
-                        <div class="mainboxtop">
-                            <div class="label">工作</div>
-                            <div class="date">7月16日</div>
-                            <div class="time">17:35</div>
-                        </div>
-                    </div>
-                    <div></div>
-                </div>
-                <div class="mainbox">
-                        <div class="mainImg">
-                            <div class="mainboxtop">
-                                <div class="label">工作</div>
-                                <div class="date">7月16日</div>
-                                <div class="time">17:35</div>
-                            </div>
-                        </div>
-                        <div></div>
-                    </div>
-    </div>
+	<!-- 头部 -->
+	<header style="display: block" id="header">
+		<div id="mainhead" style="display:block">
+			<div>
+				<p id="header1">待领取</p>
+				<div class="line"></div>
+			</div>
+			<div>
+				<p>待完成</p>
+				<div class="line"></div>
+			</div>
+		</div>
+
+		<div id="otherhead" style="display: none">
+			<p id="header2">社交</p>
+		</div>
+	</header>
+
+	<!-- 阳宁 -->
+	
+	<!--首页-->
+    <div id="main" class="container" style="display:block;">
+    	<div class="mainbox">
+			<div class="blackbox"></div>
+			<div class="mainImg">
+				<div class="mainboxtop">
+					<div class="label">工作</div>
+					<div class="date">7月16日</div>
+					<div class="time">17:35</div>
+				</div>
+				<div class="mainboxmid">
+					<p>林荣耀帮我带奶茶，龙珠奶绿，少冰</p>
+				</div>
+			</div>
+
+			<div class="mainboxbottom">
+				<div class="mainhead"><div class="headimg"></div><span>jio雯婷</span></span></div>
+				<div class="btnPick"></div>
+				<div class="btnDiscuss"></div>
+			</div>
+		</div>
+		
+    	<div class="mainbox">
+			<div class="blackbox"></div>
+			<div class="mainImg">
+				<div class="mainboxtop">
+					<div class="label">工作</div>
+					<div class="date">7月16日</div>
+					<div class="time">17:35</div>
+				</div>
+				<div class="mainboxmid">
+					<p>林荣耀帮我带奶茶，龙珠奶绿，少冰</p>
+				</div>
+			</div>
+
+			<div class="mainboxbottom">
+				<div class="mainhead"><div class="headimg"></div><span>jio雯婷</span></span></div>
+				<div class="btnPick"></div>
+				<div class="btnDiscuss"></div>
+			</div>
+		</div>
+		
+    	<div class="mainbox">
+			<div class="blackbox"></div>
+			<div class="mainImg">
+				<div class="mainboxtop">
+					<div class="label">工作</div>
+					<div class="date">7月16日</div>
+					<div class="time">17:35</div>
+				</div>
+				<div class="mainboxmid">
+					<p>林荣耀帮我带奶茶，龙珠奶绿，少冰</p>
+				</div>
+			</div>
+
+			<div class="mainboxbottom">
+				<div class="mainhead"><div class="headimg"></div><span>jio雯婷</span></span></div>
+				<div class="btnPick"></div>
+				<div class="btnDiscuss"></div>
+			</div>
+		</div>
+	</div>
+	
+
+
     <!-- 屹彬 -->
+
+	<!-- 我 -->
+	<div style="display: none" id="me">  
+		<!-- 背景1 -->
+		<div id="background1"><p><span>A</span>ffairs</p></div>
+		<section id="midPart">
+			<div class="div1">
+				<div><img src="img/1.png" alt=""><p>我的事务</p></div>
+			</div>
+			<div class="div2">
+				<div><img src="img/2.png" alt=""><p>我的小组</p></div>
+			</div>
+			<div class="div3">
+				<div><img src="img/3.png" alt=""><p>草稿箱</p></div>	
+			</div>
+			<div class="div4">
+				<div><img src="img/4.png" alt=""><p>历史记录</p></div>	
+			</div>
+		</section>
+	</div>
+
+	<!-- 我的事务 -->
+	<div style="display:none" class="container" id="myBusiness">
+		<!-- 中间内容 -->
+		<section>
+			<div>
+				<div class="myLine"></div>
+				<div class="bigRad"><div class="smallRad"></div></div>
+				<p>7月16日17:30</p> <br>
+				<span>鸽子琨领取了</span>
+				<div class="myDiv">
+					<div class="myLeft"></div>
+					<div class="myRight">
+						<p>标签: 有人帮我带奶茶吗</p><br>
+						<p>标签：<b>生活</b></p><br>
+						<p ><i>jio雯婷</i></p>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="myLine"></div>
+				<div class="bigRad"><div class="smallRad"></div></div>
+				<p>7月16日17:30</p> <br>
+				<span>鸽子琨领取了</span>
+				<div class="myDiv">
+					<div class="myLeft"></div>
+					<div class="myRight">
+						<p>标签: 有人帮我带奶茶吗</p><br>
+						<p>标签：<b>生活</b></p><br>
+						<p ><i>jio雯婷</i></p>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="myLine"></div>
+				<div class="bigRad"><div class="smallRad"></div></div>
+				<p>7月16日17:30</p> <br>
+				<span>鸽子琨领取了</span>
+				<div class="myDiv">
+					<div class="myLeft"></div>
+					<div class="myRight">
+						<p>标签: 有人帮我带奶茶吗</p><br>
+						<p>标签：<b>生活</b></p><br>
+						<p ><i>jio雯婷</i></p>
+					</div>
+				</div>
+			</div>
+					
+			<div>
+				<div class="myLine"></div>
+				<div class="bigRad"><div class="smallRad"></div></div>
+				<p>7月16日17:30</p> <br>
+				<span>鸽子琨领取了</span>
+				<div class="myDiv">
+					<div class="myLeft"></div>
+					<div class="myRight">
+						<p>标签: 有人帮我带奶茶吗</p><br>
+						<p>标签：<b>生活</b></p><br>
+						<p ><i>jio雯婷</i></p>
+					</div>	
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- 社交 -->
+
+	<div style="display:none" class="container" id="social" >	
+		<section>
+			<div>
+				<div class="myLine"></div>
+				<div class="bigRad"><div class="smallRad"></div></div>
+				<p>7月16日17:30</p> <br>
+				<div class="myDiv">
+					<div class="myLeft2"></div>
+					<div class="myRight1">
+						<p>鸽子琨</p><br>
+						<p><b>大爷，下次请你</b></p><br>
+					</div>
+					<div class="myRight2"></div>
+				</div>
+			</div>
+			<div>
+				<div class="myLine"></div>
+				<div class="bigRad"><div class="smallRad"></div></div>
+				<p>7月16日17:30</p> <br>
+				<div class="myDiv">
+					<div class="myLeft2"></div>
+					<div class="myRight1">
+						<p>鸽子琨</p><br>
+						<p><img src="img/good.png" alt=""></p><br>
+					</div>
+					<div class="myRight2"></div>
+				</div>
+			</div>
+			<div>
+				<div class="myLine"></div>
+				<div class="bigRad"><div class="smallRad"></div></div>
+				<p>7月16日17:30</p> <br>
+				<div class="myDiv">
+					<div class="myLeft2"></div>
+					<div class="myRight1">
+						<p>鸽子琨</p><br>
+						<p><b>大爷，下次请你</b></p><br>
+					</div>
+					<div class="myRight2"></div>
+				</div>
+			</div>
+			<div>
+				<div class="myLine"></div>
+				<div class="bigRad"><div class="smallRad"></div></div>
+				<p>7月16日17:30</p> <br>
+				<div class="myDiv">
+					<div class="myLeft2"></div>
+					<div class="myRight1">
+						<p>鸽子琨</p><br>
+						<p><img src="img/good.png" alt=""></p><br>
+					</div>
+					<div class="myRight2"></div>
+				</div>
+			</div>		<div>
+				<div class="myLine"></div>
+				<div class="bigRad"><div class="smallRad"></div></div>
+				<p>7月16日17:30</p> <br>
+				<div class="myDiv">
+					<div class="myLeft2"></div>
+					<div class="myRight1">
+						<p>鸽子琨</p><br>
+						<p><b>大爷，下次请你</b></p><br>
+					</div>
+					<div class="myRight2"></div>
+				</div>
+			</div>
+			<div>
+				<div class="myLine"></div>
+				<div class="bigRad"><div class="smallRad"></div></div>
+				<p>7月16日17:30</p> <br>
+				<div class="myDiv">
+					<div class="myLeft2"></div>
+					<div class="myRight1">
+						<p>鸽子琨</p><br>
+						<p><img src="img/good.png" alt=""></p><br>
+					</div>
+					<div class="myRight2"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+		
+	</div>
 
 
     <!-- 嘉竣 -->
     <!-- 新建我的卡片 -->
-    <div class="container">
+    <div class="container" style="display: none;">
         <!-- <div class="make-card"> -->
             <form action="" class="make-card" enctype="multipart/form-data" onsubmit="return Check()">
                 <p>新建我的卡片</p>
@@ -116,15 +320,19 @@
                 </div>
             </form>
         <!-- </div> -->
-    </div>
-    <footer id="footer">
-            <ul id="footerFlex">
-                <a><img  class="img1" src="img/b0.png" alt="">首页</a>
-                <a><img  class="img2" src="img/a1.png" alt="">社交</a>
-                <a id="footerRad"><div></div></a>
-                <a><img  class="img3" src="img/a3.png" alt="">待办</a>
-                <a><img  class="img4" src="img/a4.png" alt="">我</a>
-            </ul>
-        </footer>
+	</div> 
+	
+
+
+	<!-- 底部 footer -->
+    <footer id="footer" >
+		<ul id="footerFlex">
+			<a><img  class="img1" src="img/b0.png" alt="">首页</a>
+			<a><img  class="img2" src="img/a1.png" alt="">社交</a>
+			<a id="footerRad"><div></div></a>
+			<a><img  class="img3" src="img/a3.png" alt="">待办</a>
+			<a><img  class="img4" src="img/a4.png" alt="">我</a>
+		</ul>
+    </footer>
 </body>
 </html>
