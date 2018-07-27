@@ -9,6 +9,7 @@ html,body{
     background-image:url(../img/bg.jpg);
     font-family: "幼圆";
 }
+/* 去掉input的默认边框 */
 input{
     border:none;
     outline: none;
@@ -20,28 +21,29 @@ input{
     height: 80vh;
     position: fixed;
     background-image: url(../img/bg.jpg);
-    top: 10%;
+    top: 10vh;
     background-size: 100% 100%;
 }
+/* 卡片的外包块 */
 .make-card{
-    width:90%;
-    height: 420px;
+    width:90vw;
+    height: 60vh;
     background-color: white;
     position: absolute;
     top: 50%;
-    margin:-210px 5% 0 5%;
+    margin:-30vh 5% 0 5%;
     border-radius: 7px;
     background-color: white;
     box-sizing: border-box;
 }
-/* 新建我的卡片 */
+/* 文字：新建我的卡片 */
 .make-card > p{
     text-align: center;
     font-size: 16px;
     margin-top: 12px;
     margin-bottom: 16px;
 }
-/* 标题 */
+/* 输入标题 */
 .make-card input[name = "title"]{
     box-sizing: border-box;
     font-size: 6px;
@@ -56,7 +58,7 @@ input{
 .make-card input::placeholder{
     font-family: Youyuan;
 }
-/* 具体描述 */
+/* 输入具体描述 */
 .make-card textarea{
     box-sizing: border-box;
     font-size:10px;
@@ -76,9 +78,12 @@ input{
 }
 /* 添加图片 */
 .add-img{
+    z-index: 1;
+    opacity: 1;
+    position: relative;
     display: inline-block;
     color: white;
-    font-size:6px;
+    font-size: 10px;
     vertical-align: top;
     line-height: 12vh;
     background-color:#2b3535;
@@ -87,11 +92,27 @@ input{
     border-radius:4px;
     height: 12vh;
 }
+span[class="add-img"]{
+    opacity: 1;
+    position: absolute;
+    right: 7%;
+    /*display: inline-block;
+    color: white;
+    font-size:6px;
+    vertical-align: top;
+    line-height: 12vh;
+    background-color:#2b3535;
+    text-align: center;
+    width: 25%;
+    border-radius:4px;
+    height: 12vh; */
+}
 /* 标签 */
 .card-label{
     font-size: 12px;
     margin: 8px 7%;
 }
+/* 标签三个选项 */
 .card-label > span{
     border:1px solid #2e2c34;
     margin-left: 10px;
@@ -99,10 +120,12 @@ input{
     border-radius:6px;
 
 }
-.card-label > span[class="tag-active"]{
+/* 被选中的标签样式 */
+span[class="tag-active"]{
     background-color: #2e2c34;
     color:white;
 }
+/* 分割线 */
 hr{
     margin:14px 0;
 }
@@ -134,24 +157,58 @@ hr{
 }  */
 /* 横线下面 */
 .card1-2{
-    background-color:pink;
+    /* background-color:pink; */
     font-size: 3vw;
     padding:0 6vw;
 }
+.card1-2-content{
+    margin-bottom: 2vh;
+}
+/* select共有的属性 */
 .card1-2 select{
-    appearance: none;
+    -webkit-appearance: none;
     display:inline-block;
-    width:28vw;
     border:1px solid #2e2c34;
     font-family: "幼圆";
-    font-size: 1vw;
+    font-size: 12px;
     height:5vw;
-    padding:0 0.5vw;
+    padding:0 6vw 0 2vw;
     outline:none;
+    border-radius: 4px;
     background-color:transparent;
 }
+/* 下三角角标 */
+.sanjiao{
+    display: inline-block;
+    width: 1vw;
+    height: 1vw;
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+    position: relative;
+    left: -6vw;
+    top: -2px;
+    transform: rotate(45deg);
+} 
+/* 选择小组的select */
+.card1-2 select[name="group"]{
+    width:32vw;
+}
+/* 选择小组成员的select */
+.card1-2 select[name="member"]{
+    width: 35vw;
+}
+/* 事件执行模式 */
+.card1-2-content:nth-child(2) span{
+    margin-left:6vw;
+    border:1px solid #2e2c34;
+    font-size: 10px;
+    padding: 3px 3vw;
+    border-radius:6px;
+}
 .card1-2 select > option{
-    font-size: 1vw;
+    /* font-size: 1vw;
     width: 25vw;
-    height: 30px;
+    height: 30px; */
+    -webkit-appearance: none;
+    height: 5vw;
 }
