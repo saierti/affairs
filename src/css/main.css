@@ -2,7 +2,6 @@
 #main{
     overflow: scroll;
     z-index: 1;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     top: 10%;
