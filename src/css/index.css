@@ -9,11 +9,6 @@ html,body{
     font-size: 20px;
     background-color: black;
 } 
-<<<<<<< HEAD
-/****顶部栏*******/
-header{
-    width: 100vw;
-=======
 input{
     border:none;
 }
@@ -21,51 +16,49 @@ input{
 header{
     z-index: 2;
     width: 100%;
->>>>>>> b14d1010956d584974eea53c230b92b2ee29e96e
     height: 10vh;
     background: linear-gradient(to right,#040309,#858484);
     overflow: hidden;
     font-size: 0;
     position: fixed;
     top:0;
-}
-header > div{
+    }
+    #mainhead > div{
     display:inline-block;
-
-    width: 50vw;
-    height: 10vh;
-}
-header p{
+    width: 50%;
+    height: 67px;
+    }
+    #mainhead p{
     font-family: 'Youyuan' ,sans-serif;
     text-align: center;
     margin-top: 25px;
     font-size: 4.5vw;
     color: #ffffff;
     transition: font-size ,0.2s;
-}
-<<<<<<< HEAD
-#otherhead{
-    width: 100vw;
-}
-#otherhead>p{
-    color: #fbf6c1;
-}
-#header1{
-=======
-#mainhead #header1{
->>>>>>> b14d1010956d584974eea53c230b92b2ee29e96e
+    }
+    #mainhead #header1{
     font-size:5.2vw;
     color: #fbf6c1;
-}
-.line{
+    }
+    .line{
     height: 0;
     margin: 5px 30% 0 41%;
     border-radius: 45px;
     border-bottom: 2px solid #fffbc4;
     width: 0;
-}
-/****首页************/
-
+    }
+    #otherhead{
+    width: 100%;
+    text-align: center;
+    }
+    #otherhead p{
+    font-family: 'Youyuan' ,sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 5vw;
+    color: #fbf6c1;
+    }
+/****背景******/
 .container{
     display: block;
     width: 100%;
@@ -75,41 +68,9 @@ header p{
     top: 10%;
     background-size: 100% 100%;
 }
-.mainbox{
-    width: 90vw;
-    height: 36.5vh;
-    border-radius: 7px;
-    background-color: aliceblue;
-    margin-top: 4vh;
-}
-<<<<<<< HEAD
-#main{
-    overflow: scroll;
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.mainImg{
-=======
-.container{
-    background-image: url(../img/bg.jpg);
-    background-size: cover;
-    position: fixed;
->>>>>>> b14d1010956d584974eea53c230b92b2ee29e96e
-    width: 100%;
-    height: 80vh;
-}
-<<<<<<< HEAD
-/****背景********/
+
 #background1{
     background-image: url('../img/bg1.jpg');
-=======
-
-/****背景***/
-#background{
-    background-image: url('../img/bg.jpg');
->>>>>>> b14d1010956d584974eea53c230b92b2ee29e96e
     width: 100%;
     height: 42vh;
     display: flex;
@@ -127,274 +88,6 @@ header p{
 #background1>p>span{
     color: #FFF16E;
 }
-/*****我   中间部分******/
-#midPart{
-    width: 100%;
-    height: 46vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: middle;
-    flex-wrap: wrap;
-}
-#midPart>div{
-    width: 50vw;
-    height: 23vh;
-    display: flex;
-   justify-content: center;
-   align-items: center;
-}
-#midPart>div>div{
-    width: 70px;
-    text-align: center;
-}
-#midPart>div>div>img{
-    margin: 10%;
-    display: inline-block;
-}
-#midPart>div>div>p{
-    display:inline-block
-}
-.div1>div>img{
-    width: 30px;
-    height: 38px;
-}
-.div1>div>p{
-    font-size: 0.8rem;
-    color:#FFFFFF;
-    font-family: 'youyuan';
-}
-.div2>div>p{
-    font-size: 0.8rem;
-    color:#FFFFFF;
-    font-family: 'youyuan';
-}
-.div2{
-    background-color: #555649;
-}
-.div2>div>img{
-    width: 45px;
-    height: 38px;
-}
-.div3{
-    background-color: #FFEE50;
-}
-.div3>div>img{
-    width: 38px;
-    height: 38px;
-}
-.div3>div>p{
-    font-size: 0.8rem;
-    font-family: 'youyuan';
-}
-.div4{
-    background-color: #FFF7AE;;
-}
-.div4>div>img{
-    width: 38px;
-    height: 38px;
-}
-.div4>div>p{
-    font-size: 0.8rem;
-    font-family: 'youyuan';
-}
-/*******我的事务  中间部分****/
-
-#part2{
-    position: relative;
-    overflow: scroll;
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-#part2>section{
-    width: 100vw;
-    height: 80vh;
-    vertical-align: middle;
-}  
-#part2>section p{
-    font-size: 3.5vw;
-    color: #fff;
-    display: inline-block;
-   height: 20px;
-   line-height: 20px;
-} 
-#part2>section span{
-    font-size: 2.5vw;
-    color: #fff;
-    display: inline-block;
-    margin-left: 20vw;
-}
-#part2>section>div{
-    width: 100vw;
-    height: 30vh;
-    position: relative;
-    padding-top: 5vh;
-
-}
-.myLine{
-    width: 1px;
-    height: 35vh;
-    background-color: #fff;
-    margin-left: 6vw;
-    margin-top: 3vh;
-    left:10px;
-    position: absolute;
-}
-
-.smallRad{
-    width: 10px;
-    height:10px;
-    border-radius: 50%;
-    margin-left: 3px;
-    margin-top: 3px;
-    background-color: #FFF16E;
-    border: 2px solid black
-}
-.bigRad{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #FFF16E;
-    /* padding-top: 2px;
-    padding-left: 2px; */
-    margin-left: 6vw;
- 
-  
-}
-.myDiv{
-
-    width: 78vw;
-    height: 28vw;
-    position: absolute;
-    left: 50%;
-    margin-left: -39vw;
-    margin-top: 3vh;
-    display: flex;
-    align-items: center;
-    /* opacity: 0.8; */
-    border-radius: 5px;
-    background: linear-gradient(to left,#040309,#3d3c3c);
-}
-.myLeft{
-    display: inline-block;
-    background-image: url('../img/test.jpg');
-    width: 22vw;
-    height: 20vw;
-    border-radius: 50%;
-    margin-left: 5vw;
-    background-size: cover;
-    background-position: center;
-
-}
-.myRight{
-    display: inline-block;
-    width: 45vw;
-    height: 20vw;
-    margin-left: 5vw;
-}
-.myRight>p>b{
-    margin-left: 2vw;
-    height: 20px;
-    line-height: 20px;
-    font-size: 2.5vw;
-    
-}
-.myRight>p>i{
-    margin-left:0 ;
-    height: 20px;
-    line-height: 20px;
-    font-size: 2.5vw;
-    
-}
-
-/******社交 中间部分*****/
-#part3{
-    position: relative;
-    overflow: scroll;
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-#part3>section{
-    width: 100vw;
-    height: 80vh;
-    vertical-align: middle;
-}  
-#part3>section p{
-    font-size: 3.5vw;
-    color: #fff;
-    display: inline-block;
-   height: 20px;
-   line-height: 20px;
-} 
-#part3>section span{
-    font-size: 2.5vw;
-    color: #fff;
-    display: inline-block;
-    margin-left: 20vw;
-}
-#part3>section>div{
-    width: 100vw;
-    height: 30vh;
-    position: relative;
-    padding-top: 5vh;
-
-}
-.myLeft2{
-    display: inline-block;
-    background-image: url('../img/test.png');
-    width: 15vw;
-    height: 15vw;
-    border-radius: 50%;
-    margin-left: 3vw;
-    background-size: cover;
-    background-position: center;
-}
-.myRight2{
-    display: inline-block;
-    background-image: url('../img/test.jpg');
-    width: 20vw;
-    height: 18vw;
-    margin-left: 5vw;
-    background-size: cover;
-    background-position: center;
-}
-.myRight1{
-    display: inline-block;
-    width: 30vw;
-    height: 20vw;
-    margin-left: 5vw;
-}
-.myRight1>p>img{
-    width: 5vw;
-    height: 5vw;
-    display: inline-block;
-    margin-left: 1vw;
-    margin-top: 2vw;
-}
-.myRight1>p>b{
-    margin-left: 1vw;
-    height: 20px;
-    line-height: 20px;
-    font-size: 2.5vw;
-    
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
