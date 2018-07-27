@@ -1,0 +1,74 @@
+/* 屹彬 社交 */
+#social{
+    position: relative;
+    overflow: scroll;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#social>section{
+    width: 100vw;
+    height: 80vh;
+    vertical-align: middle;
+}  
+#social>section p{
+    font-size: 3.5vw;
+    color: #fff;
+    display: inline-block;
+   height: 20px;
+   line-height: 20px;
+} 
+#social>section span{
+    font-size: 2.5vw;
+    color: #fff;
+    display: inline-block;
+    margin-left: 20vw;
+}
+#social>section>div{
+    width: 100vw;
+    height: 30vh;
+    position: relative;
+    padding-top: 5vh;
+
+}
+.myLeft2{
+    display: inline-block;
+    background-image: url('../img/test.png');
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin-left: 3vw;
+    background-size: cover;
+    background-position: center;
+}
+.myRight2{
+    display: inline-block;
+    background-image: url('../img/test.jpg');
+    width: 20vw;
+    height: 18vw;
+    margin-left: 5vw;
+    background-size: cover;
+    background-position: center;
+}
+.myRight1{
+    display: inline-block;
+    width: 30vw;
+    height: 20vw;
+    margin-left: 5vw;
+}
+.myRight1>p>img{
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+    margin-left: 1vw;
+    margin-top: 2vw;
+}
+.myRight1>p>b{
+    margin-left: 1vw;
+    height: 20px;
+    line-height: 20px;
+    font-size: 2.5vw;
+    
+}
