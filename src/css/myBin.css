@@ -1,6 +1,5 @@
-/* 屹彬 我的事务 */
-
-#myBusiness{
+/* 屹彬 草稿箱 */
+#myBin{
     position: relative;
     overflow: scroll;
     z-index: 1;
@@ -9,32 +8,27 @@
     justify-content: center;
     
 }
-#myBusiness>section{
+#myBin>section{
     width: 100vw;
     height: 80vh;
     vertical-align: middle;
 }  
-#myBusiness>section p{
+#myBin>section p{
     font-size: 3.5vw;
     color: #fff;
     display: inline-block;
    height: 20px;
    line-height: 20px;
 } 
-#myBusiness>section span{
-    font-size: 2.5vw;
-    color: #fff;
-    display: inline-block;
-    margin-left: 20vw;
-}
-#myBusiness>section>div{
+
+#myBin>section>div{
     width: 100vw;
     height: 25vh;
     position: relative;
     padding-top: 5vh;
 
 }
-.myLine{
+.myBinLine{
     width: 1px;
     height: 35vh;
     background-color: #fff;
@@ -44,7 +38,7 @@
     position: absolute;
 }
 
-.smallRad{
+.myBinSmallRad{
     width: 10px;
     height:10px;
     border-radius: 50%;
@@ -53,7 +47,7 @@
     background-color: #FFF16E;
     border: 2px solid black
 }
-.bigRad{
+.myBinBigRad{
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -65,8 +59,7 @@
  
   
 }
-.myDiv{
-
+.myBinDiv{
     width: 78vw;
     height: 28vw;
     position: absolute;
@@ -79,7 +72,7 @@
     border-radius: 5px;
     background: linear-gradient(to left,#040309,#3d3c3c);
 }
-.myLeft{
+.myBinLeft{
     display: inline-block;
     background-image: url('../img/test.jpg');
     width: 22vw;
@@ -90,23 +83,36 @@
     background-position: center;
 
 }
-.myRight{
+.myBinRight{
     display: inline-block;
     width: 45vw;
     height: 20vw;
     margin-left: 5vw;
 }
-.myRight>p>b{
+.myBinRight>p>b{
     margin-left: 2vw;
     height: 20px;
     line-height: 20px;
     font-size: 2.5vw;
     
 }
-.myRight>p>i{
-    margin-left:0 ;
+.myBinlogo{
+    float: right;
+    width: 50px;
+}
+.myBinlogo1{
+    width: 15px;
     height: 20px;
-    line-height: 20px;
-    font-size: 2.5vw;
+    margin-right: 10px;
     
+}
+.myBinlogo2{
+    width: 15px;
+    height: 20px;
+}
+#myBin>section span{
+    font-size: 2.5vw;
+    color: #fff;
+    display: inline-block;
+    margin-left: 20vw;
 }
