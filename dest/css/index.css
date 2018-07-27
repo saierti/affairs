@@ -48,7 +48,7 @@ header p{
 #background1{
     background-image: url('../img/bg.jpg');
     width: 100%;
-    height: 42%;
+    height: 42vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,7 @@ header p{
 /*****我   中间部分******/
 #midPart{
     width: 100%;
-    height: 46%;
+    height: 46vh;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -75,8 +75,8 @@ header p{
     flex-wrap: wrap;
 }
 #midPart>div{
-    width: 50%;
-    height: 50%;
+    width: 50vw;
+    height: 23vh;
     display: flex;
    justify-content: center;
    align-items: center;
