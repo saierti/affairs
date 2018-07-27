@@ -57,8 +57,14 @@ header{
     margin-top: 25px;
     font-size: 5vw;
     color: #fbf6c1;
+<<<<<<< HEAD
+}
+/****首页***/
+
+=======
     }
 /****背景******/
+>>>>>>> d17004afb46f01e09cb370f52455b730ec426b8c
 .container{
     display: block;
     width: 100%;
