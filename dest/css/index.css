@@ -11,8 +11,8 @@ html,body{
 } 
 /****顶部栏*******/
 header{
-    width: 100%;
-    height: 67px;
+    width: 100vw;
+    height: 10vh;
     background: linear-gradient(to right,#040309,#858484);
     overflow: hidden;
     font-size: 0;
@@ -22,8 +22,8 @@ header{
 header > div{
     display:inline-block;
 
-    width: 50%;
-    height: 67px;
+    width: 50vw;
+    height: 10vh;
 }
 header p{
     font-family: 'Youyuan' ,sans-serif;
@@ -32,6 +32,12 @@ header p{
     font-size: 4.5vw;
     color: #ffffff;
     transition: font-size ,0.2s;
+}
+#otherhead{
+    width: 100vw;
+}
+#otherhead>p{
+    color: #fbf6c1;
 }
 #header1{
     font-size:5.2vw;
@@ -44,11 +50,73 @@ header p{
     border-bottom: 2px solid #fffbc4;
     width: 0;
 }
+/****首页************/
+
+.container{
+    display: block;
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    background-image: url(../img/bg.jpg);
+    top: 10%;
+    background-size: 100% 100%;
+}
+.mainbox{
+    width:351px;
+    height: 244px;
+    border-radius:7px;
+    background-color: aliceblue;
+    margin-top:25px; 
+}
+#main{
+    overflow: scroll;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mainImg{
+    width: 100%;
+    height: 190px;
+    background:url(../img/test.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-mask-image:-webkit-gradient(linear,right top,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7)));
+}
+.mainboxtop{
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    position: relative;
+}
+.label{
+    display: table-cell;
+    width: 47px;
+    height: 21px;
+    border: 2px solid #FFF16E;
+    border-radius:6px;
+    font-size: 15px;
+    overflow: hidden;
+    color: #FFF16E;
+}
+.date,.time{
+    font-size: 15px;
+    color: #ffffff;
+    position: absolute;
+    top: 8px;
+}
+.date{
+    right: 55px;
+}
+.time{
+    right: 10px;
+}
 /****背景********/
 #background1{
-    background-image: url('../img/bg.jpg');
+    background-image: url('../img/bg1.jpg');
     width: 100%;
-    height: 42%;
+    height: 42vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +135,7 @@ header p{
 /*****我   中间部分******/
 #midPart{
     width: 100%;
-    height: 46%;
+    height: 46vh;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -75,8 +143,8 @@ header p{
     flex-wrap: wrap;
 }
 #midPart>div{
-    width: 50%;
-    height: 50%;
+    width: 50vw;
+    height: 23vh;
     display: flex;
    justify-content: center;
    align-items: center;
@@ -136,44 +204,192 @@ header p{
     font-family: 'youyuan';
 }
 /*******我的事务  中间部分****/
-#background{
-    background-image: url('../img/background.jpg');
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    background-size: contain;
-}
+
 #part2{
-    /* margin-top: 67px;
-    margin-bottom: 65px; */
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    position: relative;
+    overflow: scroll;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
-#background>section{
-    width: 100%;
-    height: 100%;
+#part2>section{
+    width: 100vw;
+    height: 80vh;
+    vertical-align: middle;
+}  
+#part2>section p{
+    font-size: 3.5vw;
+    color: #fff;
+    display: inline-block;
+   height: 20px;
+   line-height: 20px;
+} 
+#part2>section span{
+    font-size: 2.5vw;
+    color: #fff;
+    display: inline-block;
+    margin-left: 20vw;
+}
+#part2>section>div{
+    width: 100vw;
+    height: 30vh;
+    position: relative;
+    padding-top: 5vh;
 
 }
-#myLine{
+.myLine{
     width: 1px;
-    height: 50%;
+    height: 35vh;
     background-color: #fff;
-    margin-left: 10%;
+    margin-left: 6vw;
+    margin-top: 3vh;
+    left:10px;
     position: absolute;
-    top:50%;
-    margin-top: -50%;
 }
 
 .smallRad{
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-color: #FFF16E;
+    border: 2px solid black
+}
+.bigRad{
+    display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: #FFF16E;
+    /* padding-top: 2px;
+    padding-left: 2px; */
+    margin-left: 6vw;
+ 
+  
+}
+.myDiv{
+
+    width: 78vw;
+    height: 28vw;
+    position: absolute;
+    left: 50%;
+    margin-left: -39vw;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    /* opacity: 0.8; */
+    border-radius: 5px;
+    background: linear-gradient(to left,#040309,#3d3c3c);
+}
+.myLeft{
+    display: inline-block;
+    background-image: url('../img/test.jpg');
+    width: 22vw;
+    height: 20vw;
+    border-radius: 50%;
+    margin-left: 5vw;
+    background-size: cover;
+    background-position: center;
+
+}
+.myRight{
+    display: inline-block;
+    width: 45vw;
+    height: 20vw;
+    margin-left: 5vw;
+}
+.myRight>p>b{
+    margin-left: 2vw;
+    height: 20px;
+    line-height: 20px;
+    font-size: 2.5vw;
+    
+}
+.myRight>p>i{
+    margin-left:0 ;
+    height: 20px;
+    line-height: 20px;
+    font-size: 2.5vw;
+    
 }
 
+/******社交 中间部分*****/
+#part3{
+    position: relative;
+    overflow: scroll;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#part3>section{
+    width: 100vw;
+    height: 80vh;
+    vertical-align: middle;
+}  
+#part3>section p{
+    font-size: 3.5vw;
+    color: #fff;
+    display: inline-block;
+   height: 20px;
+   line-height: 20px;
+} 
+#part3>section span{
+    font-size: 2.5vw;
+    color: #fff;
+    display: inline-block;
+    margin-left: 20vw;
+}
+#part3>section>div{
+    width: 100vw;
+    height: 30vh;
+    position: relative;
+    padding-top: 5vh;
 
-
+}
+.myLeft2{
+    display: inline-block;
+    background-image: url('../img/test.png');
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin-left: 3vw;
+    background-size: cover;
+    background-position: center;
+}
+.myRight2{
+    display: inline-block;
+    background-image: url('../img/test.jpg');
+    width: 20vw;
+    height: 18vw;
+    margin-left: 5vw;
+    background-size: cover;
+    background-position: center;
+}
+.myRight1{
+    display: inline-block;
+    width: 30vw;
+    height: 20vw;
+    margin-left: 5vw;
+}
+.myRight1>p>img{
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+    margin-left: 1vw;
+    margin-top: 2vw;
+}
+.myRight1>p>b{
+    margin-left: 1vw;
+    height: 20px;
+    line-height: 20px;
+    font-size: 2.5vw;
+    
+}
 
 
 
