@@ -1,0 +1,157 @@
+/*myCard.css*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image:url(../img/bg.jpg);
+    font-family: "幼圆";
+}
+input{
+    border:none;
+    outline: none;
+}
+/* 每个容器都这么写 */
+.container{
+    display: block;
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    background-image: url(../img/bg.jpg);
+    top: 10%;
+    background-size: 100% 100%;
+}
+.make-card{
+    width:90%;
+    height: 420px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    margin:-210px 5% 0 5%;
+    border-radius: 7px;
+    background-color: white;
+    box-sizing: border-box;
+}
+/* 新建我的卡片 */
+.make-card > p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+/* 标题 */
+.make-card input[name = "title"]{
+    box-sizing: border-box;
+    font-size: 6px;
+    padding: 0 12px;
+    width: 86%;/*宽度写成了86%*/
+    height: 28px;
+    background-color:#d6d6d6;
+    display:block;
+    margin:0 auto 10px;
+    border-radius: 4px;
+}
+.make-card input::placeholder{
+    font-family: Youyuan;
+}
+/* 具体描述 */
+.make-card textarea{
+    box-sizing: border-box;
+    font-size:10px;
+    width: 58%;
+    height: 12vh;
+    padding: 6px 12px;
+    outline: none;
+    background-color:#d6d6d6;
+    border:none;
+    border-radius:4px;
+    margin-left:7%;
+    resize: none;
+    overflow-y: scroll;
+}
+.make-card textarea::placeholder{
+    font-family: Youyuan;
+}
+/* 添加图片 */
+.add-img{
+    display: inline-block;
+    color: white;
+    font-size:6px;
+    vertical-align: top;
+    line-height: 12vh;
+    background-color:#2b3535;
+    text-align: center;
+    width: 25%;
+    border-radius:4px;
+    height: 12vh;
+}
+/* 标签 */
+.card-label{
+    font-size: 12px;
+    margin: 8px 7%;
+}
+.card-label > span{
+    border:1px solid #2e2c34;
+    margin-left: 10px;
+    padding:2px 6px;
+    border-radius:6px;
+
+}
+.card-label > span[class="tag-active"]{
+    background-color: #2e2c34;
+    color:white;
+}
+hr{
+    margin:14px 0;
+}
+
+/* 第一行
+.card1-2-1 i{
+    font-style: normal;
+    font-size: 12px;
+}
+.card1-2-1 input{
+    border:1px solid #2b3535;
+    width:100px;
+    padding:2px 20px;
+}
+.card1-2-1 input::-webkit-input-placeholder{
+    font-size: 12px;
+}
+/* 下三角角标 */
+/* .card1-2 span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+    position: relative;
+    left: -28px;
+    top: -2px;
+    transform: rotate(45deg);
+}  */
+/* 横线下面 */
+.card1-2{
+    background-color:pink;
+    font-size: 3vw;
+    padding:0 6vw;
+}
+.card1-2 select{
+    appearance: none;
+    display:inline-block;
+    width:28vw;
+    border:1px solid #2e2c34;
+    font-family: "幼圆";
+    font-size: 1vw;
+    height:5vw;
+    padding:0 0.5vw;
+    outline:none;
+    background-color:transparent;
+}
+.card1-2 select > option{
+    font-size: 1vw;
+    width: 25vw;
+    height: 30px;
+}

@@ -9,9 +9,19 @@ html,body{
     font-size: 20px;
     background-color: black;
 } 
+<<<<<<< HEAD
 /****顶部栏*******/
 header{
     width: 100vw;
+=======
+input{
+    border:none;
+}
+/****顶部栏***/
+header{
+    z-index: 2;
+    width: 100%;
+>>>>>>> b14d1010956d584974eea53c230b92b2ee29e96e
     height: 10vh;
     background: linear-gradient(to right,#040309,#858484);
     overflow: hidden;
@@ -33,6 +43,7 @@ header p{
     color: #ffffff;
     transition: font-size ,0.2s;
 }
+<<<<<<< HEAD
 #otherhead{
     width: 100vw;
 }
@@ -40,6 +51,9 @@ header p{
     color: #fbf6c1;
 }
 #header1{
+=======
+#mainhead #header1{
+>>>>>>> b14d1010956d584974eea53c230b92b2ee29e96e
     font-size:5.2vw;
     color: #fbf6c1;
 }
@@ -62,12 +76,13 @@ header p{
     background-size: 100% 100%;
 }
 .mainbox{
-    width:351px;
-    height: 244px;
-    border-radius:7px;
+    width: 90vw;
+    height: 36.5vh;
+    border-radius: 7px;
     background-color: aliceblue;
-    margin-top:25px; 
+    margin-top: 4vh;
 }
+<<<<<<< HEAD
 #main{
     overflow: scroll;
     z-index: 1;
@@ -76,45 +91,25 @@ header p{
     justify-content: center;
 }
 .mainImg{
-    width: 100%;
-    height: 190px;
-    background:url(../img/test.jpg);
+=======
+.container{
+    background-image: url(../img/bg.jpg);
     background-size: cover;
-    background-position: center;
-    -webkit-mask-image:-webkit-gradient(linear,right top,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7)));
+    position: fixed;
+>>>>>>> b14d1010956d584974eea53c230b92b2ee29e96e
+    width: 100%;
+    height: 80vh;
 }
-.mainboxtop{
-    height: 30px;
-    text-align: center;
-    padding-top: 5px;
-    padding-left: 4px;
-    position: relative;
-}
-.label{
-    display: table-cell;
-    width: 47px;
-    height: 21px;
-    border: 2px solid #FFF16E;
-    border-radius:6px;
-    font-size: 15px;
-    overflow: hidden;
-    color: #FFF16E;
-}
-.date,.time{
-    font-size: 15px;
-    color: #ffffff;
-    position: absolute;
-    top: 8px;
-}
-.date{
-    right: 55px;
-}
-.time{
-    right: 10px;
-}
+<<<<<<< HEAD
 /****背景********/
 #background1{
     background-image: url('../img/bg1.jpg');
+=======
+
+/****背景***/
+#background{
+    background-image: url('../img/bg.jpg');
+>>>>>>> b14d1010956d584974eea53c230b92b2ee29e96e
     width: 100%;
     height: 42vh;
     display: flex;
@@ -406,6 +401,7 @@ header p{
 /*******底部***********/
 
 #footer{
+    z-index: 100;
     position: fixed;
     display: flex;
     align-items: center;

@@ -1,0 +1,118 @@
+#main{
+    overflow: scroll;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 10%;
+}
+.mainImg{
+    width: 100%;
+    height: 28vh;
+    z-index: 3;
+    border-radius: 7px;
+
+}
+.mainboxtop{
+    height: 4.2vh;
+    text-align: center;
+    padding-top: 1vh;
+    padding-left: 4px;
+    position: relative;
+}
+.label{
+    display: table-cell;
+    width: 47px;
+    height: 21px;
+    border: 2px solid #FFF16E;
+    border-radius:6px;
+    font-size: 15px;
+    overflow: hidden;
+    color: #FFF16E;
+    font-weight: bold;
+}
+.date,.time{
+    font-size: 4.2vw;
+    color: #ffffff;
+    position: absolute;
+    top: 2vh;
+}
+.date{
+    right: 55px;
+}
+.time{
+    right: 10px;
+}
+.blackbox{
+    position: absolute;
+    background: url(../img/test.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 28vh;
+    width: inherit;
+    filter: blur(1px);
+    border-radius: 7px;
+}
+.mainboxmid{
+    width: 100%;
+    height: 22.8vh;
+    position: relative;
+}
+.mainboxmid p{
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -25%;
+    font-weight: bold;
+    line-height: 1.3em;
+    color: #FFFFFF;
+    font-size: 5vw;
+    font-family: 'SimHei',sans-serif;
+}
+.mainboxbottom{
+    width: 100%;
+    height: 8.5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+}
+.headimg{
+    width: 9vw;
+    height: 5vh;
+    display: inline-block;
+    border-radius: 20px;
+    background-image: url(../img/head.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mainhead span{
+    position: relative;
+    bottom: 1.45vh;
+    color: #676464;
+    margin-left: 2vw;
+    font-size: 3.5vw;
+    font-family: 'Youyuan',sans-serif;
+}
+.btnPick{
+    width: 5vw;
+    height: 2.5vh;
+    position: absolute;
+    right: 16%;
+    background-image: url(../img/pick0.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+.btnDiscuss{
+    width: 8vw;
+    height: 2.5vh;
+    position: absolute;
+    right: 7%;
+    background-image: url(../img/discuss0.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
