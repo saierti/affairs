@@ -23,39 +23,42 @@ header{
     position: fixed;
     top: 0;
     }
-    #mainhead > div{
+#mainhead > div{
     display: inline-block;
     width: 50%;
     height: 6vh;
     line-height: 6vh;
     }
-    #mainhead p{
+#mainhead p{
     font-family: 'Youyuan' ,sans-serif;
     text-align: center;
     font-size: 4.5vw;
     color: #ffffff;
     transition: font-size ,0.2s;
     }
-    #mainhead #header1{
+#mainhead #header1{
     font-size:5.2vw;
     color: #fbf6c1;
     }
-    .line{
+.line{
     height: 0;
     margin:-2px 30% 0 41%;
     border-radius: 45px;
     border-bottom: 2px solid #fffbc4;
     width: 0;
     }
-    #otherhead{
+#otherhead{
     width: 100%;
     text-align: center;
+
     }
-    #otherhead p{
+#otherhead p{
     font-family: 'Youyuan' ,sans-serif;
     text-align: center;
     font-size: 5vw;
     color: #fbf6c1;
+    line-height: 6vh;
+    height: 6vh;
     }
 /****背景******/
 .container{
