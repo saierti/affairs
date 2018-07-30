@@ -54,7 +54,7 @@ $('document').ready(function(){
     var oDiv4 = $('#message');
     var oDiv5 = $('#me');
     var oDiv51 = $('#myBusiness');
-    var oDiv52 = $('#myGroup');
+    // var oDiv52 = $('#myGroup');
     var oDiv53 = $('#myBin');
     var oDiv54 = $('#history');
 
@@ -73,10 +73,12 @@ $('document').ready(function(){
         oDiv2.css('display','none');
         oDiv5.css('display','none');
         oDiv51.css('display','none');
-        oDiv52.css('display','none');
+        // oDiv52.css('display','none');
         oDiv53.css('display','none');
         oDiv54.css('display','none');
     })
+    
+    
     $(aA[1]).click(function(){
           
         oDiv2.css('display','block');
@@ -89,7 +91,7 @@ $('document').ready(function(){
         oDiv4.css('display','none');
         oDiv5.css('display','none');
         oDiv51.css('display','none');
-        oDiv52.css('display','none');
+        // oDiv52.css('display','none');
         oDiv53.css('display','none');
         oDiv54.css('display','none');
 
@@ -105,7 +107,7 @@ $('document').ready(function(){
         oDiv2.css('display','none');
         oDiv5.css('display','none');
         oDiv51.css('display','none');
-        oDiv52.css('display','none');
+        // oDiv52.css('display','none');
         oDiv53.css('display','none');
         oDiv54.css('display','none');
     })
@@ -118,7 +120,7 @@ $('document').ready(function(){
         oDiv2.css('display','none');
         oDiv4.css('display','none');
         oDiv51.css('display','none');
-        oDiv52.css('display','none');
+        // oDiv52.css('display','none');
         oDiv53.css('display','none');
         oDiv54.css('display','none');
 
@@ -136,14 +138,15 @@ $('document').ready(function(){
         oDiv2.css('display','none');
         oDiv4.css('display','none');
         oDiv5.css('display','none');
-        oDiv52.css('display','none');
+        // oDiv52.css('display','none');
         oDiv53.css('display','none');
         oDiv54.css('display','none');
 
     })
+    
     $('.div2').click(function(){
 
-        oDiv52.css('display','block');
+        // oDiv52.css('display','block');
         $('#header').css('display','block')
         $('#header3').text('我的小组')
         $('#mainhead').css('display','none')
@@ -171,7 +174,7 @@ $('document').ready(function(){
         oDiv2.css('display','none');
         oDiv4.css('display','none');
         oDiv5.css('display','none');
-        oDiv52.css('display','none');
+        // oDiv52.css('display','none');
         oDiv51.css('display','none');
         oDiv54.css('display','none');
 

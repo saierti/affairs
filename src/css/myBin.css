@@ -21,98 +21,121 @@
    line-height: 20px;
 } 
 
-#myBin>section>div{
+/* #myBin>section>div{
     width: 100vw;
     height: 25vh;
     position: relative;
     padding-top: 5vh;
 
-}
-.myBinLine{
-    width: 1px;
-    height: 35vh;
-    background-color: #fff;
-    margin-left: 6vw;
-    margin-top: 2vh;
-    left:10px;
-    position: absolute;
-}
+} */
 
-.myBinSmallRad{
-    width: 10px;
-    height:10px;
-    border-radius: 50%;
-    margin-left: 3px;
-    margin-top: 3px;
-    background-color: #FFF16E;
-    border: 2px solid black
-}
-.myBinBigRad{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #FFF16E;
-    /* padding-top: 2px;
-    padding-left: 2px; */
-    margin-left: 6vw;
- 
-  
-}
-.myBinDiv{
-    width: 78vw;
-    height: 28vw;
-    position: absolute;
-    left: 50%;
-    margin-left: -39vw;
-    margin-top: 3vh;
-    display: flex;
-    align-items: center;
-    /* opacity: 0.8; */
-    border-radius: 5px;
-    background: linear-gradient(to left,#040309,#3d3c3c);
-}
-.myBinLeft{
-    display: inline-block;
-    background-image: url('../img/test.jpg');
-    width: 22vw;
-    height: 20vw;
-    border-radius: 50%;
-    margin-left: 5vw;
-    background-size: cover;
-    background-position: center;
 
-}
-.myBinRight{
-    display: inline-block;
-    width: 45vw;
-    height: 20vw;
-    margin-left: 5vw;
-}
-.myBinRight>p>b{
-    margin-left: 2vw;
-    height: 20px;
-    line-height: 20px;
-    font-size: 2.5vw;
-    
-}
+
 .myBinlogo{
     float: right;
+    margin-top: 1vh;
     width: 50px;
 }
 .myBinlogo1{
     width: 15px;
-    height: 20px;
-    margin-right: 10px;
+    height: 18px;
+    margin-right: 7px;
     
 }
 .myBinlogo2{
     width: 15px;
-    height: 20px;
+    height: 18px;
 }
 #myBin>section span{
-    font-size: 2.5vw;
+
     color: #fff;
     display: inline-block;
-    margin-left: 20vw;
+}
+
+/****/
+
+.myBinDiv2{
+    display: inline-block;
+    width: 84vw;
+    float: right;
+    height: 30vh;
+}
+
+
+.myBinDiv {
+    width: 84vw;
+    height: 16vh;
+    /* opacity: 0.8; */
+    border-radius: 5px;
+    /* margin-top: 2vh; */
+    background: linear-gradient(to left,#040309,#3d3c3c);
+}
+.myBinDiv2>span{
+    font-size: 3.5vw;
+    margin: 2vh 0 ;
+}
+
+.myBinRight{
+    display: inline-block;
+    width: 42vw;
+    vertical-align: bottom;
+    height: 16vh;
+    margin-left :2vw;
+    /* padding-top: 2vw; */
+    line-height: 3vh;
+}
+/*****/
+
+#myBin2{
+    background-image: url('../img/nwlogo.png');
+}
+/* myBinRightP2 > span{
+
+    margin-left: 2vw;
+    font-size: 2.5vw;
+
+} */
+
+
+.myBinDiv2{
+    display: inline-block;
+    width: 84vw;
+    float: right;
+    height: 30vh;
+}
+.myBinLeft{
+    display: inline-block;
+    background-image: url('../img/test.jpg');
+    width:  12vh;
+    height: 12vh;
+    border-radius: 50%;
+    /* margin-left: 5vw; */
+    background-size: cover;
+    background-position: center;
+    margin: 2vh;
+
+}
+.myBinRightP1{
+    margin-top: 2vh;
+}
+.myBinDiv2 p{
+    
+    font-size:3vw;
+    color: #fff;
+    display: inline-block;
+
+} 
+
+.myBinDiv2>p{
+    font-size: 4.5vw;
+}
+
+.myBinSpan{
+    padding:  0 1vw 0 1vw;
+    margin-left: 2vw;
+    font-size: 0.5vw;
+    border-radius: 6px;
+    border: 1px solid  white;
+    color: #fff;
+    display: inline-block;
 }

@@ -9,42 +9,54 @@
     justify-content: center;
     
 }
-#myBusiness>section{
+#myBusiness > section{
     width: 100vw;
     height: 80vh;
-    vertical-align: middle;
-}  
-#myBusiness>section p{
-    font-size: 3.5vw;
-    color: #fff;
-    display: inline-block;
-   height: 20px;
-   line-height: 20px;
-} 
-#myBusiness>section span{
-    font-size: 2.5vw;
-    color: #fff;
-    display: inline-block;
-    margin-left: 20vw;
 }
-#myBusiness>section>div{
+.myDiv{
     width: 100vw;
     height: 25vh;
     position: relative;
-    padding-top: 5vh;
+    margin-top: 5vh;
+}  
+.myDiv1{
+    width: 8vw;
+    height: 25vh;
+    float: left;
+    margin-left: 8vw;
+    display: inline-block;
+}
+.myBusinessDiv2 p{
+    font-size:3vw;
+    color: #fff;
+    display: inline-block;
 
+} 
+.myBusinessDiv2 > span{
+    font-size: 2.5vw;
+    color: #fff;
+    display: inline-block;
+    margin: 5vw 10vw;
+}
+.myBusinessDiv2{
+    display: inline-block;
+    width: 84vw;
+    float: right;
+    height: 25vh;
 }
 .myLine{
     width: 1px;
-    height: 35vh;
+    height: 30vh;
     background-color: #fff;
-    margin-left: 6vw;
-    margin-top: 2vh;
-    left:10px;
+    /* margin-left: 6vw;
+    margin-top: 2vh; */
+    margin-left: 10px;
     position: absolute;
+    z-index: -1;
+    margin-top: -1px
 }
 
-.smallRad{
+.mySmallRad{
     width: 10px;
     height:10px;
     border-radius: 50%;
@@ -53,60 +65,68 @@
     background-color: #FFF16E;
     border: 2px solid black
 }
-.bigRad{
+.myBigRad{
     display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: #FFF16E;
+    position: relative;
+    z-index: 1;
     /* padding-top: 2px;
     padding-left: 2px; */
-    margin-left: 6vw;
- 
+    /* margin-left: 6vw; */
   
 }
-.myDiv{
-
-    width: 78vw;
-    height: 28vw;
-    position: absolute;
-    left: 50%;
-    margin-left: -39vw;
-    margin-top: 3vh;
+.myBusinessDiv{
+    width: 70vw;
+    height: 15vh;
     display: flex;
     align-items: center;
     /* opacity: 0.8; */
     border-radius: 5px;
     background: linear-gradient(to left,#040309,#3d3c3c);
-}
-.myLeft{
-    display: inline-block;
-    background-image: url('../img/test.jpg');
-    width: 22vw;
-    height: 20vw;
-    border-radius: 50%;
-    margin-left: 5vw;
-    background-size: cover;
-    background-position: center;
 
 }
-.myRight{
+
+.myBusinessLeft{
+    display: inline-block;
+    background-image: url('../img/test.jpg');
+    width: 17vw;
+    height: 17vw;
+    border-radius: 50%;
+    /* margin-left: 5vw; */
+    background-size: cover;
+    background-position: center;
+    margin: 0 2vw;
+
+}
+.myBusinessRight{
     display: inline-block;
     width: 45vw;
-    height: 20vw;
-    margin-left: 5vw;
+    height: 12vh;
+    margin-left :2vw;
+    line-height: 3vh;
 }
-.myRight>p>b{
+
+.myBusinessRight > p > span{
     margin-left: 2vw;
-    height: 20px;
-    line-height: 20px;
     font-size: 2.5vw;
-    
 }
-.myRight>p>i{
-    margin-left:0 ;
-    height: 20px;
-    line-height: 20px;
+#myBusinessRightP3{
     font-size: 2.5vw;
-    
 }
+/**插入元素img**/
+#myBusiness1{
+    background-image: url('../img/nwlogo.png');
+}
+#myBusiness2{
+    background-image: url('../img/test.jpg');
+}
+
+#myBusiness3{
+    background-image: url('../img/IMG_3631.jpg');
+}
+
+
+/***/

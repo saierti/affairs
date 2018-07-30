@@ -28,78 +28,74 @@
     padding-top: 5vh;
 
 }
-.historyLine{
-    width: 1px;
-    height: 35vh;
-    background-color: #fff;
-    margin-left: 6vw;
-    margin-top: 2vh;
-    left:10px;
-    position: absolute;
+.historyRight{
+    display: inline-block;
+    width: 50vw;
+    vertical-align: bottom;
+    height: 12vh;
+    margin-left :2vw;
+    /* padding-top: 2vw; */
+    line-height: 3vh;
 }
 
-.historySmallRad{
-    width: 10px;
-    height:10px;
-    border-radius: 50%;
-    margin-left: 3px;
-    margin-top: 3px;
-    background-color: #FFF16E;
-    border: 2px solid black
+historyRightP2 > span{
+
+    margin-left: 2vw;
+    font-size: 2.5vw;
+
 }
-.historyBigRad{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #FFF16E;
-    /* padding-top: 2px;
-    padding-left: 2px; */
-    margin-left: 6vw;
- 
-  
-}
-.historyDiv{
-    width: 78vw;
-    height: 28vw;
-    position: absolute;
-    left: 50%;
-    margin-left: -39vw;
-    margin-top: 3vh;
-    display: flex;
-    align-items: center;
+
+.historyDiv {
+    width: 80vw;
+    height: 14vh;
     /* opacity: 0.8; */
     border-radius: 5px;
+    margin-top: 2vh;
     background: linear-gradient(to left,#040309,#3d3c3c);
+}
+
+.historyDiv2{
+    display: inline-block;
+    width: 84vw;
+    float: right;
+    height: 25vh;
 }
 .historyLeft{
     display: inline-block;
     background-image: url('../img/test.jpg');
-    width: 22vw;
-    height: 20vw;
+    width:  10vh;
+    height: 10vh;
     border-radius: 50%;
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
     background-size: cover;
     background-position: center;
+    margin: 2vh;
 
 }
-.historyRight{
+.historyRightP1{
+    margin-top: 1vh;
+}
+.historyDiv2 p{
+    
+    font-size:3vw;
+    color: #fff;
     display: inline-block;
-    width: 45vw;
-    height: 20vw;
-    margin-left: 5vw;
+
+} 
+
+.historyDiv2>p{
+    font-size: 4.5vw;
 }
-.historyRight>p>b{
+
+.historySpan{
+    padding:  0 1vw 0 1vw;
     margin-left: 2vw;
-    height: 20px;
-    line-height: 20px;
-    font-size: 2.5vw;
-    
+    font-size: 0.5vw;
+    border-radius:6px;
+    border: 1px solid  white;
+    color: #fff;
+    display: inline-block;
 }
-.historyRight>p>i{
-    margin-left:0 ;
-    height: 20px;
-    line-height: 20px;
-    font-size: 2.5vw;
-    
-}
+
+/****/
+  
