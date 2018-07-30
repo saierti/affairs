@@ -57,9 +57,10 @@ header{
     text-align: center;
     font-size: 5vw;
     color: #fbf6c1;
-}
-/****背景***/
-
+    line-height: 6vh;
+    height: 6vh;
+    }
+/****背景******/
 .container{
     display: block;
     width: 100%;

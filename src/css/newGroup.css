@@ -1,0 +1,90 @@
+/* newGroup.css */
+.make-group{
+    width:90vw;
+    background-color:white;
+    margin:10vh 5vw;
+    border-radius: 8px;
+}
+/* 新建小组p标签 */
+.make-group > p{
+    text-align: center;
+    font-family: "幼圆";
+    padding:2vh;
+}
+/* p下面的两部分 */
+.card2-1{
+    padding: 0 8vw 2vh 8vw;
+}
+.card2-1:after{
+    content:"";
+    clear:both;
+    display:block;
+}
+/* 左边 */
+.card2-1-left{
+    float:left;
+    font-size: 2vh;
+    line-height: 4vh;
+}
+.card2-1-left input[name="groupname"]{
+    background-color: #d6d6d6;
+    width:36vw;
+    height:4vh;
+    border-radius:6px;
+    padding-left: 4vw;
+    vertical-align: top;
+}
+.card2-1-left input[name="groupname"]::-webkit-input-placeholder{
+    font-size:12px;
+}
+.g-xingzhi{
+    border:1px solid #2e2c34;
+    margin-left: 5vw;
+    padding:2px 6px;
+    border-radius:6px;
+}
+/* 右边 */
+.card2-1-right{
+    float: right;
+    display: inline-block;
+    width:28vw;
+    height: 16vh;
+    background-color:#2b3535;
+    font-size:12px;
+    text-align: center;
+    /*vertical-align: center; 没用也不知道为什么*/
+    padding-top:5.5vh;
+    border-radius: 6px;
+    box-sizing:border-box;
+    color: white;
+}
+/* 小组简介 */
+#groupintroduce{
+    margin-left:8vw;
+    width:74vw;
+    height: 12vh;
+    background-color: #d6d6d6;
+    border-radius: 6px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+/* 创建和取消按钮 */
+.card2-2{
+    display: flex;
+    justify-content: center;
+}
+.card2-end{
+    margin: 0 10vw 14px;
+    padding:8px 16px;
+    font-size:14px;
+    border-radius:6px;
+    font-family: "幼圆";
+    color:white;
+}
+.card2-2 > input{
+    background-color: #2b3535;
+}
+.card2-2 > span{
+    background-color:#5b5872;
+}

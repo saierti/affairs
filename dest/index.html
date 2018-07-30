@@ -16,6 +16,9 @@
 	<link rel="stylesheet" href="css/myGroup.css"> <!-- 屹彬 我的小组 -->
 	<link rel="stylesheet" href="css/myBin.css">  <!-- 屹彬 草稿箱 -->
 	<link rel="stylesheet" href="css/message.css"> <!-- 屹彬 待办 -->
+	<link rel="stylesheet" href="css/newCard.css">   <!--嘉竣 卡片-->
+	<link rel="stylesheet" href="css/newGroup.css">		<!-- 嘉竣 新建小组 -->
+	<link rel="stylesheet" href="CSS/myGroup.CSS">		<!-- 嘉竣 我的小组-->
 	<script src="js/index.js"></script>	   <!-- 底部 -->
 	<script src = "js/header.js"></script>	<!-- 头部 -->
     <script src = "js/main.js"></script>     <!-- 阳宁首页 -->
@@ -104,44 +107,7 @@
 			</div>
 		</div>
     </div>
-    
     <!--首页完结-->
-
-    <!--卡片详情-->
-    <!---对应css为carddetail.css-->
-    <div class="container" id="carddetail">
-        <div id="headcontain">
-            <div id="detailhead"></div>
-            <!--进度条区域-->
-            <div class="barbox">
-                <!--领取进度条-->
-                <div class="bararea">
-                    <span class="barhead">领取进度</span>
-                    <div class="barbox-1">
-                        <div class="bar"></div>
-                    </div>
-                    <span class="percent">100%</span>
-                </div>
-                <div class="headarea">
-                    <div class="userhead"></div>
-                    <div class="userhead"></div> 
-                    <div class="userhead"></div>    
-                </div>
-                <!--完成进度条-->
-                <div class="bararea">
-                    <span class="barhead">完成进度</span>
-                    <div class="barbox-2">
-                        <div class="bar"></div>
-                    </div>
-                    <span class="percent">50%</span>
-                </div>    
-            </div>    
-        </div>
-    </div>
-
-    <!--卡片详情完结-->
-	
-
 
     <!--卡片详情-->
     <!---对应css为carddetail.css-->
@@ -486,19 +452,20 @@
 	<!-- 嘉竣 -->
 	
     <!-- 新建我的卡片 -->
-    <div class="container" style="display: none;">
+    <div class="container" id="newCard" style="display: none;">
         <!-- <div class="make-card"> -->
-            <form action="" class="make-card" enctype="multipart/form-data" onsubmit="return Check()">
+			<form action="" class="make-card" enctype="multipart/form-data" onsubmit="return Check()">
+				<span class="chacha quit-card1"></span>
                 <p>新建我的卡片</p>
                 <input name="title" type="text" placeholder="请输入标题（必填）">
                 <textarea name="dcb" cols="30" rows="4" placeholder="请输入具体描述...（选填）"></textarea>
                 <!-- <input type="file" accept="image/*" class="add-img" value="添加照片"> -->
                 <span class="add-img">添加照片</span>
-                <input type="hidden" name="tag" id="tag">
+                <input type="hidden" name="tag" id="tag" value="生活">
                 <div class="card-label">
-                    标签：<span class="tag-active">生活</span>
-                    <span>工作</span>
-                    <span>学习</span>
+                    标签：<span class="tags card-active">生活</span>
+                    <span class="tags" >工作</span>
+                    <span class="tags" >学习</span>
                 </div>
                 <hr/>
                 <!-- hr下面的内容 -->
@@ -510,9 +477,10 @@
                                 <option value="哈哈哈">哈哈哈</option>
                         </select>
                         <span class="sanjiao"></span>    
-                    </div>
+					</div>
+					<input type="hidden" name="e-model" id="e-model" value="指定人员">
                     <div class="card1-2-content">
-                        事执行模式：<span>任选人员</span><span>指定人员</span>
+                        事执行模式：<span class="e-moshis">任选人员</span><span class="e-moshis card-active">指定人员</span>
                     </div>
                     <div class="card1-2-content">
                         选择参与成员:
@@ -521,19 +489,134 @@
                                 <option value="呵呵呵">呵呵呵</option>
                         </select>
                         <span class="sanjiao"></span>    
-                    </div>
-                </div>
-            </form>
+					</div>
+					<div class="card1-2-content">
+						选择时限：
+						<input type="date" name="dead-date" placeholder="展开日历" id="dead-date" onfocus="$(this).removeAttr('placeholder')">
+					</div>
+				</div>
+				<hr/>
+				<!-- 第二个hr -->
+				<div class="card1-3">
+					<input type="submit" class="card1-end" value="创建">
+					<span class="card1-end quit-card1">取消</span>
+				</div>
+			</form>
+			
+
         <!-- </div> -->
-    </div>
-    <footer id="footer">
-            <ul id="footerFlex">
-                <a><img  class="img1" src="img/b0.png" alt="">首页</a>
-                <a><img  class="img2" src="img/a1.png" alt="">社交</a>
-                <a id="footerRad"><div></div></a>
-                <a><img  class="img3" src="img/a3.png" alt="">待办</a>
-                <a><img  class="img4" src="img/a4.png" alt="">我</a>
-            </ul>
-        </footer>
+	</div> 
+	
+
+	<!-- 新建小组 -->
+	<div class="container" id="newGroup" style="display: none;">
+		<form action="" class="make-group">
+			<p>新建小组</p>
+			<div class="card2-1">
+				<div class="card2-1-left">
+					<input type="text" name="groupname" placeholder="请输入小组名称"><br/>
+					<input type="hidden" name="groupcharacter" value="">
+					&nbsp;选择小组性质：<br/>
+					<span class="g-xingzhi card-active">生活</span>
+					<span class="g-xingzhi">工作</span><br/>
+					<span class="g-xingzhi">学习</span>
+				</div>
+				<div class="card2-1-right">请选择图片<br/>或预设头像</div>
+			</div>
+			<textarea name="groupintroduce" id="groupintroduce" placeholder="请输入小组简介..."></textarea>
+			<hr>
+			<div class="card2-2">
+				<input type="submit" class="card2-end" value="创建">
+				<span class="card2-end quit-card2">取消</span>
+			</div>
+		</form>
+	</div>
+	
+	<!-- 我的小组 -->
+	<div class="container" id="myGroupCard" style="display: block;">
+		<div class="myGroupCard-wrapper">
+			<img src="img/IMG_3631.jpg" alt="" class="myGroupCard-img">
+			<div class="gimg-right">
+				<div class="edit-button"></div>
+				<p class="group-name">nw神秘组织</p>
+				<span class="group-words">咕咕咕 咕咕咕 有爱的组织</span>
+			</div>
+			<p class="team-character-show">工作小组</p>
+			<p class="team-number-show">小组成员：14</p>
+			<p class="member-list">成员列表</p>
+			<div class="like-man-wrapper">
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.png" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.png" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>					
+			</div>
+			<div class="share-to-chat">分享链接到聊天</div>
+			<div class="copy-the-url">复制当前小组链接</div>
+			<div class="card3-end">删除并退出当前小组</div>
+		</div>
+	</div>
+
+	<!-- 底部 footer -->
+    <footer id="footer" >
+		<ul id="footerFlex">
+			<a><img  class="img1" src="img/b0.png" alt="">首页</a>
+			<a><img  class="img2" src="img/a1.png" alt="">社交</a>
+			<a id="footerRad"><div></div></a>
+			<a><img  class="img3" src="img/a3.png" alt="">待办</a>
+			<a><img  class="img4" src="img/a4.png" alt="">我</a>
+		</ul>
+    </footer>
 </body>
 </html>

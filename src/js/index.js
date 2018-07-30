@@ -58,7 +58,7 @@ $('document').ready(function(){
     var oDiv53 = $('#myBin');
     var oDiv54 = $('#history');
 
-    oDiv1.css('display','flex');          /**********首页！！！！ */
+    // oDiv1.css('display','flex');
 
     $(aA[0]).click(function(){
     
