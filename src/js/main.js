@@ -10,4 +10,16 @@ $('document').ready(function(){
                 flag--;
              }
     });
+    //点击卡片跳转到卡片详情
+    $('.mainImg').click(function(){
+        $('#header').css('display','none');
+        $('#main').css('display','none');
+        $('#carddetail').css('display','block');
+    });
+    $('.btnDiscuss').click(function(){
+        $('#header').css('display','none');
+        $('#main').css('display','none');
+        $('#carddetail').css('display','block');
+        $('#carddetail').scrollTop(600);
+    })
 });
