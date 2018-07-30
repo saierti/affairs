@@ -1,6 +1,5 @@
 /* 屹彬 草稿箱 */
 #myBin{
-    position: relative;
     overflow: scroll;
     z-index: 1;
     display: flex;

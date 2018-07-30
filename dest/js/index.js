@@ -51,12 +51,14 @@ $('document').ready(function(){
 
     var oDiv1 = $('#main');
     var oDiv2 = $('#social');
+    var oDiv3 = $('#newCard')
     var oDiv4 = $('#message');
     var oDiv5 = $('#me');
     var oDiv51 = $('#myBusiness');
     // var oDiv52 = $('#myGroup');
     var oDiv53 = $('#myBin');
     var oDiv54 = $('#history');
+    var oDiv11 = $('#carddetail');
 
     // oDiv1.css('display','flex');
 
@@ -71,7 +73,9 @@ $('document').ready(function(){
 
         oDiv4.css('display','none');
         oDiv2.css('display','none');
+        oDiv3.css('display','none');
         oDiv5.css('display','none');
+        oDiv11.css('display','none');
         oDiv51.css('display','none');
         // oDiv52.css('display','none');
         oDiv53.css('display','none');
@@ -89,12 +93,31 @@ $('document').ready(function(){
 
         oDiv1.css('display','none');
         oDiv4.css('display','none');
+        oDiv3.css('display','none');
         oDiv5.css('display','none');
         oDiv51.css('display','none');
         // oDiv52.css('display','none');
         oDiv53.css('display','none');
+        oDiv11.css('display','none');
         oDiv54.css('display','none');
 
+    })
+    $(aA[2]).click(function(){
+        oDiv3.css('display','block');
+        $('#header').css('display','none');
+        $('#header3').text('待办')
+        $('#mainhead').css('display','none')
+        $('#otherhead').css('display','block')
+
+        oDiv1.css('display','none');
+        oDiv2.css('display','none');
+        oDiv4.css('display','none');
+        oDiv5.css('display','none');
+        oDiv11.css('display','none');
+        oDiv51.css('display','none');
+        // oDiv52.css('display','none');
+        oDiv53.css('display','none');
+        oDiv54.css('display','none');
     })
     $(aA[3]).click(function(){
         oDiv4.css('display','block');
@@ -105,7 +128,9 @@ $('document').ready(function(){
 
         oDiv1.css('display','none');
         oDiv2.css('display','none');
+        oDiv3.css('display','none');
         oDiv5.css('display','none');
+        oDiv11.css('display','none');
         oDiv51.css('display','none');
         // oDiv52.css('display','none');
         oDiv53.css('display','none');
@@ -118,7 +143,9 @@ $('document').ready(function(){
 
         oDiv1.css('display','none');
         oDiv2.css('display','none');
+        oDiv3.css('display','none');
         oDiv4.css('display','none');
+        oDiv11.css('display','none');
         oDiv51.css('display','none');
         // oDiv52.css('display','none');
         oDiv53.css('display','none');
@@ -137,7 +164,9 @@ $('document').ready(function(){
         oDiv1.css('display','none');
         oDiv2.css('display','none');
         oDiv4.css('display','none');
+        oDiv3.css('display','none');
         oDiv5.css('display','none');
+        oDiv11.css('display','none');
         // oDiv52.css('display','none');
         oDiv53.css('display','none');
         oDiv54.css('display','none');
@@ -157,6 +186,8 @@ $('document').ready(function(){
         oDiv4.css('display','none');
         oDiv5.css('display','none');
         oDiv51.css('display','none');
+        oDiv11.css('display','none');
+        oDiv3.css('display','none');
         oDiv53.css('display','none');
         oDiv54.css('display','none');
 
@@ -174,7 +205,9 @@ $('document').ready(function(){
         oDiv2.css('display','none');
         oDiv4.css('display','none');
         oDiv5.css('display','none');
+        oDiv11.css('display','none');
         // oDiv52.css('display','none');
+        oDiv3.css('display','none');
         oDiv51.css('display','none');
         oDiv54.css('display','none');
 
@@ -194,6 +227,8 @@ $('document').ready(function(){
         oDiv2.css('display','none');
         oDiv4.css('display','none');
         oDiv5.css('display','none');
+        oDiv3.css('display','none');
+        oDiv11.css('display','none');
         oDiv51.css('display','none');
         oDiv52.css('display','none');
         oDiv53.css('display','none');
