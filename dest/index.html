@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- 注释 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,17 +9,13 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="css/index.css">	<!-- 头部 底部 背景 公用 -->
 	<link rel="stylesheet" href="css/main.css">   	 <!-- 阳宁首页 -->
-	<link rel="stylesheet" href="css/carddetail.css">   	 <!-- 阳宁 卡片详情 -->
 	<link rel="stylesheet" href="css/me.css">		<!-- 屹彬  我 -->
 	<link rel="stylesheet" href="css/myBusiness.css">	<!-- 屹彬 我的事务 -->
 	<link rel="stylesheet" href="css/social.css"> 	<!-- 屹彬  社交 -->
 	<link rel="stylesheet" href="css/history.css">  <!-- 屹彬  历史记录 -->
-	<link rel="stylesheet" href="css/myGroup.css"> <!-- 屹彬 我的小组 -->
 	<link rel="stylesheet" href="css/myBin.css">  <!-- 屹彬 草稿箱 -->
 	<link rel="stylesheet" href="css/message.css"> <!-- 屹彬 待办 -->
-	<link rel="stylesheet" href="css/newCard.css">   <!--嘉竣 卡片-->
-	<link rel="stylesheet" href="css/newGroup.css">		<!-- 嘉竣 新建小组 -->
-	<link rel="stylesheet" href="CSS/myGroup.CSS">		<!-- 嘉竣 我的小组-->
+	<link rel="stylesheet" href="css/myGroup.css">
 	<script src="js/index.js"></script>	   <!-- 底部 -->
 	<script src = "js/header.js"></script>	<!-- 头部 -->
     <script src = "js/main.js"></script>     <!-- 阳宁首页 -->
@@ -26,7 +23,7 @@
 </head>
 <body>
 	<!-- 头部 header -->
-	<header id="header" >
+	<header style="display: block" id="header">
 		<div id="mainhead" style="display:block">
 			<div>
 				<p id="header1">待领取</p>
@@ -46,7 +43,7 @@
 	<!-- 阳宁 -->
 	
 	<!--首页-->
-    <div id="main" class="container">
+    <div id="main" class="container" style="display:none;">
     	<div class="mainbox">
 			<div class="blackbox"></div>
 			<div class="mainImg">
@@ -106,102 +103,134 @@
 				<div class="btnDiscuss"></div>
 			</div>
 		</div>
-    </div>
-    <!--首页完结-->
+	</div>
+	
 
-    <!--卡片详情-->
-    <!---对应css为carddetail.css-->
-    <div class="container" id="carddetail" style="display: none;">
-        <div id="headcontain">
-            <div id="detailhead"></div>
-            <!--进度条区域-->
-            <div class="barbox">
-                <!--领取进度条-->
-                <div class="bararea">
-                    <span class="barhead">领取进度</span>
-                    <div class="barbox-1">
-                        <div class="bar1"></div>
-                    </div>
-                    <span class="percent">100%</span>
-                </div>
-                <!--头像区域-->
-                <div class="headarea">
-                    <div class="userhead"></div>
-                    <div class="userhead"></div> 
-                    <div class="userhead"></div>    
-                </div>
-                <!--完成进度条-->
-                <div class="bararea">
-                    <span class="barhead">完成进度</span>
-                    <div class="barbox-2">
-                        <div class="bar2"></div>
-                    </div>
-                    <span class="percent">50%</span>
-                </div>    
+
+    <!-- 屹彬 -->
+
+	<!-- 我 -->
+	<div style="display: none" id="me">  
+		<!-- 背景1 -->
+		<div id="background1"><img src="img/affairs.png" alt=""></div>
+		<section id="midPart">
+			<div class="div1">
+				<div><img src="img/1.png" alt=""><p>我的事务</p></div>
 			</div>
-		</div>
-		<div  class="cardwork">
-			<div class="douhao"></div>
-			<div class="cardwork-left">
-				<strong>有人帮我带奶茶吗</strong>
-				<div class="label">生活</div>
-				<p class="cardinformation">龙珠奶绿 ，少糖正常冰</p>
-				<div class="puttime"><span>发布时间：</span><p>鬼知道什么时候</p></div>
-				<div class="deadline"><span>截止时间：</span><p>爱啥时截止啥时截止</p></div>
+			<div class="div2">
+				<div><img src="img/2.png" alt=""><p>我的小组</p></div>
 			</div>
-			<div class="cardwork-right">
-				<div class="righthead">
-					<div>
-						<div class="rightheadimg"></div>
+			<div class="div3">
+				<div><img src="img/3.png" alt=""><p>草稿箱</p></div>	
+			</div>
+			<div class="div4">
+				<div><img src="img/4.png" alt=""><p>历史记录</p></div>	
+			</div>
+		</section>
+	</div>
+
+	<!-- 我的事务 -->
+	<div style="display:none" class="container" id="myBusiness">
+		<!-- 中间内容 -->
+		<section>
+			<div class="myDiv">
+				<div class="myDiv1">
+					<div class="myBigRad"><div class="mySmallRad"></div></div>
+					<div class="myLine"></div>
+				</div>
+				<div class="myBusinessDiv2">
+					<p>7月28日17:30</p> <br>
+					<span>张阳宁领取了</span>
+					<div class="myBusinessDiv">
+						<div class="myBusinessLeft" id="myBusiness1"></div>
+						<div class="myBusinessRight">
+							<p>标签: 有人帮我带牛奶吗</p>
+							<p class="myBusinessRightP2">标签: <span>命令</span></p><br>
+							<p id="myBusinessRightP3">Mr.bin</p>
+						</div>
 					</div>
-					<p class="rightheadid">咕咕咕</p>
-				</div>
-				<div class="rightbtn1">
-					<input type="submit" class="rightbtn-1" value="完成">
-					<input type="submit" class="rightbtn-2" value="放弃">
-				</div>
+				</div>		
 			</div>
-		</div>
-			<!-- 评论区 -->
-		<div class="discuss-area" >
-			<div class="discuss-top">
-				<span>评论</span>
-				<div></div>
-			</div>
-			<div class="discuss-middle">
-				<div class="discuss-detail">
-					<div class="discuss-head"></div>
-					<span>jio雯婷:</span>
-					<p class="discuss-text">随便说点什么</p>
+
+			<div class="myDiv">
+				<div class="myDiv1">
+					<div class="myBigRad"><div class="mySmallRad"></div></div>
+					<div class="myLine"></div>
 				</div>
-				<div class="discussTime">
-						<span class="discuss-day">7月16日</span>
-						<span class="discuss-time">20:36</span>
-				</div>
-				<hr>
-				<div class="discuss-detail">
-					<div class="discuss-head"></div>
-					<span>jio雯婷:</span>
-					<p class="discuss-text">随便说点什么</p>
-				</div>
-				<div class="discussTime">
-						<span class="discuss-day">7月16日</span>
-						<span class="discuss-time">20:36</span>
-				</div>
-				<hr>
-				<div class="discuss-detail">
-						<div class="discuss-head"></div>
-						<span>jio雯婷:</span>
-						<p class="discuss-text">随便说点什么</p>
+				<div class="myBusinessDiv2">
+					<p>7月28日17:30</p> <br>
+					<span>张阳宁领取了</span>
+					<div class="myBusinessDiv">
+						<div class="myBusinessLeft" id="myBusiness1"></div>
+						<div class="myBusinessRight">
+							<p>标签: 有人帮我带牛奶吗</p>
+							<p class="myBusinessRightP2">标签: <span>命令</span></p><br>
+							<p id="myBusinessRightP3">Mr.bin</p>
+						</div>
 					</div>
-					<div class="discussTime">
-							<span class="discuss-day">7月16日</span>
-							<span class="discuss-time">20:36</span>
-					</div>
+				</div>		
 			</div>
-			<div class="discuss-bottom">
-				<input  class="input-text" type="text" placeholder="说点什么......">
-				<input class="input-btn" type="submit" value="发送">
+
+			
+			<div class="myDiv">
+				<div class="myDiv1">
+					<div class="myBigRad"><div class="mySmallRad"></div></div>
+					<div class="myLine"></div>
+				</div>
+				<div class="myBusinessDiv2">
+					<p>7月28日17:30</p> <br>
+					<span>张阳宁领取了</span>
+					<div class="myBusinessDiv">
+						<div class="myBusinessLeft" id="myBusiness1"></div>
+						<div class="myBusinessRight">
+							<p>标签: 有人帮我带牛奶吗</p>
+							<p class="myBusinessRightP2">标签: <span>命令</span></p><br>
+							<p id="myBusinessRightP3">Mr.bin</p>
+						</div>
+					</div>
+				</div>		
+			</div>
+
+		</section>
+	</div>
+
+	<!-- 社交 -->
+
+	<div style="display:none" class="container" id="social" >	
+		<section>
+			<div class="myDiv">
+				<div class="myDiv1">
+					<div class="myBigRad"><div class="mySmallRad"></div></div>
+					<div class="myLine"></div>
+				</div>
+				<div class="socialDiv2">
+					<p>下午17：34</p> <br>
+					<div class="socialDiv" >
+						<div class="socialLeft" id="social1"></div>
+						<div class="socialRight">
+							<p class="socialRightP1">鸽子琨</p><br>
+							<p class="socialRightP2"><span>大爷下次请你</span></p>
+						</div>
+						<img class="socialImg" src="img/test.png" alt="">
+					</div>
+				</div>		
+			</div>
+			<div class="myDiv">
+				<div class="myDiv1">
+					<div class="myBigRad"><div class="mySmallRad"></div></div>
+					<div class="myLine"></div>
+				</div>
+				<div class="socialDiv2">
+					<p>下午17：34</p> <br>
+					<div class="socialDiv" >
+						<div class="socialLeft" id="social1"></div>
+						<div class="socialRight">
+							<p class="socialRightP1">鸽子琨</p><br>
+							<p class="socialRightP2"><img src="img/good.png" alt=""></p><br>
+						</div>
+						<img class="socialImg" src="img/test.png" alt="">
+					</div>
+				</div>		
 			</div>
 		</section>
 	</div>	
@@ -210,186 +239,75 @@
 	<!-- 历史记录 -->
 	<div class="container" id="history" style="display: none">
 		<section>
-			<div>
-				<div class="historyLine"></div>
-				<div class="historyBigRad"><div class="historySmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="historyDiv">
-					<div class="historyLeft"></div>
-					<div class="historyRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>日常</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>
+			<div class="myDiv">
+				<div class="myDiv1">
+					<div class="myBigRad"><div class="mySmallRad"></div></div>
+					<div class="myLine"></div>
 				</div>
-			</div>
-
-			<div>
-				<div class="historyLine"></div>
-				<div class="historyBigRad"><div class="historySmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="historyDiv">
-					<div class="historyLeft"></div>
-					<div class="historyRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>日常</b></p><br>
-						<p ><i>jio雯婷</i></p>
+				<div class="historyDiv2">
+					<p>7月28日17:30</p> <br>
+					<div class="historyDiv">
+						<div class="historyLeft" id="history1"></div>
+						<div class="historyRight">
+							<p class="historyRightP1">标题: 我爱学习</p><br>
+							<p class="historyRightP2">标签: <span class="historySpan">日常</span></p><br>
+						</div>
 					</div>
-				</div>
+				</div>		
 			</div>
-			<div>
-				<div class="historyLine"></div>
-				<div class="historyBigRad"><div class="historySmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="historyDiv">
-					<div class="historyLeft"></div>
-					<div class="historyRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>日常</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="historyLine"></div>
-				<div class="historyBigRad"><div class="historySmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="historyDiv">
-					<div class="historyLeft"></div>
-					<div class="historyRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>日常</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>
-				</div>
-			</div>
+	
 
-		</section>
-	</div>
-
-
-
-
-	<!-- 屹彬 -->
-	<!-- 我的小组 -->
-	<div class="container" id="myGroup" style="display: none" >
-		<section>
-			<div>
-				<div class="myGroupLine"></div>
-				<div class="myGroupBigRad"><div class="myGroupSmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="myGroupDiv">
-					<div class="myGroupLeft"></div>
-					<div class="myGroupRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>日常</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>
-				</div>
-			</div>
-
-			<div>
-				<div class="myGroupLine"></div>
-				<div class="myGroupBigRad"><div class="myGroupSmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="myGroupDiv">
-					<div class="myGroupLeft"></div>
-					<div class="myGroupRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>日常</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>
-				</div>
-			</div>
-
-			<div>
-				<div class="myGroupLine"></div>
-				<div class="myGroupBigRad"><div class="myGroupSmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="myGroupDiv">
-					<div class="myGroupLeft"></div>
-					<div class="myGroupRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>日常</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>
-				</div>
-			</div>
-
-			<div>
-				<div class="myGroupLine"></div>
-				<div class="myGroupBigRad"><div class="myGroupSmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="myGroupDiv">
-					<div class="myGroupLeft"></div>
-					<div class="myGroupRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>日常</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>
-				</div>
-			</div>
-
-			
 		</section>
 	</div>
 
 	<!-- 草稿箱 -->
 	<div class="container" id="myBin" style="display: none" >
 		<section>
-			<div>
-				<div class="myBinLine"></div>
-				<div class="myBinBigRad"><div class="myBinSmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<span>所有人拒绝了</span>
-				<div class="myBinDiv">
-					<div class="myBinLeft"></div>
-					<div class="myBinRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>日常</b></p><br>
-						<div class="myBinlogo">
-							<img  class="myBinlogo1" src="img/write.png" alt="">
-							<img class="myBinlogo2" src="img/bin2.png" alt="">
+			<div class="myDiv">
+				<div class="myDiv1">
+					<div class="myBigRad"><div class="mySmallRad"></div></div>
+					<div class="myLine"></div>
+				</div>
+				<div class="myBinDiv2">
+					<p>7月28日17:30</p> <br>
+					<span>所有人拒绝了</span>
+					<div class="myBinDiv">
+						<div class="myBinLeft" id="myBin1"></div>
+						<div class="myBinRight">
+							<p class="myBinRightP1">标题: 有人给我带奶茶吗</p><br>
+							<p class="myBinRightP2">标签: <span class="myBinSpan">日常</span></p><br>
+							<div class="myBinlogo">
+									<img  class="myBinlogo1" src="img/write.png" alt="">
+									<img class="myBinlogo2" src="img/bin2.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
+				</div>		
 			</div>
 
-			<div>
-				<div class="myBinLine"></div>
-				<div class="myBinBigRad"><div class="myBinSmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<span>所有人拒绝了</span>
-				<div class="myBinDiv">
-					<div class="myBinLeft"></div>
-					<div class="myBinRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>日常</b></p><br>
-						<div class="myBinlogo">
-							<img  class="myBinlogo1" src="img/write.png" alt="">
-							<img class="myBinlogo2" src="img/bin2.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="myBinLine"></div>
-				<div class="myBinBigRad"><div class="myBinSmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<span>所有人拒绝了</span>
-				<div class="myBinDiv">
-					<div class="myBinLeft"></div>
-					<div class="myBinRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>日常</b></p><br>
-						<div class="myBinlogo">
-							<img  class="myBinlogo1" src="img/write.png" alt="">
-							<img class="myBinlogo2" src="img/bin2.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
 
+			<div class="myDiv">
+				<div class="myDiv1">
+					<div class="myBigRad"><div class="mySmallRad"></div></div>
+					<div class="myLine"></div>
+				</div>
+				<div class="myBinDiv2">
+					<p>7月28日17:30</p> <br>
+					<span>发布失败</span>
+					<div class="myBinDiv">
+						<div class="myBinLeft" id="myBin2"></div>
+						<div class="myBinRight">
+							<p class="myBinRightP1">标题: 女生节许愿墙</p><br>
+							<p class="myBinRightP2">标签: <span class="myBinSpan">工作</span></p><br>
+							<div class="myBinlogo">
+									<img  class="myBinlogo1" src="img/write.png" alt="">
+									<img class="myBinlogo2" src="img/bin2.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>		
+			</div>
+	
 		
 		</section>
 	</div>
@@ -397,54 +315,62 @@
 	<!-- 待办 -->
 	<div class="container" id="message" style="display: none" >
 		<section>
-			<div>
-				<div class="messageLine"></div>
-				<div class="messageBigRad"><div class="messageSmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<img class="messageImg" src="img/test.png" alt="">
-				<span>鸽子kun领取了</span>
-				<div class="messageDiv">
-					<div class="messageLeft"></div>
-					<div class="messageRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>生活</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>
+			<div class="myDiv">
+				<div class="myDiv1">
+					<div class="myBigRad"><div class="mySmallRad"></div></div>
+					<div class="myLine"></div>
 				</div>
+				<div class="messageDiv2">
+					<p>7月28日17:30</p> <br>
+					<img class="messageImg" src="img/test.png" alt="">
+					<span>张阳宁领取了</span>
+					<div class="messageDiv">
+						<div class="messageLeft" id="message1"></div>
+						<div class="messageRight">
+							<p>标签: 有人帮我带牛奶吗</p>
+							<p class="messageRightP2">标签: <span>命令</span></p><br>
+							<p id="messageRightP3">Mr.bin</p>
+						</div>
+					</div>
+				</div>		
 			</div>
 
-			<div>
-				<div class="messageLine"></div>
-				<div class="messageBigRad"><div class="messageSmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<img class="messageImg" src="img/test.png" alt="">
-				<span>鸽子kun领取了</span>
-				<div class="messageDiv">
-					<div class="messageLeft"></div>
-					<div class="messageRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>生活</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>
+			<div class="myDiv">
+				<div class="myDiv1">
+					<div class="myBigRad"><div class="mySmallRad"></div></div>
+					<div class="myLine"></div>
 				</div>
-			</div>
-
-			<div>
-				<div class="messageLine"></div>
-				<div class="messageBigRad"><div class="messageSmallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<img class="messageImg" src="img/test.png" alt="">
-				<span>鸽子kun领取了</span>
-				<div class="messageDiv">
-					<div class="messageLeft"></div>
-					<div class="messageRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>生活</b></p><br>
-						<p ><i>jio雯婷</i></p>
+				<div class="messageDiv2">
+					<p>7月28日17:30</p> <br>
+				
+					<div class="messageDiv">
+						<div class="messageLeft" id="message1"></div>
+						<div class="messageRight">
+							<p>标签: 有人帮我带牛奶吗</p>
+							<p class="messageRightP2">标签: <span>命令</span></p><br>
+							<p id="messageRightP3">Mr.bin</p>
+						</div>
 					</div>
-				</div>
+				</div>		
 			</div>
-
+			<div class="myDiv">
+					<div class="myDiv1">
+						<div class="myBigRad"><div class="mySmallRad"></div></div>
+						<div class="myLine"></div>
+					</div>
+					<div class="messageDiv2">
+						<p>7月28日17:30</p> <br>
+					
+						<div class="messageDiv">
+							<div class="messageLeft" id="message1"></div>
+							<div class="messageRight">
+								<p>标签: 有人帮我带牛奶吗</p>
+								<p class="messageRightP2">标签: <span>命令</span></p><br>
+								<p id="messageRightP3">Mr.bin</p>
+							</div>
+						</div>
+					</div>		
+				</div>
 
 		</section>
 	</div>
@@ -452,58 +378,40 @@
 	<!-- 嘉竣 -->
 	
     <!-- 新建我的卡片 -->
-    <div class="container" id="newCard" style="display: none;">
+    <div class="container" style="display: none">
         <!-- <div class="make-card"> -->
-			<form action="" class="make-card" enctype="multipart/form-data" onsubmit="return Check()">
-				<span class="chacha quit-card1"></span>
+            <form action="" class="make-card" onsubmit="return Check()">
                 <p>新建我的卡片</p>
                 <input name="title" type="text" placeholder="请输入标题（必填）">
                 <textarea name="dcb" cols="30" rows="4" placeholder="请输入具体描述...（选填）"></textarea>
-                <!-- <input type="file" accept="image/*" class="add-img" value="添加照片"> -->
                 <span class="add-img">添加照片</span>
-                <input type="hidden" name="tag" id="tag" value="生活">
+                <input type="hidden" name="tag" id="tag">
                 <div class="card-label">
-                    标签：<span class="tags card-active">生活</span>
-                    <span class="tags" >工作</span>
-                    <span class="tags" >学习</span>
+                    标签：<span class="tag-active">生活</span>
+                    <span>工作</span>
+                    <span>学习</span>
                 </div>
                 <hr/>
                 <!-- hr下面的内容 -->
                 <div class="card1-2">
-                    <div class="card1-2-content">
+                    <div class="card1-2-1">
+                        <!-- <i>选择面向小组</i>
+                        <input type="text" placeholder="查看小组列表" value="">
+                        <span></span>
+                        <div class="group"></div> -->
                         选择面向小组:
                         <select name="group" id="group">
                                 <option value="" disabled selected style="display: none;color: grey;">查看小组列表</option>
                                 <option value="哈哈哈">哈哈哈</option>
-                        </select>
-                        <span class="sanjiao"></span>    
-					</div>
-					<input type="hidden" name="e-model" id="e-model" value="指定人员">
-                    <div class="card1-2-content">
-                        事执行模式：<span class="e-moshis">任选人员</span><span class="e-moshis card-active">指定人员</span>
-                    </div>
-                    <div class="card1-2-content">
-                        选择参与成员:
-                        <select name="member" id="menber">
-                                <option value="" disabled selected style="display: none;">查看小组成员</option>
                                 <option value="呵呵呵">呵呵呵</option>
                         </select>
-                        <span class="sanjiao"></span>    
-					</div>
-					<div class="card1-2-content">
-						选择时限：
-						<input type="date" name="dead-date" placeholder="展开日历" id="dead-date" onfocus="$(this).removeAttr('placeholder')">
-					</div>
-				</div>
-				<hr/>
-				<!-- 第二个hr -->
-				<div class="card1-3">
-					<input type="submit" class="card1-end" value="创建">
-					<span class="card1-end quit-card1">取消</span>
-				</div>
-			</form>
-			
-
+                        <span></span>    
+                    </div>
+                    <div class="card1-2-2">
+                        <i>事件执行模式：</i>
+                    </div>
+                </div>
+            </form>
         <!-- </div> -->
 	</div> 
 	

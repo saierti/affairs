@@ -6,69 +6,80 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
+
 #social>section{
     width: 100vw;
     height: 80vh;
-    vertical-align: middle;
 }  
-#social>section p{
-    font-size: 3.5vw;
-    color: #fff;
+.socialRight{
     display: inline-block;
-   height: 20px;
-   line-height: 20px;
-} 
-#social>section span{
-    font-size: 2.5vw;
-    color: #fff;
-    display: inline-block;
-    margin-left: 20vw;
+    width: 24vw;
+    vertical-align: bottom;
+    height: 12vh;
+    margin-left :2vw;
+    /* padding-top: 2vw; */
+    line-height: 3vh;
 }
-#social>section>div{
-    width: 100vw;
-    height: 30vh;
-    position: relative;
-    padding-top: 5vh;
 
+.socialRightP2 > span{
+    margin-left: 2vw;
+    font-size: 2.5vw;
 }
-.myLeft2{
+.socialImg{
     display: inline-block;
-    background-image: url('../img/test.png');
-    width: 15vw;
-    height: 15vw;
-    border-radius: 50%;
-    margin-left: 3vw;
-    background-size: cover;
-    background-position: center;
+    width:  8vh;
+    height: 8vh;
+    margin: 2vh;
 }
-.myRight2{
-    display: inline-block;
-    background-image: url('../img/test.jpg');
-    width: 20vw;
-    height: 18vw;
-    margin-left: 5vw;
-    background-size: cover;
-    background-position: center;
+.socialDiv {
+    width: 80vw;
+    height: 12vh;
+    /* opacity: 0.8; */
+    border-radius: 5px;
+    margin-top: 2vh;
+    background: linear-gradient(to left,#040309,#3d3c3c);
 }
-.myRight1{
-    display: inline-block;
-    width: 30vw;
-    height: 20vw;
-    margin-left: 5vw;
-}
-.myRight1>p>img{
+.socialRight>p>img{
     width: 5vw;
     height: 5vw;
     display: inline-block;
-    margin-left: 1vw;
-    margin-top: 2vw;
+    margin: 2vw;
 }
-.myRight1>p>b{
-    margin-left: 1vw;
-    height: 20px;
-    line-height: 20px;
-    font-size: 2.5vw;
+.socialDiv2{
+    display: inline-block;
+    width: 84vw;
+    float: right;
+    height: 25vh;
+}
+.socialLeft{
+    display: inline-block;
+    background-image: url('../img/test.jpg');
+    width:  8vh;
+    height: 8vh;
+    border-radius: 50%;
+    /* margin-left: 5vw; */
+    background-size: cover;
+    background-position: center;
+    margin: 2vh;
+
+}
+.socialRightP1{
+    margin-top: 2vh;
+}
+.socialDiv2 p{
     
+    font-size:3vw;
+    color: #fff;
+    display: inline-block;
+
+} 
+.socialDiv2 > span{
+    font-size: 2.5vw;
+    color: #fff;
+    display: inline-block;
+
+}
+.socialDiv2>p{
+    font-size: 4vw;
 }
