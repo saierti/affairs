@@ -8,6 +8,7 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="css/index.css">	<!-- 头部 底部 背景 公用 -->
 	<link rel="stylesheet" href="css/main.css">   	 <!-- 阳宁首页 -->
+	<link rel="stylesheet" href="css/carddetail.css">   	 <!-- 阳宁 卡片详情 -->
 	<link rel="stylesheet" href="css/me.css">		<!-- 屹彬  我 -->
 	<link rel="stylesheet" href="css/myBusiness.css">	<!-- 屹彬 我的事务 -->
 	<link rel="stylesheet" href="css/social.css"> 	<!-- 屹彬  社交 -->
@@ -15,6 +16,9 @@
 	<link rel="stylesheet" href="css/myGroup.css"> <!-- 屹彬 我的小组 -->
 	<link rel="stylesheet" href="css/myBin.css">  <!-- 屹彬 草稿箱 -->
 	<link rel="stylesheet" href="css/message.css"> <!-- 屹彬 待办 -->
+	<link rel="stylesheet" href="css/newCard.css">   <!--嘉竣 卡片-->
+	<link rel="stylesheet" href="css/newGroup.css">		<!-- 嘉竣 新建小组 -->
+	<link rel="stylesheet" href="CSS/myGroup.CSS">		<!-- 嘉竣 我的小组-->
 	<script src="js/index.js"></script>	   <!-- 底部 -->
 	<script src = "js/header.js"></script>	<!-- 头部 -->
     <script src = "js/main.js"></script>     <!-- 阳宁首页 -->
@@ -22,7 +26,7 @@
 </head>
 <body>
 	<!-- 头部 header -->
-	<header style="display: block" id="header">
+	<header id="header" >
 		<div id="mainhead" style="display:block">
 			<div>
 				<p id="header1">待领取</p>
@@ -42,7 +46,7 @@
 	<!-- 阳宁 -->
 	
 	<!--首页-->
-    <div id="main" class="container" style="display:none;">
+    <div id="main" class="container">
     	<div class="mainbox">
 			<div class="blackbox"></div>
 			<div class="mainImg">
@@ -102,178 +106,102 @@
 				<div class="btnDiscuss"></div>
 			</div>
 		</div>
-	</div>
-	
+    </div>
+    <!--首页完结-->
 
-
-    <!-- 屹彬 -->
-
-	<!-- 我 -->
-	<div style="display: none" id="me">  
-		<!-- 背景1 -->
-		<div id="background1"><p><span>A</span>ffairs</p></div>
-		<section id="midPart">
-			<div class="div1">
-				<div><img src="img/1.png" alt=""><p>我的事务</p></div>
+    <!--卡片详情-->
+    <!---对应css为carddetail.css-->
+    <div class="container" id="carddetail" style="display: none;">
+        <div id="headcontain">
+            <div id="detailhead"></div>
+            <!--进度条区域-->
+            <div class="barbox">
+                <!--领取进度条-->
+                <div class="bararea">
+                    <span class="barhead">领取进度</span>
+                    <div class="barbox-1">
+                        <div class="bar1"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                </div>
+                <!--头像区域-->
+                <div class="headarea">
+                    <div class="userhead"></div>
+                    <div class="userhead"></div> 
+                    <div class="userhead"></div>    
+                </div>
+                <!--完成进度条-->
+                <div class="bararea">
+                    <span class="barhead">完成进度</span>
+                    <div class="barbox-2">
+                        <div class="bar2"></div>
+                    </div>
+                    <span class="percent">50%</span>
+                </div>    
 			</div>
-			<div class="div2">
-				<div><img src="img/2.png" alt=""><p>我的小组</p></div>
+		</div>
+		<div  class="cardwork">
+			<div class="douhao"></div>
+			<div class="cardwork-left">
+				<strong>有人帮我带奶茶吗</strong>
+				<div class="label">生活</div>
+				<p class="cardinformation">龙珠奶绿 ，少糖正常冰</p>
+				<div class="puttime"><span>发布时间：</span><p>鬼知道什么时候</p></div>
+				<div class="deadline"><span>截止时间：</span><p>爱啥时截止啥时截止</p></div>
 			</div>
-			<div class="div3">
-				<div><img src="img/3.png" alt=""><p>草稿箱</p></div>	
-			</div>
-			<div class="div4">
-				<div><img src="img/4.png" alt=""><p>历史记录</p></div>	
-			</div>
-		</section>
-	</div>
-
-	<!-- 我的事务 -->
-	<div style="display:none" class="container" id="myBusiness">
-		<!-- 中间内容 -->
-		<section>
-			<div>
-				<div class="myLine"></div>
-				<div class="bigRad"><div class="smallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<span>鸽子琨领取了</span>
-				<div class="myDiv">
-					<div class="myLeft"></div>
-					<div class="myRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>生活</b></p><br>
-						<p ><i>jio雯婷</i></p>
+			<div class="cardwork-right">
+				<div class="righthead">
+					<div>
+						<div class="rightheadimg"></div>
 					</div>
+					<p class="rightheadid">咕咕咕</p>
+				</div>
+				<div class="rightbtn">
+					<input type="submit" class="rightbtn-1" value="完成">
+					<input type="submit" class="rightbtn-2" value="放弃">
 				</div>
 			</div>
-
-			<div>
-				<div class="myLine"></div>
-				<div class="bigRad"><div class="smallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<span>鸽子琨领取了</span>
-				<div class="myDiv">
-					<div class="myLeft"></div>
-					<div class="myRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>生活</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>
-				</div>
+		</div>
+			<!-- 评论区 -->
+		<div class="discuss-area" >
+			<div class="discuss-top">
+				<span>评论</span>
+				<div></div>
 			</div>
-
-			<div>
-				<div class="myLine"></div>
-				<div class="bigRad"><div class="smallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<span>鸽子琨领取了</span>
-				<div class="myDiv">
-					<div class="myLeft"></div>
-					<div class="myRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>生活</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>
+			<div class="discuss-middle">
+				<div class="discuss-detail">
+					<div class="discuss-head"></div>
+					<span>jio雯婷:</span>
+					<p class="discuss-text">随便说点什么</p>
 				</div>
+				<div class="discussTime">
+						<span class="discuss-day">7月16日</span>
+						<span class="discuss-time">20:36</span>
+				</div>
+				<hr>
+				<div class="discuss-detail">
+					<div class="discuss-head"></div>
+					<span>jio雯婷:</span>
+					<p class="discuss-text">随便说点什么</p>
+				</div>
+				<div class="discussTime">
+						<span class="discuss-day">7月16日</span>
+						<span class="discuss-time">20:36</span>
+				</div>
+				<hr>
+				<div class="discuss-detail">
+						<div class="discuss-head"></div>
+						<span>jio雯婷:</span>
+						<p class="discuss-text">随便说点什么</p>
+					</div>
+					<div class="discussTime">
+							<span class="discuss-day">7月16日</span>
+							<span class="discuss-time">20:36</span>
+					</div>
 			</div>
-					
-			<div>
-				<div class="myLine"></div>
-				<div class="bigRad"><div class="smallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<span>鸽子琨领取了</span>
-				<div class="myDiv">
-					<div class="myLeft"></div>
-					<div class="myRight">
-						<p>标签: 有人帮我带奶茶吗</p><br>
-						<p>标签：<b>生活</b></p><br>
-						<p ><i>jio雯婷</i></p>
-					</div>	
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<!-- 社交 -->
-
-	<div style="display:none" class="container" id="social" >	
-		<section>
-			<div>
-				<div class="myLine"></div>
-				<div class="bigRad"><div class="smallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="myDiv">
-					<div class="myLeft2"></div>
-					<div class="myRight1">
-						<p>鸽子琨</p><br>
-						<p><b>大爷，下次请你</b></p><br>
-					</div>
-					<div class="myRight2"></div>
-				</div>
-			</div>
-			<div>
-				<div class="myLine"></div>
-				<div class="bigRad"><div class="smallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="myDiv">
-					<div class="myLeft2"></div>
-					<div class="myRight1">
-						<p>鸽子琨</p><br>
-						<p><img src="img/good.png" alt=""></p><br>
-					</div>
-					<div class="myRight2"></div>
-				</div>
-			</div>
-			<div>
-				<div class="myLine"></div>
-				<div class="bigRad"><div class="smallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="myDiv">
-					<div class="myLeft2"></div>
-					<div class="myRight1">
-						<p>鸽子琨</p><br>
-						<p><b>大爷，下次请你</b></p><br>
-					</div>
-					<div class="myRight2"></div>
-				</div>
-			</div>
-			<div>
-				<div class="myLine"></div>
-				<div class="bigRad"><div class="smallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="myDiv">
-					<div class="myLeft2"></div>
-					<div class="myRight1">
-						<p>鸽子琨</p><br>
-						<p><img src="img/good.png" alt=""></p><br>
-					</div>
-					<div class="myRight2"></div>
-				</div>
-			</div>		<div>
-				<div class="myLine"></div>
-				<div class="bigRad"><div class="smallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="myDiv">
-					<div class="myLeft2"></div>
-					<div class="myRight1">
-						<p>鸽子琨</p><br>
-						<p><b>大爷，下次请你</b></p><br>
-					</div>
-					<div class="myRight2"></div>
-				</div>
-			</div>
-			<div>
-				<div class="myLine"></div>
-				<div class="bigRad"><div class="smallRad"></div></div>
-				<p>7月16日17:30</p> <br>
-				<div class="myDiv">
-					<div class="myLeft2"></div>
-					<div class="myRight1">
-						<p>鸽子琨</p><br>
-						<p><img src="img/good.png" alt=""></p><br>
-					</div>
-					<div class="myRight2"></div>
-				</div>
+			<div class="discuss-bottom">
+				<input  class="input-text" type="text" placeholder="说点什么......">
+				<input class="input-btn" type="submit" value="发送">
 			</div>
 		</section>
 	</div>	
@@ -339,6 +267,10 @@
 		</section>
 	</div>
 
+
+
+
+	<!-- 屹彬 -->
 	<!-- 我的小组 -->
 	<div class="container" id="myGroup" style="display: none" >
 		<section>
@@ -520,44 +452,161 @@
 	<!-- 嘉竣 -->
 	
     <!-- 新建我的卡片 -->
-    <div class="container" style="display: none">
+    <div class="container" id="newCard" style="display: none;">
         <!-- <div class="make-card"> -->
-            <form action="" class="make-card" onsubmit="return Check()">
+			<form action="" class="make-card" enctype="multipart/form-data" onsubmit="return Check()">
+				<span class="chacha quit-card1"></span>
                 <p>新建我的卡片</p>
                 <input name="title" type="text" placeholder="请输入标题（必填）">
                 <textarea name="dcb" cols="30" rows="4" placeholder="请输入具体描述...（选填）"></textarea>
+                <!-- <input type="file" accept="image/*" class="add-img" value="添加照片"> -->
                 <span class="add-img">添加照片</span>
-                <input type="hidden" name="tag" id="tag">
+                <input type="hidden" name="tag" id="tag" value="生活">
                 <div class="card-label">
-                    标签：<span class="tag-active">生活</span>
-                    <span>工作</span>
-                    <span>学习</span>
+                    标签：<span class="tags card-active">生活</span>
+                    <span class="tags" >工作</span>
+                    <span class="tags" >学习</span>
                 </div>
                 <hr/>
                 <!-- hr下面的内容 -->
                 <div class="card1-2">
-                    <div class="card1-2-1">
-                        <!-- <i>选择面向小组</i>
-                        <input type="text" placeholder="查看小组列表" value="">
-                        <span></span>
-                        <div class="group"></div> -->
+                    <div class="card1-2-content">
                         选择面向小组:
                         <select name="group" id="group">
                                 <option value="" disabled selected style="display: none;color: grey;">查看小组列表</option>
                                 <option value="哈哈哈">哈哈哈</option>
+                        </select>
+                        <span class="sanjiao"></span>    
+					</div>
+					<input type="hidden" name="e-model" id="e-model" value="指定人员">
+                    <div class="card1-2-content">
+                        事执行模式：<span class="e-moshis">任选人员</span><span class="e-moshis card-active">指定人员</span>
+                    </div>
+                    <div class="card1-2-content">
+                        选择参与成员:
+                        <select name="member" id="menber">
+                                <option value="" disabled selected style="display: none;">查看小组成员</option>
                                 <option value="呵呵呵">呵呵呵</option>
                         </select>
-                        <span></span>    
-                    </div>
-                    <div class="card1-2-2">
-                        <i>事件执行模式：</i>
-                    </div>
-                </div>
-            </form>
+                        <span class="sanjiao"></span>    
+					</div>
+					<div class="card1-2-content">
+						选择时限：
+						<input type="date" name="dead-date" placeholder="展开日历" id="dead-date" onfocus="$(this).removeAttr('placeholder')">
+					</div>
+				</div>
+				<hr/>
+				<!-- 第二个hr -->
+				<div class="card1-3">
+					<input type="submit" class="card1-end" value="创建">
+					<span class="card1-end quit-card1">取消</span>
+				</div>
+			</form>
+			
+
         <!-- </div> -->
 	</div> 
 	
 
+	<!-- 新建小组 -->
+	<div class="container" id="newGroup" style="display: none;">
+		<form action="" class="make-group">
+			<p>新建小组</p>
+			<div class="card2-1">
+				<div class="card2-1-left">
+					<input type="text" name="groupname" placeholder="请输入小组名称"><br/>
+					<input type="hidden" name="groupcharacter" value="">
+					&nbsp;选择小组性质：<br/>
+					<span class="g-xingzhi card-active">生活</span>
+					<span class="g-xingzhi">工作</span><br/>
+					<span class="g-xingzhi">学习</span>
+				</div>
+				<div class="card2-1-right">请选择图片<br/>或预设头像</div>
+			</div>
+			<textarea name="groupintroduce" id="groupintroduce" placeholder="请输入小组简介..."></textarea>
+			<hr>
+			<div class="card2-2">
+				<input type="submit" class="card2-end" value="创建">
+				<span class="card2-end quit-card2">取消</span>
+			</div>
+		</form>
+	</div>
+	
+	<!-- 我的小组 -->
+	<div class="container" id="myGroupCard" style="display: block;">
+		<div class="myGroupCard-wrapper">
+			<img src="img/IMG_3631.jpg" alt="" class="myGroupCard-img">
+			<div class="gimg-right">
+				<div class="edit-button"></div>
+				<p class="group-name">nw神秘组织</p>
+				<span class="group-words">咕咕咕 咕咕咕 有爱的组织</span>
+			</div>
+			<p class="team-character-show">工作小组</p>
+			<p class="team-number-show">小组成员：14</p>
+			<p class="member-list">成员列表</p>
+			<div class="like-man-wrapper">
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.png" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.png" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>					
+			</div>
+			<div class="share-to-chat">分享链接到聊天</div>
+			<div class="copy-the-url">复制当前小组链接</div>
+			<div class="card3-end">删除并退出当前小组</div>
+		</div>
+	</div>
 
 	<!-- 底部 footer -->
     <footer id="footer" >
