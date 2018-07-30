@@ -5,6 +5,7 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    top: 6.5%;
 }
 .mainImg{
     width: 100%;
@@ -20,6 +21,7 @@
     border-radius: 7px;
     background-color: aliceblue;
     margin-top: 4vh;
+    margin-bottom: 1vh;
 }
 .mainboxtop{
     height: 4.2vh;
@@ -92,6 +94,7 @@
     display: flex;
     align-items: center;
     padding-left: 3vw;
+    position: relative;
 }
 .headimg{
     width: 9vw;
@@ -116,6 +119,7 @@
     height: 2.5vh;
     position: absolute;
     right: 16%;
+    bottom: 35%;
     background-image: url(../img/pick0.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -124,6 +128,7 @@
     width: 8vw;
     height: 2.5vh;
     position: absolute;
+    bottom:35%;
     right: 7%;
     background-image: url(../img/discuss0.png);
     background-size: contain;
