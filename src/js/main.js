@@ -21,5 +21,5 @@ $('document').ready(function(){
         $('#main').css('display','none');
         $('#carddetail').css('display','block');
         $('#carddetail').scrollTop(600);
-    })
+    });
 });
