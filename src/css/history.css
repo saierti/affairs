@@ -1,6 +1,5 @@
 /* 屹彬 历史纪录 */
 #history{
-    position: relative;
     overflow: scroll;
     z-index: 1;
     display: flex;
