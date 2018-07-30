@@ -11,6 +11,7 @@ var CONFIG = {
 // localhost:8080 
 connect.server({
 	root: CONFIG.dest,
+	host:'0.0.0.0',
 	port: 8080,
 	livereload: true
 });
