@@ -15,6 +15,10 @@
    justify-content: center;
    align-items: center;
 }
+#background1>img{
+    width: 200px;
+    height: 60px;
+}
 #midPart>div>div{
     width: 70px;
     text-align: center;
