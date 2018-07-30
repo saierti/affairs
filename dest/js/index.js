@@ -54,7 +54,7 @@ $('document').ready(function(){
     var oDiv5 = $('#me');
     var oDiv51 = $('#myBusiness');
 
-    oDiv1.css('display','flex');
+    // oDiv1.css('display','flex');
 
     $(aA[0]).click(function(){
     

@@ -1,0 +1,135 @@
+/* myGroup.css */
+#myGroup{
+    overflow:scroll;
+}
+.myGroup-wrapper{
+    width:84vw;
+    margin:6vh 8vw;
+    /* height: 100px; */
+    background-color: white;
+    border-radius: 6px;
+    position: relative;
+}
+.myGroup-wrapper:after{
+    content:"";
+    display: block;
+    padding-top:1px;
+}
+/* 小组图片 */
+.myGroup-img{
+    position: absolute;
+    width: 32vw;
+    height: 32vw;
+    background-size:100% 100%;
+    top: -5vh;
+    left:4vw;
+    border-radius: 6px;
+    box-shadow: 4px 4px 10px rgb(148, 147, 147);
+}
+/* 图片右边的块 */
+.gimg-right{
+    margin-top:5px;
+    margin-right:4vw;
+    float: right;
+    display: inline-block;
+    width:26vw;
+    /* background-color:pink; */
+    position: relative;
+    padding-right:10vw;
+    /* margin-top:2vh; */
+    /* margin-right:10vw; */
+}
+.group-name{
+    font-size: 4vw;
+    line-height: 6vw;
+}
+.group-words{
+    font-size:3.5vw;
+    color:#736f6f;
+    line-height: 1vw;
+}
+/* 编辑按钮 */
+.edit-button{
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    vertical-align: bottom;
+    display: inline-block;
+    width:20px;
+    height: 24px;
+    background-image:url(../img/edit.png);
+    background-size:100% 100%;
+}
+/* 清除浮动 */
+/* .team-character-show:before{
+    margin-bottom:10px;
+    content:"";
+    clear:both;
+    display: block;
+} */
+.team-character-show,
+.team-number-show{
+    margin-left:7vw;
+    color:grey;
+}
+.team-character-show{
+    padding-top:16vh;
+    font-size:10px;
+}
+.team-number-show{
+    font-size:10px;
+}
+/* 成员列表最外面的块 */
+.like-man-wrapper{
+    /* background-color: pink; */
+    font-size: 0;
+    /* 取消img之间的空隙↑↑ */
+    padding-left:2.5vw;
+}
+.member-list{
+    margin:1.5vh 0 1.5vh 7vw;
+    font-size:12px;
+}
+/* 点赞人的头像和名字的外包 */
+.like-man{
+    margin:1vw;
+    display: inline-block;
+    /* background-color:orange; */
+}
+/* 点赞人的头像 */
+.like-man-head{
+    display: block;
+    text-align: center;
+    width:11vw;
+    height: 11vw;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+/* 点赞人的名字 */
+.like-man-name{
+    font-size: 6px;
+    text-align: center;
+    line-height: 8px;
+    padding:4px 0;
+}
+/* 分享链接到聊天和复制当前小组链接 */
+.share-to-chat,
+.copy-the-url{
+    border-top:1px solid #2b3535;
+    border-bottom:1px solid #2b3535;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+/* 删除并退出当前小组 */
+.card3-end{
+    width: 70vw;
+    height: 8vh;
+    background-color:#2b3535;
+    margin:3vh 7vw 2vh 7vw;
+    color: white;
+    text-align: center;
+    line-height: 8vh;
+    border-radius:3vw;
+    font-size:18px;
+}
