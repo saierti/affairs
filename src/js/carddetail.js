@@ -17,7 +17,7 @@ $('document').ready(function(){
                 e.preventDefault();
                 e.stopPropagation();//阻止冒泡，防止点击时同时触发下拉和上拉
                 $(head[4]).css('background-image','url(img/test.png)');
-                $('.headarea').css('height',Math.ceil(length1/5)*(35)+'px');//Math.ceil向上取整
+                $('.headarea').css('height',Math.ceil(length1/5)*(12)+'vw');//Math.ceil向上取整
                 for(let i = 5;i < length1;i++){
                     $(head[i]).css('display','inline-block');
                 }
@@ -26,7 +26,7 @@ $('document').ready(function(){
         //上拉
         $('.userhead:last').click(function(e){
             e. stopPropagation();
-            $('.headarea').css('height','35px');
+            $('.headarea').css('height','12vw');
             setTimeout(function(){
                 $(head[4]).css('background-image','url(img/more.png)')
                 for(let i = 5;i < length1;i++){

@@ -68,24 +68,26 @@
     font-family: 'simsun',sans-serif;
 }
 .headarea{
-    width: 60vw;
-    height: 35px;
-    margin:4px 22vw 2px auto;
+    font-size: 0;
+    width: 66vw;
+    height: 10vw;
+    margin: 4px 16vw 2px auto;
     text-align: left;
     margin-top: 4px;
     overflow: hidden;
     transition: height,0.6s;
 }
 .userhead{
-    width: 32px;
-    height: 32px;
-    margin-right: 1vw;
-    margin-right: 1vw;
+    margin:0;
+    width: 10vw;
+    height: 10vw;
+    margin-right: 3vw;
+    margin-bottom: 2vw;
     background-image: url(../img/test.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 45px;
+    border-radius: 50%;
     display: inline-block;
 }
 .cardwork{
