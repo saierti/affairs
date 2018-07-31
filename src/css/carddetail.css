@@ -71,9 +71,8 @@
     font-size: 0;
     width: 66vw;
     height: 10vw;
-    margin: 4px 16vw 2px auto;
+    margin: 2vh 16vw 2px auto;
     text-align: left;
-    margin-top: 4px;
     overflow: hidden;
     transition: height,0.6s;
 }

@@ -20,8 +20,56 @@
    line-height: 20px;
 } 
 
+.message-block{
+    width: 100vw;
+    height: 5vh;
+}
+.messagediv{
+    width: 100vw;
+    height: 20vh;
+    position: relative;
+}
 
+.messageDiv1{
+    width: 8vw;
+    height: 22vh;
+    float: left;
+    margin-left: 8vw;
+    display: inline-block;
+}
 
+.messageLine{
+    width: 1px;
+    height: 20vh;
+    background-color: #fff;
+    margin-left: 10px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -4px;
+} 
+.messagediv2{
+    width: 100vw;
+    height: 28vh;
+    position: relative;
+}
+
+.messageDiv1-2{
+    width: 8vw;
+    height: 28vh;
+    float: left;
+    margin-left: 8vw;
+    display: inline-block;
+}
+
+.messageLine2{
+    width: 1px;
+    height: 28vh;
+    background-color: #fff;
+    margin-left: 10px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -4px;
+} 
 .messageLeft{
     display: inline-block;
     background-image: url('../img/test.jpg');

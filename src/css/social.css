@@ -6,11 +6,37 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.social-block{
+    width: 100vw;
+    height: 5vh;
+}
 #social>section{
     width: 100vw;
     height: 80vh;
-}  
+} 
+.socialdiv{
+    width: 100vw;
+    height: 20vh;
+    position: relative;
+}
+
+.socialDiv1{
+    width: 8vw;
+    height: 20vh;
+    float: left;
+    margin-left: 8vw;
+    display: inline-block;
+}
+
+.socialLine{
+    width: 1px;
+    height: 17vh;
+    background-color: #fff;
+    margin-left: 10px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -4px;
+} 
 .socialRight{
     display: inline-block;
     width: 24vw;
@@ -49,7 +75,7 @@
     display: inline-block;
     width: 84vw;
     float: right;
-    height: 25vh;
+    height: 20vh;
 }
 .socialLeft{
     display: inline-block;
