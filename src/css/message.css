@@ -1,6 +1,5 @@
 /* 屹彬 待办 */
 #message{
-    position: relative;
     overflow: scroll;
     z-index: 1;
     display: flex;

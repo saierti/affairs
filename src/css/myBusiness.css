@@ -1,7 +1,6 @@
 /* 屹彬 我的事务 */
 
 #myBusiness{
-    position: relative;
     overflow: scroll;
     z-index: 1;
     display: flex;

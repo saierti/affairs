@@ -1,6 +1,5 @@
 /* 屹彬 社交 */
 #social{
-    position: relative;
     overflow: scroll;
     z-index: 1;
     display: flex;
