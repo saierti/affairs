@@ -60,7 +60,7 @@ $('document').ready(function(){
     var oDiv54 = $('#history');
     var oDiv11 = $('#carddetail');
     var oCard2 = $('#newGroup');
-    var oCard3 = $('myGroupCard')
+    var oCard3 = $('#myGroupCard')
 
     oDiv1.css('display','flex');
 
@@ -108,20 +108,6 @@ $('document').ready(function(){
         oCard3.css('display','none');
 
     })        
-    oDiv3.css('display','block');
-    oDiv3.css('z-index','33')
-
-    oDiv1.css('opacity','0.3');
-    oDiv2.css('opacity','0.3');
-    oDiv4.css('opacity','0.3');
-    oDiv5.css('opacity','0.3');
-    oDiv11.css('opacity','0.3');
-    oDiv51.css('opacity','0.3');
-    oDiv52.css('opacity','0.3');
-    oDiv53.css('opacity','0.3');
-    oDiv54.css('opacity','0.3');
-    oCard2.css('opacity','0.3');
-    oCard3.css('opacity','0.3');
 
     $(aA[2]).click(function(){
         oDiv3.css('display','block');

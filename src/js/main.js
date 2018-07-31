@@ -15,11 +15,13 @@ $('document').ready(function(){
         $('#header').css('display','none');
         $('#main').css('display','none');
         $('#carddetail').css('display','block');
+        $('#carddetail').css('opacity','1');
     });
     $('.btnDiscuss').click(function(){
         $('#header').css('display','none');
         $('#main').css('display','none');
         $('#carddetail').css('display','block');
         $('#carddetail').scrollTop(600);
+        $('#carddetail').css('opacity','1');   
     });
 });
