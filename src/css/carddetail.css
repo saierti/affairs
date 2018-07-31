@@ -60,7 +60,7 @@
 }
 .percent{
     font-size: 12px;
-    height: 2vh;
+    height: 4.5vh;
     margin-top: 1.2vh;
     margin-right: 3vw;
     color: #FFF16E;
@@ -69,10 +69,12 @@
 }
 .headarea{
     width: 60vw;
-    height: 5vh;
+    height: 35px;
     margin:4px 22vw 2px auto;
     text-align: left;
     margin-top: 4px;
+    overflow: hidden;
+    transition: height,0.6s;
 }
 .userhead{
     width: 32px;
@@ -206,6 +208,26 @@ strong{
     background-color: #ffffff;
     margin-top: 2vh;
 }
+.rightbtn2{
+    text-align: center;
+}
+.rightbtn2 div{
+    width: 51%;
+    display: inline-block;
+    margin-bottom: 2vh;
+    height:4vh ;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.rightbtn-3{
+    background-image: url(../img/write.png);
+}
+.rightbtn-3{
+    background-image: url(../img/write.png);
+}.rightbtn-4{
+    background-image: url(../img/bin2.png);
+}
 .discuss-area{
     width: 100%;
     height: 30vh;
@@ -305,7 +327,6 @@ strong{
     border-top-left-radius:  5px;
     border-bottom-left-radius:  5px;
     background-color: #ffffffc2;
-    color: #949090;
 }
 .input-btn{
     width: 15%;

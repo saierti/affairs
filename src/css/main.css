@@ -7,11 +7,14 @@
     justify-content: center;
     top: 6.5%;
 }
+#white-space{
+    width: 100%;
+    height: 5vh;
+}
 .mainImg{
     width: 100%;
-    height: 28vh;
+    height: 25vh;
     z-index: 3;
-    border-radius: 7px;
     position: relative;
     background-color: rgba(0,0,0,0.3);
 }
@@ -34,6 +37,7 @@
     display: table-cell;
     width: 47px;
     height: 21px;
+    line-height: 21px;
     border: 2px solid #FFF16E;
     border-radius:6px;
     font-size: 15px;
@@ -58,21 +62,21 @@
     background: url(../img/test.jpg);
     background-size: cover;
     background-position: center;
-    height: 28vh;
+    height: 25vh;
     width: inherit;
     filter: blur(1px);
     border-radius: 7px;
 }
 .mainbox{
     width: 90vw;
-    height: 36.5vh;
+    height: 32.5vh;
     border-radius: 7px;
     background-color: aliceblue;
     margin-top: 4vh;
 }
 .mainboxmid{
     width: 100%;
-    height: 22.8vh;
+    height: 19.8vh;
     position: relative;
 }
 .mainboxmid p{
@@ -80,25 +84,25 @@
     text-align: center;
     position: absolute;
     top: 20%;
-    left: 50%;
-    margin-left: -25%;
+    left: 20%;
     font-weight: bold;
     line-height: 1.3em;
     color: #FFFFFF;
     font-size: 5vw;
+    font-weight: 500;
     font-family: 'SimHei',sans-serif;
 }
 .mainboxbottom{
     width: 100%;
-    height: 8.5vh;
+    height: 7.5vh;
     display: flex;
     align-items: center;
     padding-left: 3vw;
     position: relative;
 }
 .headimg{
-    width: 9vw;
-    height: 5vh;
+    width: 33px;
+    height: 33px;
     display: inline-block;
     border-radius: 20px;
     background-image: url(../img/head.jpg);
@@ -125,7 +129,7 @@
     background-repeat: no-repeat;
     }
 .btnDiscuss{
-    width: 8vw;
+    width: 6vw;
     height: 2.5vh;
     position: absolute;
     bottom:35%;
