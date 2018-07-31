@@ -1,0 +1,74 @@
+/* 屹彬 我的小组 */
+#myGroup{
+    overflow: scroll;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#myGroup>section{
+    width: 100vw;
+    height: 80vh;
+    vertical-align: middle;
+} 
+.myGroup-div{
+    width: 86vw;
+    height: 15vh;
+    margin-left: 7vw;
+    display: flex;
+    align-items: center;
+    /* opacity: 0.8; */
+    border-radius: 5px;
+    margin-top: 3vh;
+    background-color: #FFF;
+    opacity:0.8;
+}
+.myGroup-div > div {
+    width: 30vw;
+    margin-left: 5vw;
+}
+.myGroup-div > img {
+    width: 18vw;
+    height: 18vw;
+    background-size: cover;
+    background-position: center;
+}
+.myGroup-div > p {
+    width: 20vw;
+    margin-left: 7vw;
+    font-size: 2.8vw;
+    color: gray;
+    text-align: center;
+}
+.myGroup-left-div-p1{
+    color: black;
+    width: 25vw;
+
+    font-size:4vw;
+    margin-bottom: 4vh;
+    margin-top: 1vh;
+}
+.myGroup-left-div-p2 , .myGroup-left-div-p3{
+    color: gray;
+    font-size: 2vw;
+    margin: 1vw;
+    width: 20vw;
+}
+.add-group{
+    float: left;
+    margin: 0;
+    width: 40vw;
+    height: 15vh;
+    margin-left: 7vw;
+    margin-right:5vw;
+    margin-top: 3vh;
+}
+.search-group{
+    float: right;
+    margin: 0;
+    width: 40vw;
+    height: 15vh;
+    margin-right: 7vw;
+    margin-top: 3vh;
+}

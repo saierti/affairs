@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/myBusiness.css">	<!-- 屹彬 我的事务 -->
 	<link rel="stylesheet" href="css/social.css"> 	<!-- 屹彬  社交 -->
 	<link rel="stylesheet" href="css/history.css">  <!-- 屹彬  历史记录 -->
-	<link rel="stylesheet" href="css/myGroup.css"> <!-- 屹彬 我的小组 -->
+	<link rel="stylesheet" href="css/Group.css"> <!-- 屹彬 我的小组 -->
 	<link rel="stylesheet" href="css/myBin.css">  <!-- 屹彬 草稿箱 -->
 	<link rel="stylesheet" href="css/message.css"> <!-- 屹彬 待办 -->
 	<link rel="stylesheet" href="css/newCard.css">   <!--嘉竣 卡片-->
@@ -23,6 +23,7 @@
 	<script src = "js/header.js"></script>	<!-- 头部 -->
 	<script src = "js/main.js"></script>   <!-- 阳宁首页 -->
 	<script src="js/newCard.js"></script>  	<!-- 嘉俊 卡片 -->
+		<!-- 屹彬  卡片进草稿箱 -->
 </head>
 <body>
 	<!-- 头部 header -->
@@ -468,9 +469,22 @@
 
 		</section>
 	</div>
-
+	<!-- 我的小组 -->
+	<div class="container" id="myGroup" style="display: none;">
+		<section>
+			<div class="myGroup-div" id="myGroup1">
+				<div class="myGroup-left-div">
+					<p class="myGroup-left-div-p1">nw神秘组织</p>
+					<p class="myGroup-left-div-p2">工作小组</p>
+					<p class="myGroup-left-div-p3">成员人数：<span>14</span></p>
+				</div>
+				<img src="img/nwlogo.png" alt="">
+				<p>咕咕咕 咕咕咕,有爱的组织</p>
+			</div>
+			<img class="add-group" src="img/addGroup.png"></img>
+			<img class="search-group" src="img/searchGroup.png"></img>
+			</div>
 	<!-- 嘉竣 -->
-	
     <!-- 新建我的卡片 -->
     <div class="container" id="newCard" style="display: none;">
         <!-- <div class="make-card"> -->
@@ -627,6 +641,18 @@
 			<div class="card3-end">删除并退出当前小组</div>
 		</div>
 	</div>
+
+	
+	<!-- 草稿箱 -->
+	<img  id="card-bin" src="img/3.png"
+	style=
+	"
+	position: absolute;
+	left: 4.5vw;
+	bottom: 4vh;
+	height: 38px;
+	width: 38px;
+	"></img>
 
 	<!-- 底部 footer -->
     <footer id="footer" >
