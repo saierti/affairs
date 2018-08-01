@@ -2,7 +2,7 @@
 html,body{
     width: 100%;
     height: 100%;
-    background-image:url(../img/bg.jpg);
+    /* background-image:url(../img/bg.jpg); */
     font-family: "幼圆";
 }
 /* 去掉input的默认边框 */
@@ -171,11 +171,11 @@ hr{
     transform: rotate(45deg);
 } 
 /* 选择小组的select */
-.card1-2 select[name="group"]{
+.card1-2 select[name="s-group"]{
     width:32vw;
 }
 /* 选择小组成员的select */
-.card1-2 select[name="member"]{
+.card1-2 select[name="s-member"]{
     width: 35vw;
 }
 /* 事件执行模式 */
@@ -227,7 +227,7 @@ hr{
     font-family: "幼圆";
     color:white;
 }
-.card1-3 > input{
+.card1-3 .card-submit{
     background-color: #2b3535;
 }
 .card1-3 > span{

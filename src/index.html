@@ -51,7 +51,7 @@
 	<!-- 阳宁 -->
 	
 	<!--首页-->
-    <div id="main" class="container" >
+    <div id="main" class="container" style="display: none">
     	<div class="mainbox">
 			<div class="blackbox"></div>
 			<div class="mainImg">
@@ -592,11 +592,11 @@
     <!-- 新建我的卡片 -->
     <div class="container" id="newCard" style="display: none;">
         <!-- <div class="make-card"> -->
-			<form action="" class="make-card" enctype="multipart/form-data" onsubmit="return Check()">
+			<form action="" id="form1" class="make-card" enctype="multipart/form-data" >
 				<span class="chacha quit-card1"></span>
                 <p>新建我的卡片</p>
-                <input name="title" type="text" placeholder="请输入标题（必填）">
-                <textarea name="dcb" cols="30" rows="4" placeholder="请输入具体描述...（选填）"></textarea>
+                <input id="title" name="title" type="text" placeholder="请输入标题（必填）">
+                <textarea id="dcb" name="dcb" cols="30" rows="4" placeholder="请输入具体描述...（选填）"></textarea>
                 <!-- <input type="file" accept="image/*" class="add-img" value="添加照片"> -->
                 <span class="add-img">添加照片</span>
                 <input type="hidden" name="tag" id="tag" value="生活">
@@ -610,7 +610,7 @@
                 <div class="card1-2">
                     <div class="card1-2-content">
                         选择面向小组:
-                        <select name="group" id="group">
+                        <select name="s-group" id="s-group">
                                 <option value="" disabled selected style="display: none;color: grey;">查看小组列表</option>
                                 <option value="哈哈哈">哈哈哈</option>
                         </select>
@@ -622,7 +622,7 @@
                     </div>
                     <div class="card1-2-content">
                         选择参与成员:
-                        <select name="member" id="menber">
+                        <select name="s-member" id="s-member">
                                 <option value="" disabled selected style="display: none;">查看小组成员</option>
                                 <option value="呵呵呵">呵呵呵</option>
                         </select>
@@ -630,13 +630,13 @@
 					</div>
 					<div class="card1-2-content">
 						选择时限：
-						<input type="date" name="dead-date" placeholder="展开日历" id="dead-date" onfocus="$(this).removeAttr('placeholder')">
+						<input type="date" id="dead-date" name="dead-date" placeholder="展开日历" id="dead-date" onfocus="$(this).removeAttr('placeholder')">
 					</div>
 				</div>
 				<hr/>
 				<!-- 第二个hr -->
 				<div class="card1-3">
-					<input type="submit" class="card1-end" value="创建">
+					<span class="card1-end card-submit">创建</span>
 					<span class="card1-end quit-card1">取消</span>
 				</div>
 			</form>
@@ -732,11 +732,23 @@
 					<p class="like-man-name">jio雯婷</p>
 				</div>
 				<div class="like-man">
-					<img class="like-man-head" src="img/test.png" alt="">
+					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
 					<p class="like-man-name">jio雯婷</p>
 				</div>
 				<div class="like-man">
 					<img class="like-man-head" src="img/head.jpg" alt="">
+					<p class="like-man-name">jio雯婷</p>
+				</div>
+				<div class="like-man">
+					<img class="like-man-head" src="img/test.jpg" alt="">
 					<p class="like-man-name">jio雯婷</p>
 				</div>					
 			</div>
