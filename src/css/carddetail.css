@@ -11,9 +11,9 @@
     text-align: center;
 }
 #detailhead{
-    width: 143px;
-    height: 143px;
-    border-radius: 90px;
+    width: 38vw;
+    height: 38vw;
+    border-radius: 50%;
     display: inline-block;
     background-image: url(../img/test.jpg);
     background-size: cover;
@@ -92,7 +92,7 @@
 .cardwork{
     position: relative;
     width: 91vw;
-    height: 30vh;
+    height: 55vw;
     border-radius: 7px;
     background: linear-gradient(to left,#0505074d,#5d5d5e94);
     margin: 5vh 5vw auto 5vw;
@@ -197,7 +197,7 @@ strong{
 }
 .rightbtn1 input{
     width: 50%;
-    height:6vh ;    
+    height:10.5vw ;    
     border-radius: 3px;
     font-size: 3.5vw;
     font-family: 'youyuan',sans-serif;
@@ -216,7 +216,7 @@ strong{
     width: 51%;
     display: inline-block;
     margin-bottom: 2vh;
-    height:4vh ;
+    height:8vw;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
