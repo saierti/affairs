@@ -32,7 +32,7 @@
 
 .messageDiv1{
     width: 8vw;
-    height: 22vh;
+    height: 21vh;
     float: left;
     margin-left: 8vw;
     display: inline-block;
@@ -40,7 +40,7 @@
 
 .messageLine{
     width: 1px;
-    height: 20vh;
+    height: 21vh;
     background-color: #fff;
     margin-left: 10px;
     position: absolute;
@@ -55,7 +55,7 @@
 
 .messageDiv1-2{
     width: 8vw;
-    height: 28vh;
+    height: 26vh;
     float: left;
     margin-left: 8vw;
     display: inline-block;
@@ -114,7 +114,7 @@
     display: inline-block;
     width: 84vw;
     float: right;
-    height: 25vh;
+    height: 21vh;
 }
 
 .messageDiv{
