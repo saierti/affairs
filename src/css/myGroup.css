@@ -188,7 +188,6 @@
 }
 /* 成员列表最外面的块 */
 .like-man-wrapper{
-    /* background-color: pink; */
     font-size: 0;
     /* 取消img之间的空隙↑↑ */
     padding-left:2.5vw;
@@ -201,7 +200,6 @@
 .like-man{
     margin:1vw;
     display: inline-block;
-    /* background-color:orange; */
 }
 /* 点赞人的头像 */
 .like-man-head{
