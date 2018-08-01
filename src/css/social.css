@@ -30,7 +30,7 @@
 
 .socialLine{
     width: 1px;
-    height: 17vh;
+    height: 20vh;
     background-color: #fff;
     margin-left: 10px;
     position: absolute;
@@ -39,10 +39,10 @@
 } 
 .socialRight{
     display: inline-block;
-    width: 24vw;
-    vertical-align: bottom;
+    width: 25vw;
+    /* vertical-align: bottom; */
     height: 12vh;
-    margin-left :2vw;
+    /* margin-left :2vw; */
     /* padding-top: 2vw; */
     line-height: 3vh;
 }
@@ -53,9 +53,9 @@
 }
 .socialImg{
     display: inline-block;
-    width:  8vh;
-    height: 8vh;
-    margin: 2vh;
+    width:  16vw;
+    height: 16vw;
+    margin: auto;
 }
 .socialDiv {
     width: 80vw;
@@ -63,6 +63,9 @@
     /* opacity: 0.8; */
     border-radius: 5px;
     margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to left,#040309,#3d3c3c);
 }
 .socialRight>p>img{
@@ -80,13 +83,13 @@
 .socialLeft{
     display: inline-block;
     background-image: url('../img/test.jpg');
-    width:  8vh;
-    height: 8vh;
+    width:  16vw;
+    height: 16vw;
     border-radius: 50%;
     /* margin-left: 5vw; */
     background-size: cover;
     background-position: center;
-    margin: 2vh;
+    margin: auto;
 
 }
 .socialRightP1{

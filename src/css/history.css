@@ -22,9 +22,9 @@
 
 #history>section>div{
     width: 100vw;
-    height: 20vh;
+    /* height: 20vh; */
     position: relative;
-    padding-top: 5vh;
+    /* padding-top: 3vh; */
 
 }
 .historyRight{
@@ -32,8 +32,8 @@
     width: 50vw;
     vertical-align: bottom;
     height: 12vh;
-    margin-left :2vw;
-    /* padding-top: 2vw; */
+    margin-left: 2vw;
+    padding-top: 2vw;
     line-height: 3vh;
 }
 
@@ -43,13 +43,43 @@ historyRightP2 > span{
     font-size: 2.5vw;
 
 }
-
+.history-block{
+    width: 100vw;
+    height: 3vh;
+}
+.historydiv{
+    width: 100vw;
+    height: 25vh;
+    position: relative;
+    /* margin-top: 5vh; */
+}  
+.historyDiv1{
+    width: 8vw;
+    height: 25vh;
+    float: left;
+    margin-left: 8vw;
+    display: inline-block;
+}
+.historyLine{
+    width: 1px;
+    height: 25vh;
+    background-color: #fff;
+    /* margin-left: 6vw;
+    margin-top: 2vh; */
+    margin-left: 10px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -1px;
+    /* margin-top: -4px; */
+}
 .historyDiv {
     width: 80vw;
     height: 14vh;
     /* opacity: 0.8; */
     border-radius: 5px;
     margin-top: 2vh;
+    display: flex;
+    align-items: center;
     background: linear-gradient(to left,#040309,#3d3c3c);
 }
 
@@ -61,14 +91,14 @@ historyRightP2 > span{
 }
 .historyLeft{
     display: inline-block;
-    background-image: url('../img/test.jpg');
-    width:  10vh;
-    height: 10vh;
+    background-image: url(../img/test.jpg);
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
     /* margin-left: 5vw; */
     background-size: cover;
     background-position: center;
-    margin: 2vh;
+    margin: auto;
 
 }
 .historyRightP1{
