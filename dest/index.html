@@ -133,11 +133,7 @@
 					<div class="userhead"></div>
 					<div class="userhead"></div>
                     <div class="userhead"></div> 
-					<div class="userhead"></div>
-					 <div class="userhead"></div>
-                    <div class="userhead"></div> 
-					<div class="userhead"></div>   
-					<div class="userhead"></div>    
+                    <div class="userhead"></div>    
                 </div>
                 <!--完成进度条-->
                 <div class="bararea">
@@ -213,7 +209,7 @@
 					</div>
 			</div>
 			<div class="discuss-bottom">
-				<input  class="input-text" type="text" placeholder="  说点什么......">
+				<input  class="input-text" type="text" placeholder="说点什么......">
 				<input class="input-btn" type="submit" value="发送">
 			</div>
 		</section>
@@ -227,10 +223,11 @@
 	<!-- 历史记录 -->
 	<div class="container" id="history" style="display: none">
 		<section>
-			<div class="myDiv">
-				<div class="myDiv1">
+			<div class="history-block"></div>
+			<div class="historydiv">
+				<div class="historyDiv1">
 					<div class="myBigRad"><div class="mySmallRad"></div></div>
-					<div class="myLine"></div>
+					<div class="historyLine"></div>
 				</div>
 				<div class="historyDiv2">
 					<p>7月28日17:30</p> <br>
@@ -243,6 +240,38 @@
 					</div>
 				</div>		
 			</div>
+			<div class="historydiv">
+				<div class="historyDiv1">
+					<div class="myBigRad"><div class="mySmallRad"></div></div>
+					<div class="historyLine"></div>
+				</div>
+				<div class="historyDiv2">
+					<p>7月28日17:30</p> <br>
+					<div class="historyDiv">
+						<div class="historyLeft" id="history1"></div>
+						<div class="historyRight">
+							<p class="historyRightP1">标题: 我爱学习</p><br>
+							<p class="historyRightP2">标签: <span class="historySpan">日常</span></p><br>
+						</div>
+					</div>
+				</div>		
+			</div>
+			<div class="historydiv">
+					<div class="historyDiv1">
+						<div class="myBigRad"><div class="mySmallRad"></div></div>
+						<div class="historyLine"></div>
+					</div>
+					<div class="historyDiv2">
+						<p>7月28日17:30</p> <br>
+						<div class="historyDiv">
+							<div class="historyLeft" id="history1"></div>
+							<div class="historyRight">
+								<p class="historyRightP1">标题: 我爱学习</p><br>
+								<p class="historyRightP2">标签: <span class="historySpan">日常</span></p><br>
+							</div>
+						</div>
+					</div>		
+				</div>
 		</section>
 	</div>
 	<!-- 我的事务 -->
@@ -331,11 +360,10 @@
 	<!-- 社交 -->
 	<div style="display:none" class="container" id="social" >	
 		<section>
-			<div class="social-block"></div>
-			<div class="socialdiv">
-				<div class="socialDiv1">
+			<div class="myDiv">
+				<div class="myDiv1">
 					<div class="myBigRad"><div class="mySmallRad"></div></div>
-					<div class="socialLine"></div>
+					<div class="myLine"></div>
 				</div>
 				<div class="socialDiv2">
 					<p>下午17：34</p> <br>
@@ -349,10 +377,10 @@
 					</div>
 				</div>		
 			</div>
-			<div class="socialdiv">
-				<div class="socialDiv1">
+			<div class="myDiv">
+				<div class="myDiv1">
 					<div class="myBigRad"><div class="mySmallRad"></div></div>
-					<div class="socialLine"></div>
+					<div class="myLine"></div>
 				</div>
 				<div class="socialDiv2">
 					<p>下午17：34</p> <br>
@@ -360,7 +388,7 @@
 						<div class="socialLeft" id="social1"></div>
 						<div class="socialRight">
 							<p class="socialRightP1">鸽子琨</p><br>
-							<p class="socialRightP2"><span>大爷下次请你</span></p>
+							<p class="socialRightP2"><img src="img/good.png" alt=""></p><br>
 						</div>
 						<img class="socialImg" src="img/test.png" alt="">
 					</div>
@@ -423,11 +451,10 @@
 	<!-- 待办 -->
 	<div class="container" id="message" style="display: none" >
 		<section>
-			<div class="message-block"></div>
-			<div class="messagediv2">
-				<div class="messageDiv1-2">
+			<div class="myDiv">
+				<div class="myDiv1">
 					<div class="myBigRad"><div class="mySmallRad"></div></div>
-					<div class="messageLine2"></div>
+					<div class="myLine"></div>
 				</div>
 				<div class="messageDiv2">
 					<p>7月28日17:30</p> <br>
@@ -444,10 +471,10 @@
 				</div>		
 			</div>
 
-			<div class="messagediv">
-				<div class="messageDiv1">
+			<div class="myDiv">
+				<div class="myDiv1">
 					<div class="myBigRad"><div class="mySmallRad"></div></div>
-					<div class="messageLine"></div>
+					<div class="myLine"></div>
 				</div>
 				<div class="messageDiv2">
 					<p>7月28日17:30</p> <br>
@@ -462,15 +489,14 @@
 					</div>
 				</div>		
 			</div>
-			<div class="messagediv2">
-					<div class="messageDiv1-2">
+			<div class="myDiv">
+					<div class="myDiv1">
 						<div class="myBigRad"><div class="mySmallRad"></div></div>
-						<div class="messageLine2"></div>
+						<div class="myLine"></div>
 					</div>
 					<div class="messageDiv2">
 						<p>7月28日17:30</p> <br>
-						<img class="messageImg" src="img/test.png" alt="">
-						<span>张阳宁领取了</span>
+					
 						<div class="messageDiv">
 							<div class="messageLeft" id="message1"></div>
 							<div class="messageRight">
@@ -481,7 +507,7 @@
 						</div>
 					</div>		
 				</div>
-	
+
 		</section>
 	</div>
 	<!-- 我的小组 -->
@@ -496,9 +522,28 @@
 				<img src="img/nwlogo.png" alt="">
 				<p>咕咕咕 咕咕咕,有爱的组织</p>
 			</div>
+			<div class="myGroup-div" id="myGroup1">
+					<div class="myGroup-left-div">
+						<p class="myGroup-left-div-p1">nw神秘组织</p>
+						<p class="myGroup-left-div-p2">工作小组</p>
+						<p class="myGroup-left-div-p3">成员人数：<span>14</span></p>
+					</div>
+					<img src="img/nwlogo.png" alt="">
+					<p>咕咕咕 咕咕咕,有爱的组织</p>
+				</div>
+				<div class="myGroup-div" id="myGroup1">
+						<div class="myGroup-left-div">
+							<p class="myGroup-left-div-p1">nw神秘组织</p>
+							<p class="myGroup-left-div-p2">工作小组</p>
+							<p class="myGroup-left-div-p3">成员人数：<span>14</span></p>
+						</div>
+						<img src="img/nwlogo.png" alt="">
+						<p>咕咕咕 咕咕咕,有爱的组织</p>
+					</div>
 			<img class="add-group" src="img/addGroup.png"></img>
 			<img class="search-group" src="img/searchGroup.png"></img>
-			</div>
+		</section>
+	</div>
 	<!-- 嘉竣 -->
     <!-- 新建我的卡片 -->
     <div class="container" id="newCard" style="display: none;">
