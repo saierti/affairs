@@ -2,12 +2,18 @@ $('document').ready(function(){
     var head = $('.userhead');
     var headarea = $('.headarea');
     var length = $('.userhead').length;
+    
+
+
+
     //头像多余五个时显示省略
     if(length > 5){
         $(head[4]).css('background-image','url(img/more.png)');
         $('.headarea').append('<div class="userhead"></div>');
         $('.userhead:last').css('background-image','url(img/slideup.png)');
         var length1 = $('.userhead').length;
+
+
         for(let i = 5;i < length;i++){
             $(head[i]).css('display','none');
         }
@@ -23,6 +29,10 @@ $('document').ready(function(){
                 }
             })
         }
+
+
+
+
         //上拉
         $('.userhead:last').click(function(e){
             e. stopPropagation();
@@ -35,9 +45,14 @@ $('document').ready(function(){
             },600);
         })
     }
+
+
+    
     //点击底部消失
     $('#footerFlex a').click(function(){
         $('#carddetail').css('display','none');
     });
-    
+    $('.rightbtn-3').click(function(){
+        
+    })
 });

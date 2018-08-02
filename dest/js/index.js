@@ -1,11 +1,34 @@
 $('document').ready(function(){
 
 
+// 获取tokens
+    
+//     http.get('',
+//     function(data){
+//         console.log(data);
+//     }
+// )
 
 
+http.login(function(res){
+    console.log('fsadfsafsad',res);
+},function(err){
+    console.log(err);
+});
+
+http.post('/fnc/unclaimed',{
+    eid:561543
+    },function(res){
+        console.log(res);
+    },function(err){
+        console.log(err);
+    }
+)
 
 
-
+    $.get('http://192.168.1.17:3000/fnc/login',function(data){
+        console.log(data);
+    })
 
 
 
@@ -115,17 +138,17 @@ $('document').ready(function(){
 
         $('#card-bin').css('bottom','4vh');
         
-        oDiv1.css('opacity','0.3');
-        oDiv2.css('opacity','0.3');
-        oDiv4.css('opacity','0.3');
-        oDiv5.css('opacity','0.3');
-        oDiv11.css('opacity','0.3');
-        oDiv51.css('opacity','0.3');
-        oDiv52.css('opacity','0.3');
-        oDiv53.css('opacity','0.3');
-        oDiv54.css('opacity','0.3');
-        oCard2.css('opacity','0.3');
-        oCard3.css('opacity','0.3');
+        // oDiv1.css('opacity','0.3');
+        // oDiv2.css('opacity','0.3');
+        // oDiv4.css('opacity','0.3');
+        // oDiv5.css('opacity','0.3');
+        // oDiv11.css('opacity','0.3');
+        // oDiv51.css('opacity','0.3');
+        // oDiv52.css('opacity','0.3');
+        // oDiv53.css('opacity','0.3');
+        // oDiv54.css('opacity','0.3');
+        // oCard2.css('opacity','0.3');
+        // oCard3.css('opacity','0.3');
     })
     $(aA[3]).click(function(){
         oDiv4.css('display','block');
