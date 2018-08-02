@@ -2,6 +2,16 @@
 $(function(){
 
 
+    //为了日历的placeholder而写的死js代码
+    // $("#dead-date").focus(function() {
+    //     $(this).attr({type: 'datetime-local'});
+    //     $(this).focus();
+    // });
+
+
+
+
+
     // 自己测试添加选项函数
     // var selfJSON = {
     //     "a":"tug",

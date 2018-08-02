@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="css/message.css"> <!-- 屹彬 待办 -->
 	<link rel="stylesheet" href="css/newCard.css">   <!--嘉竣 卡片-->
 	<link rel="stylesheet" href="css/newGroup.css">		<!-- 嘉竣 新建小组 -->
-	<link rel="stylesheet" href="CSS/myGroup.CSS">		<!-- 嘉竣 我的小组-->
+	<link rel="stylesheet" href="css/myGroup.css">		<!-- 嘉竣 我的小组-->
 	<script src="js/index.js"></script>	   <!-- 底部 -->
 	<script src = "js/header.js"></script>	<!-- 头部 -->
 	<script src = "js/main.js"></script>     <!-- 阳宁首页 -->
@@ -590,63 +590,68 @@
 	</div>
 	<!-- 嘉竣 -->
     <!-- 新建我的卡片 -->
-    <div class="container" id="newCard" style="display: none;">
+    <div class="container" id="newCard" style="display: block;">
         <!-- <div class="make-card"> -->
-			<form action="" id="form1" class="make-card" enctype="multipart/form-data" >
-				<span class="chacha quit-card1"></span>
-                <p>新建我的卡片</p>
-                <input id="title" name="title" type="text" placeholder="请输入标题（必填）">
-                <textarea id="dcb" name="dcb" cols="30" rows="4" placeholder="请输入具体描述...（选填）"></textarea>
-                <!-- <input type="file" accept="image/*" class="add-img" value="添加照片"> -->
-                <span class="add-img">添加照片</span>
-                <input type="hidden" name="tag" id="tag" value="生活">
-                <div class="card-label">
-                    标签：<span class="tags card-active">生活</span>
-                    <span class="tags" >工作</span>
-                    <span class="tags" >学习</span>
-                </div>
-                <hr/>
-                <!-- hr下面的内容 -->
-                <div class="card1-2">
-                    <div class="card1-2-content">
-                        选择面向小组:
-                        <select name="s-group" id="s-group">
-                                <option value="" disabled selected style="display: none;color: grey;">查看小组列表</option>
-                                <option value="哈哈哈">哈哈哈</option>
-                        </select>
-                        <span class="sanjiao"></span>    
-					</div>
-					<input type="hidden" name="e-model" id="e-model" value="指定人员">
-                    <div class="card1-2-content">
-                        事执行模式：<span class="e-moshis">任选人员</span><span class="e-moshis card-active">指定人员</span>
-                    </div>
-                    <div class="card1-2-content">
-                        选择参与成员:
-                        <select name="s-member" id="s-member">
-                                <option value="" disabled selected style="display: none;">查看小组成员</option>
-                                <option value="呵呵呵">呵呵呵</option>
-                        </select>
-                        <span class="sanjiao"></span>    
-					</div>
-					<div class="card1-2-content">
-						选择时限：
-						<input type="date" id="dead-date" name="dead-date" placeholder="展开日历" id="dead-date" onfocus="$(this).removeAttr('placeholder')">
-					</div>
+		<form action="" id="form1" class="make-card" enctype="multipart/form-data" >
+			<span class="chacha quit-card1"></span>
+			<p>新建我的卡片</p>
+			<input id="title" name="title" type="text" placeholder="请输入标题（必填）">
+			<textarea id="describe" name="describe" cols="30" rows="4" placeholder="请输入具体描述...（选填）"></textarea>
+			<!-- <input type="file" accept="image/*" class="add-img" value="添加照片"> -->
+			<span class="add-img">添加照片</span>
+			<input type="hidden" name="tag" id="tag" value="生活">
+			<div class="card-label">
+				标签：<span class="tags card-active">生活</span>
+				<span class="tags" >工作</span>
+				<span class="tags" >学习</span>
+			</div>
+			<hr/>
+			<!-- hr下面的内容 -->
+			<div class="card1-2">
+				<div class="card1-2-content">
+					选择面向小组:
+					<select name="s-group" id="s-group" placeholder="123">
+						<option value="" disabled selected style="display: none;color: grey;">查看小组列表</option>
+						<option value="哈哈哈">哈哈哈</option>
+						<option value="哈哈哈">哈哈哈</option>
+						<option value="哈哈哈">哈哈哈</option>
+					</select>
+					<span class="sanjiao"></span>    
 				</div>
-				<hr/>
-				<!-- 第二个hr -->
-				<div class="card1-3">
-					<span class="card1-end card-submit">创建</span>
-					<span class="card1-end quit-card1">取消</span>
+				<input type="hidden" name="e-model" id="e-model" value="指定人员">
+				<div class="card1-2-content">
+					事执行模式：<span class="e-moshis">任选人员</span><span class="e-moshis card-active">指定人员</span>
 				</div>
-			</form>
-			
-
+				<div class="card1-2-content">
+					选择参与成员:
+					<select name="s-member" id="s-member" multiple="true">
+						<!-- <option value="" disabled selected style="display: none;">查看小组成员</option> -->
+						<option value="呵呵呵">呵呵呵</option>
+						<option value="呵呵呵">呵呵呵</option>
+						<option value="呵呵呵">呵呵呵</option>
+					</select>
+					<span class="sanjiao"></span>    
+				</div>
+				<div class="card1-2-content">
+					选择时限：
+					<input type="datetime-local" id="dead-date" name="dead-date" placeholder="展开日历" id="dead-date">
+				</div>
+			</div>
+			<hr/>
+			<!-- 第二个hr -->
+			<div class="card1-3">
+				<span class="card1-end card-submit">创建</span>
+				<span class="card1-end quit-card1">取消</span>
+			</div>
+		</form>
         <!-- </div> -->
 	</div> 
 	
 
 	<!-- 新建小组 -->
+	<!-- 新建小组的发布成功与发布失败遮罩 -->
+	
+	<div id="dark-cover"></div>
 	<div class="container" id="newGroup" style="display: none;">
 		<form action="" class="make-group">
 			<p>新建小组</p>
