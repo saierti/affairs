@@ -148,7 +148,7 @@ $(function(){
     //我的小组部分----------------------------------------------
     //预留一个点击小组列表中的小组的点击事件
     //触发ajax获取小组成员表以及其他信息
-    $("").click(function(){
+    // $("").click(function(){
 
         
 
@@ -180,7 +180,7 @@ $(function(){
             $(".like-man").eq(11).nextAll().css("display","inline-block");
             $("#more-members").css("display","none");            
         });
-    });
+    // });
 
 
 

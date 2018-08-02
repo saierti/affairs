@@ -2,10 +2,12 @@ $('document').ready(function(){
 
 
 
+    console.log(123)
 
 
-
-
+    $.get('http://192.168.1.17:3000/fnc/login',function(data){
+        console.log(data);
+    })
 
 
 
@@ -115,17 +117,17 @@ $('document').ready(function(){
 
         $('#card-bin').css('bottom','4vh');
         
-        oDiv1.css('opacity','0.3');
-        oDiv2.css('opacity','0.3');
-        oDiv4.css('opacity','0.3');
-        oDiv5.css('opacity','0.3');
-        oDiv11.css('opacity','0.3');
-        oDiv51.css('opacity','0.3');
-        oDiv52.css('opacity','0.3');
-        oDiv53.css('opacity','0.3');
-        oDiv54.css('opacity','0.3');
-        oCard2.css('opacity','0.3');
-        oCard3.css('opacity','0.3');
+        // oDiv1.css('opacity','0.3');
+        // oDiv2.css('opacity','0.3');
+        // oDiv4.css('opacity','0.3');
+        // oDiv5.css('opacity','0.3');
+        // oDiv11.css('opacity','0.3');
+        // oDiv51.css('opacity','0.3');
+        // oDiv52.css('opacity','0.3');
+        // oDiv53.css('opacity','0.3');
+        // oDiv54.css('opacity','0.3');
+        // oCard2.css('opacity','0.3');
+        // oCard3.css('opacity','0.3');
     })
     $(aA[3]).click(function(){
         oDiv4.css('display','block');
