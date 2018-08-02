@@ -93,7 +93,7 @@
 
 .myBusinessLeft{
     display: inline-block;
-    background-image: url('../img/test.jpg');
+    background-image: url('/../images/test.jpg');
     width: 17vw;
     height: 17vw;
     border-radius: 50%;
@@ -120,14 +120,14 @@
 }
 /**插入元素img**/
 #myBusiness1{
-    background-image: url('../img/nwlogo.png');
+    background-image: url('/../images/nwlogo.png');
 }
 #myBusiness2{
-    background-image: url('../img/test.jpg');
+    background-image: url('/../images/test.jpg');
 }
 
 #myBusiness3{
-    background-image: url('../img/IMG_3631.jpg');
+    background-image: url('/../images/IMG_3631.jpg');
 }
 
 

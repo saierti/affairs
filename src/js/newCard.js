@@ -44,28 +44,28 @@ $(function(){
 
 
     // 从后台传数据作为面向小组选项值
-    function groupListRefresh(){
-        $.getJSON("aaa.json", function(data){
-            var groupList = '<option value="" disabled selected style="display: none;color: grey;">查看小组列表</option>';
-            $.each(data, function(i, items){
-                groupList += '<option value="'+ items + '">' + items + '</option>';
-            });
-            $("#s-group").html(groupList);
-        })
-    };
-    groupListRefresh();
+    // function groupListRefresh(){
+    //     $.getJSON("", function(data){
+    //         var groupList = '<option value="" disabled selected style="display: none;color: grey;">查看小组列表</option>';
+    //         $.each(data, function(i, items){
+    //             groupList += '<option value="'+ items + '">' + items + '</option>';
+    //         });
+    //         $("#s-group").html(groupList);
+    //     })
+    // };
+    // groupListRefresh();
 
-    // // 从后台传数据作为选择参与成员的选项值
-    function memberListRefresh(){
-        $.getJSON("bbb.json", function(data){
-            var memberList = '<option value="" disabled selected style="display: none;">查看小组成员</option>';
-            $.each(data, function(i, items){
-                memberList += '<option value="'+ items + '">' + items + '</option>';
-            });
-            $("#s-member").html(memberList);
-        })
-    };
-    memberListRefresh();
+    // // // 从后台传数据作为选择参与成员的选项值
+    // function memberListRefresh(){
+    //     $.getJSON("", function(data){
+    //         var memberList = '<option value="" disabled selected style="display: none;">查看小组成员</option>';
+    //         $.each(data, function(i, items){
+    //             memberList += '<option value="'+ items + '">' + items + '</option>';
+    //         });
+    //         $("#s-member").html(memberList);
+    //     })
+    // };
+    // memberListRefresh();
 
     // 点击小组下拉列表的时候刷新
     // $("#s-group").click(function(){
@@ -148,26 +148,26 @@ $(function(){
     //我的小组部分----------------------------------------------
     //预留一个点击小组列表中的小组的点击事件
     //触发ajax获取小组成员表以及其他信息
-    $("").click(function(){
+    // $("").click(function(){
 
         
 
-        //点击事件触发后获取信息
-        $.ajax({
-            type:"POST",
-            dataType:"json",
-            url:"",
-            //哪个小组？？？？
-            data:"",
-            success:function(data,textStatus){
-                if(textStatus !== 200)alert("错误原因报码："+ textStatus);
-                else{
-                    $(".group-name").val() = data.groupname;
-                    $(".team-character-show").val() = data.g-xingzhi;
-                    $(".group-words").val() = data.groupintroduce;
-                }
-            }
-        });
+        // //点击事件触发后获取信息
+        // $.ajax({
+        //     type:"POST",
+        //     dataType:"json",
+        //     url:"",
+        //     //哪个小组？？？？
+        //     data:"",
+        //     success:function(data,textStatus){
+        //         if(textStatus !== 200)alert("错误原因报码："+ textStatus);
+        //         else{
+        //             $(".group-name").val() = data.groupname;
+        //             $(".team-character-show").val() = data.g-xingzhi;
+        //             $(".group-words").val() = data.groupintroduce;
+        //         }
+        //     }
+        // });
         
 
 
@@ -180,7 +180,7 @@ $(function(){
             $(".like-man").eq(11).nextAll().css("display","inline-block");
             $("#more-members").css("display","none");            
         });
-    });
+    // });
 
 
 

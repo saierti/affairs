@@ -1,7 +1,29 @@
 $('document').ready(function(){
 
 
+// 获取tokens
+    
+//     http.get('',
+//     function(data){
+//         console.log(data);
+//     }
+// )
 
+
+http.login(function(res){
+    console.log('fsadfsafsad',res);
+},function(err){
+    console.log(err);
+});
+
+http.post('/fnc/unclaimed',{
+    eid:561543
+    },function(res){
+        console.log(res);
+    },function(err){
+        console.log(err);
+    }
+)
 
 
 
