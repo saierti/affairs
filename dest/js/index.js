@@ -16,44 +16,27 @@ $('document').ready(function(){
 //     console.log(err);
 // });
 
-http.post('/fnc/unclaimed',{
-    eid:863671
-    },function(res){
-        console.log(res);
-    },function(err){
-        console.log(err);
-    }
-)
+// http.post('/fnc/unclaimed',{
+//     eid:561543
+//     },function(res){
+//         console.log(res);
+//     },function(err){
+//         console.log(err);
+//     }
+// )
 
 
-    $.get('http://192.168.1.11:3000/fnc/login',function(data){
-        console.log(data);
-    })
-
-
-
+    // $.get('http://192.168.1.11:3000/fnc/login',function(data){
+    //     console.log(data);
+    // })
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // http.login(function(){
+    //     console.log('登陆成功')
+    // },function(){
+    //     console.log('登陆失败')
+    // });
 
 
     /***************页面跳转测试部分************************** */
@@ -130,6 +113,9 @@ http.post('/fnc/unclaimed',{
         oCard2.css('display','none');
         oCard3.css('display','none');
 
+ 
+        
+       
     })        
 
     $(aA[2]).click(function(){
