@@ -10,14 +10,14 @@ $('document').ready(function(){
 // )
 
 
-http.login(function(res){
-    console.log('fsadfsafsad',res);
-},function(err){
-    console.log(err);
-});
+// http.login(function(res){
+//     console.log('fsadfsafsad',res);
+// },function(err){
+//     console.log(err);
+// });
 
 http.post('/fnc/unclaimed',{
-    eid:561543
+    eid:863671
     },function(res){
         console.log(res);
     },function(err){
@@ -26,7 +26,7 @@ http.post('/fnc/unclaimed',{
 )
 
 
-    $.get('http://192.168.1.17:3000/fnc/login',function(data){
+    $.get('http://192.168.1.11:3000/fnc/login',function(data){
         console.log(data);
     })
 

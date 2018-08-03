@@ -86,7 +86,7 @@
 /*****/
 
 #myBin2{
-    background-image: url('../img/nwlogo.png');
+    background-image: url('/../img/nwlogo.png');
 }
 /* myBinRightP2 > span{
 
@@ -104,7 +104,7 @@
 }
 .myBinLeft{
     display: inline-block;
-    background-image: url('../img/test.jpg');
+    background-image: url('/../img/test.jpg');
     width:  12vh;
     height: 12vh;
     border-radius: 50%;

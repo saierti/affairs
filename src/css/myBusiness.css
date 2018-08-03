@@ -25,26 +25,12 @@
     margin-left: 8vw;
     display: inline-block;
 }
-.myLine{
-    width: 1px;
-    height: 30vh;
-    background-color: #fff;
-    /* margin-left: 6vw;
-    margin-top: 2vh; */
-    margin-left: 10px;
-    position: absolute;
-    z-index: -1;
-    margin-top: -1px;
-    margin-top: -4px;
-}
-
 .myBusinessDiv2 p{
     font-size:3vw;
     color: #fff;
     display: inline-block;
 
 } 
-
 .myBusinessDiv2 > span{
     font-size: 2.5vw;
     color: #fff;
@@ -56,6 +42,18 @@
     width: 84vw;
     float: right;
     height: 25vh;
+}
+.myLine{
+    width: 1px;
+    height: 30vh;
+    background-color: #fff;
+    /* margin-left: 6vw;
+    margin-top: 2vh; */
+    margin-left: 10px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -1px;
+    margin-top: -4px;
 }
 
 .mySmallRad{
@@ -93,7 +91,7 @@
 
 .myBusinessLeft{
     display: inline-block;
-    background-image: url('/../images/test.jpg');
+    background-image: url('/../img/test.jpg');
     width: 17vw;
     height: 17vw;
     border-radius: 50%;
@@ -120,14 +118,14 @@
 }
 /**插入元素img**/
 #myBusiness1{
-    background-image: url('/../images/nwlogo.png');
+    background-image: url('/../img/nwlogo.png');
 }
 #myBusiness2{
-    background-image: url('/../images/test.jpg');
+    background-image: url('/../img/test.jpg');
 }
 
 #myBusiness3{
-    background-image: url('/../images/IMG_3631.jpg');
+    background-image: url('/../img/IMG_3631.jpg');
 }
 
 
