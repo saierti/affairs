@@ -607,9 +607,7 @@
 					选择面向小组:
 					<select name="s-group" id="s-group" placeholder="123">
 						<option value="" disabled selected style="display: none;color: grey;">查看小组列表</option>
-						<option value="哈哈哈">哈哈哈</option>
-						<option value="哈哈哈">哈哈哈</option>
-						<option value="哈哈哈">哈哈哈</option>
+						<option value="哈哈哈">NW神秘组织</option>
 					</select>
 					<span class="sanjiao"></span>    
 				</div>
@@ -619,17 +617,17 @@
 				</div>
 				<div class="card1-2-content">
 					选择参与成员:
-					<select name="s-member" id="s-member" multiple="true">
+					<select name="involve" id="involve" multiple="true">
 						<!-- <option value="" disabled selected style="display: none;">查看小组成员</option> -->
-						<option value="呵呵呵">呵呵呵</option>
-						<option value="呵呵呵">呵呵呵</option>
-						<option value="呵呵呵">呵呵呵</option>
+						<option value="呵呵呵">郑佳俊</option>
+						<option value="呵呵呵">黄屹彬</option>
+						<option value="呵呵呵">张阳宁</option>
 					</select>
 					<span class="sanjiao"></span>    
 				</div>
 				<div class="card1-2-content">
 					选择时限：
-					<input type="datetime-local" id="dead-date" name="dead-date" placeholder="展开日历" id="dead-date">
+					<input type="datetime-local" id="dead-date" name="limited" placeholder="展开日历" id="limited">
 				</div>
 			</div>
 			<hr/>
@@ -643,11 +641,24 @@
 	</div> 
 	
 
-	<!-- 新建小组 -->
-	<!-- 新建小组的发布成功与发布失败遮罩 -->
+
+	<!-- 遮罩层 -->
 	
-	<div id="dark-cover"></div>
+	<div id="dark-cover" style="display: block;display: none;"></div>
+
+	<!-- 发布成功与失败的块(也得写在外面否则会由于z-index的层级关系好吧我也忘记叫做什么了，反正会出bug) -->
+	<div class="reflect-message" style="display: none;">
+		<i id="static-chacha"></i>
+		<img id="fabu" src="img/fabu-happy.png" alt="">
+		<p id="fabu-word">耶！消息发布成功啦~</p>
+		<span>点击屏幕返回</span>
+	</div>
+
+	<!-- 新建小组 -->
 	<div class="container" id="newGroup" style="display: none;">
+
+		</div>
+		<!-- 新建小组卡片的具体内容 -->
 		<form action="" class="make-group">
 			<p>新建小组</p>
 			<div class="card2-1">
@@ -670,6 +681,30 @@
 		</form>
 	</div>
 	
+	<!-- 新建小组 -->
+	<div class="container" id="newGroup" style="display: none;">
+			<form action="" class="make-group">
+				<p>新建小组</p>
+				<div class="card2-1">
+					<div class="card2-1-left">
+						<input type="text" name="groupname" placeholder="请输入小组名称"><br/>
+						<input type="hidden" name="groupcharacter" value="">
+						&nbsp;选择小组性质：<br/>
+						<span class="g-xingzhi card-active">生活</span>
+						<span class="g-xingzhi">工作</span><br/>
+						<span class="g-xingzhi">学习</span>
+					</div>
+					<div class="card2-1-right">请选择图片<br/>或预设头像</div>
+				</div>
+				<textarea name="groupintroduce" id="groupintroduce" placeholder="请输入小组简介..."></textarea>
+				<hr>
+				<div class="card2-2">
+					<input type="submit" class="card2-end" value="创建">
+					<span class="card2-end quit-card2">取消</span>
+				</div>
+			</form>
+		</div>
+
 	<!-- 我的小组 -->
 	<div class="container" id="myGroupCard" style="display:none;">
 		<div class="myGroupCard-wrapper">
