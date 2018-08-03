@@ -52,7 +52,7 @@
     top: 2vh;
 }
 .date{
-    right: 55px;
+    right: 60px;
 }
 .time{
     right: 10px;
@@ -117,10 +117,15 @@
     position: absolute;
     right: 16%;
     bottom: 35%;
-    background-image: url(/../img/pick0.png);
     background-size: contain;
     background-repeat: no-repeat;
     }
+[data-like = '0']{
+    background-image: url(/../img/pick0.png);
+}
+[data-like = '1']{
+    background-image: url(/../img/pick1.png);
+}
 .btnDiscuss{
     width: 6vw;
     height: 2.5vh;

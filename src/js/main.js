@@ -10,6 +10,7 @@ $('document').ready(function(){
             var hour = time.getHours();
             var minutes = time.getMinutes();
             var describe =res.Evn[i].describe;
+            var eventId = res.Evn[i].eventId;
             var cardbox = `
             <div class="mainbox">
                 <div class="blackbox"></div>
@@ -26,35 +27,53 @@ $('document').ready(function(){
     
                 <div class="mainboxbottom">
                     <div class="mainhead"><div class="headimg"></div><span>jio雯婷</span></span></div>
-                    <div class="btnPick"></div>
+                    <div class="btnPick" data-id = "${eventId}" data-like ="0"></div>
                     <div class="btnDiscuss"></div>
                 </div>
             </div>`;
             $('#mainbefore').after(cardbox);
-            console.log(1);
-            test();
+            console.log(eventId);
+            //获取刷新页面后点赞的初始值
+            if(res.Evns[i]){
+                switch(res.Evns[i].like){
+                    case 0: for(let j=0;j < res.Evn.length;j++){
+                            if($(this).dataset.id == res.Evns[i].eventId){
+                                $('.btnpick')[j].dataset.like = res.Evns[i].like.toString();
+                            }
+                    }
+                }
+            }
         }
+        pick();
     },function(err){
         console.log(err);
-    })
+    });
 
 
-    function test(){
+    function pick(){
         var flag = 0;
         $('.btnPick').click(function(){
-            console.log(this);
-                if(flag == 0){
-                    $(this).css('background-image','url(img/pick1.png)');
                     //交互
-                    var date =new Date().toLocaleString();
-                    console.log(date);
-                //     http.post('/like/up',{
-                //         eid:
-                }
-                else{
-                    $(this).css('background-image','url(img/pick0.png)');
-                    flag--;
-                }
+
+                    var that = this;
+                    console.log(this);
+                    var date =new Date();
+                    http.post('/like/up',{
+                        eid:this.dataset.id,
+                        liketime: date
+                    },function(res){
+                      
+                        if(that.dataset.like == "0"){//若初始状态为未点赞，那么点击改为点赞并且社交处增加一条点赞消息
+                            that.dataset.like = "1";
+                            // console.log(that.dataset.like);
+                        }
+                        else{
+                            that.dataset.like = "0";
+                        }
+                    },function(err){
+
+                    })
+
         });
     }
     //点击卡片跳转到卡片详情
