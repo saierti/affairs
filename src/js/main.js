@@ -1,6 +1,7 @@
 $('document').ready(function(){
     var flag = 0;
     $('.btnPick').click(function(){
+    
             if(flag == 0){
                 $(this).css('background-image','url(img/pick1.png)');
                 flag++;
@@ -9,6 +10,7 @@ $('document').ready(function(){
                 $(this).css('background-image','url(img/pick0.png)');
                 flag--;
              }
+             
     });
     //点击卡片跳转到卡片详情
     $('.mainImg').click(function(){
