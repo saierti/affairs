@@ -26,17 +26,17 @@ $('document').ready(function(){
 // )
 
 
-    $.get('http://192.168.1.11:3000/fnc/login',function(data){
-        console.log(data);
-    })
+    // $.get('http://192.168.1.11:3000/fnc/login',function(data){
+    //     console.log(data);
+    // })
 
 
 
-    http.login(function(){
-        console.log('登陆成功')
-    },function(){
-        console.log('登陆失败')
-    });
+    // http.login(function(){
+    //     console.log('登陆成功')
+    // },function(){
+    //     console.log('登陆失败')
+    // });
 
 
     /***************页面跳转测试部分************************** */
