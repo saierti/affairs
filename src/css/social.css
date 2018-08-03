@@ -82,7 +82,7 @@
 }
 .socialLeft{
     display: inline-block;
-    background-image: url('../img/test.jpg');
+    background-image: url('/../img/test.jpg');
     width:  16vw;
     height: 16vw;
     border-radius: 50%;

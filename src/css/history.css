@@ -91,7 +91,7 @@ historyRightP2 > span{
 }
 .historyLeft{
     display: inline-block;
-    background-image: url(../img/test.jpg);
+    background-image: url(/../img/test.jpg);
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
