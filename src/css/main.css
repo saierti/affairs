@@ -59,7 +59,7 @@
 }
 .blackbox{
     position: absolute;
-    background: url(../img/test.jpg);
+    background: url(/../img/test.jpg);
     background-size: cover;
     background-position: center;
     height: 45vw;
@@ -98,7 +98,7 @@
     height: 33px;
     display: inline-block;
     border-radius: 20px;
-    background-image: url(../img/head.jpg);
+    background-image: url(/../img/head.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@
     position: absolute;
     right: 16%;
     bottom: 35%;
-    background-image: url(../img/pick0.png);
+    background-image: url(/../img/pick0.png);
     background-size: contain;
     background-repeat: no-repeat;
     }
@@ -127,7 +127,7 @@
     position: absolute;
     bottom:35%;
     right: 7%;
-    background-image: url(../img/discuss0.png);
+    background-image: url(/../img/discuss0.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

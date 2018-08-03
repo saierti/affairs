@@ -2,6 +2,16 @@
 $(function(){
 
 
+    //为了日历的placeholder而写的死js代码
+    // $("#dead-date").focus(function() {
+    //     $(this).attr({type: 'datetime-local'});
+    //     $(this).focus();
+    // });
+
+
+
+
+
     // 自己测试添加选项函数
     // var selfJSON = {
     //     "a":"tug",
@@ -31,17 +41,21 @@ $(function(){
 
     
     //进入新建我的卡片触发按钮点击之后
-    $("").click(function(){
+    $("#footerRad").click(function(){
         //新建定时器定时刷新我的小组和小组成员
-        var timer1 = setInterval(function(){
-            groupListRefresh();
-            memberListRefresh();
-        },4000);
+        // var timer1 = setInterval(function(){
+        //     groupListRefresh();
+        //     memberListRefresh();
+        // },4000);
     });
 
 
 
-
+    http.login(function(){
+        console.log('登陆成功')
+    },function(){
+        console.log('登陆失败')
+    });
 
     // 从后台传数据作为面向小组选项值
     // function groupListRefresh(){
@@ -110,37 +124,43 @@ $(function(){
 
 
     // 点击创建按钮触发的事件
-    // $(".card-submit").click(function(){
-    //     //判断是否填写必填处
-    //     if($("input[name$='title']").val() == ""){
-    //         //标题为空触发
-    //         alert("标题不能为空");
-    //     }
-    //     if($("input[name$='tag']").val() == ""){
-    //         alert("请选择一个标签");
-    //     }
-    //     // 发送表单数据
-    //     $.ajax({
-    //         type:"POST",
-    //         dataType:"json",
-    //         url:"",
-    //         data:{
-    //             "title":$("#title").val(),
-    //             "dcb":$("dcb").val(),
-    //             "tag":$("tag").val(),
-    //             "s-group":$("s-group").val(),
-    //             "s-member":$("s-member").val(),
-    //             "e-model":$("e-model").val(),
-    //             "dead-date":$("dead-date").val()
-    //         },
-    //         success:function(data,textStatus){
-    //             //只是发送数据不需要处理data
-    //             if(textStatus == 200)alert("创建成功！");
-    //             else alert("创建失败");
-    //         }
-    //     });
-
-    // });
+    $(".card-submit").click(function(){
+        //判断是否填写必填处
+        if($("input[name$='title']").val() == ""){
+            //标题为空触发
+            alert("标题不能为空");
+        }
+        if($("input[name$='tag']").val() == ""){
+            alert("请选择一个标签");
+        }
+        alert("123");
+        var now = new Date().getTime();
+        http.post('/event/create',{
+            title:$("#title").val(),
+            describe:$("#describe").val(),
+            tag:$("#tag").val(),
+            // s-group:$("#s-group").val(),
+            involve:$("#involve").val(),
+            // e-model:$(".e-model").val(),
+            date:now,
+            limited:$("#limited").val()
+        },function(res){
+            $("#dark-cover").css("display","block");
+            $(".reflect-message").css("display","block");
+            $("#fabu").attr("src","img/fabu-happy.png");
+            $("#fabu-word").text("耶！消息发布成功啦~");
+        },function(err){
+            $("#dark-cover").css("display","block");
+            $(".reflect-message").css("display","block");
+            $("#fabu").attr("src","img/fabu-sad.png");
+            $("#fabu-word").text("啊哦，消息未发布。可进入草稿箱查看哦。");
+        })
+    });
+    // 作为提交状态反应的两只小熊猫的点击事件，点击消失
+    $(".reflect-message").click(function(){
+        $(".reflect-message").css("display","none");
+        $("#dark-cover").css("display","none");
+    });
 
 
 

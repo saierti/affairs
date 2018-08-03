@@ -15,7 +15,7 @@
     height: 38vw;
     border-radius: 50%;
     display: inline-block;
-    background-image: url(../img/test.jpg);
+    background-image: url(/../img/test.jpg);
     background-size: cover;
     background-position: center;
     margin-top: 3vh;
@@ -82,7 +82,7 @@
     height: 10vw;
     margin-right: 3vw;
     margin-bottom: 2vw;
-    background-image: url(../img/test.png);
+    background-image: url(/../img/test.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@
     left: 5%;
     width: 7vw;
     height: 3.5vh;
-    background-image: url(../img/douhao.png);
+    background-image: url(/../img/douhao.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ strong{
     height: 44px;
     border-radius: 10px;
     display: inline-block;
-    background-image: url(../img/head.jpg);
+    background-image: url(/../img/head.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -222,12 +222,12 @@ strong{
     background-repeat: no-repeat;
 }
 .rightbtn-3{
-    background-image: url(../img/write.png);
+    background-image: url(/../img/write.png);
 }
 .rightbtn-3{
-    background-image: url(../img/write.png);
+    background-image: url(/../img/write.png);
 }.rightbtn-4{
-    background-image: url(../img/bin2.png);
+    background-image: url(/../img/bin2.png);
 }
 .discuss-area{
     width: 100%;
@@ -247,7 +247,7 @@ strong{
 .discuss-top div{
     width: 22px;
     height: 16px;
-    background-image: url(../img/discuss0.png);
+    background-image: url(/../img/discuss0.png);
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -269,7 +269,7 @@ strong{
     width: 33px;
     height:33px;
     border-radius: 20px;
-    background-image: url(../img/head.jpg);
+    background-image: url(/../img/head.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center; 

@@ -22,17 +22,17 @@
 
 .message-block{
     width: 100vw;
-    height: 9vw;
+    height: 5vh;
 }
 .messagediv{
     width: 100vw;
-    height: 40vw;
+    height: 20vh;
     position: relative;
 }
 
 .messageDiv1{
     width: 8vw;
-    height: 40vw;
+    height: 21vh;
     float: left;
     margin-left: 8vw;
     display: inline-block;
@@ -40,22 +40,22 @@
 
 .messageLine{
     width: 1px;
-    height: 41vw;
+    height: 21vh;
     background-color: #fff;
     margin-left: 10px;
     position: absolute;
     z-index: -1;
-    /* margin-top: -4px; */
+    margin-top: -4px;
 } 
 .messagediv2{
     width: 100vw;
-    height: 50.4vw;
+    height: 28vh;
     position: relative;
 }
 
 .messageDiv1-2{
     width: 8vw;
-    height: 50.4vw;
+    height: 26vh;
     float: left;
     margin-left: 8vw;
     display: inline-block;
@@ -63,18 +63,18 @@
 
 .messageLine2{
     width: 1px;
-    height: 50.4vw;
+    height: 28vh;
     background-color: #fff;
     margin-left: 10px;
     position: absolute;
     z-index: -1;
-    /* margin-top: -4px; */
+    margin-top: -4px;
 } 
 .messageLeft{
     display: inline-block;
-    background-image: url('../img/test.jpg');
+    background-image: url('/../img/test.jpg');
     width: 22vw;
-    height: 40vw;
+    height: 20vw;
     border-radius: 50%;
     margin-left: 5vw;
     background-size: cover;
@@ -94,28 +94,6 @@
     border-radius: 15px;
 }
 /****/
-.messageDiv2-2{
-    display: inline-block;
-    width: 84vw;
-    float: right;
-    height: 40vw;
-}
-.messageDiv2-2 p{
-    font-size:3vw;
-    color: #fff;
-    display: inline-block;
-
-} 
-.messageDiv2-2 > span{
-    font-size: 2.5vw;
-    color: #fff;
-    display: inline-block;
-    height:30px;
-    line-height:30px;
-    vertical-align: bottom;
-    margin-top: 1.8vw;
-    /* margin: 5vw 10vw; */
-}
 .messageDiv2 p{
     font-size:3vw;
     color: #fff;
@@ -129,19 +107,19 @@
     height:30px;
     line-height:30px;
     vertical-align: bottom;
-    margin-top: 1.8vw;
+    margin-top: 1vh;
     /* margin: 5vw 10vw; */
 }
 .messageDiv2{
     display: inline-block;
     width: 84vw;
     float: right;
-    height: 50.4vw;
+    height: 21vh;
 }
 
 .messageDiv{
     width: 70vw;
-    height: 27vw;
+    height: 15vh;
     display: flex;
     align-items: center;
     /* opacity: 0.8; */
@@ -153,7 +131,7 @@
 
 .messageLeft{
     display: inline-block;
-    background-image: url('../img/test.jpg');
+    background-image: url('/../img/test.jpg');
     width: 17vw;
     height: 17vw;
     border-radius: 50%;
@@ -166,9 +144,9 @@
 .messageRight{
     display: inline-block;
     width: 45vw;
-    height: 21.6vw;
+    height: 12vh;
     margin-left :2vw;
-    line-height: 5.4vw;
+    line-height: 3vh;
 }
 
 .messageRight > p > span{

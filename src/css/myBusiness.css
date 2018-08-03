@@ -25,26 +25,12 @@
     margin-left: 8vw;
     display: inline-block;
 }
-.myLine{
-    width: 1px;
-    height: 30vh;
-    background-color: #fff;
-    /* margin-left: 6vw;
-    margin-top: 2vh; */
-    margin-left: 10px;
-    position: absolute;
-    z-index: -1;
-    margin-top: -1px;
-    margin-top: -4px;
-}
-
 .myBusinessDiv2 p{
     font-size:3vw;
     color: #fff;
     display: inline-block;
 
 } 
-
 .myBusinessDiv2 > span{
     font-size: 2.5vw;
     color: #fff;
@@ -56,6 +42,18 @@
     width: 84vw;
     float: right;
     height: 25vh;
+}
+.myLine{
+    width: 1px;
+    height: 30vh;
+    background-color: #fff;
+    /* margin-left: 6vw;
+    margin-top: 2vh; */
+    margin-left: 10px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -1px;
+    margin-top: -4px;
 }
 
 .mySmallRad{
