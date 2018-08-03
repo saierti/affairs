@@ -10,11 +10,11 @@ $('document').ready(function(){
 // )
 
 
-// http.login(function(res){
-//     console.log('fsadfsafsad',res);
-// },function(err){
-//     console.log(err);
-// });
+http.login(function(res){
+    console.log('fsadfsafsad',res);
+},function(err){
+    console.log(err);
+});
 
 http.post('/fnc/unclaimed',{
     eid:863671
