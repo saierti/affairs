@@ -1,13 +1,13 @@
 var http = (function() {
 	var http = {};
-	var BASEURL = "http://192.168.1.11:3000";
+	var BASEURL = "http://47.106.21.195:3389";
 
 
 	function saveToken(auth) {
 		var key = "auth";
 		window.localStorage.setItem(key, auth);
 	}
-	function getToken() {
+	function getToken() {c
 		console.log('gettoken');
 		return window.localStorage.getItem("auth");
 	}

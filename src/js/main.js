@@ -14,7 +14,7 @@ $('document').ready(function(){
             var cardbox = `
             <div class="mainbox">
                 <div class="blackbox"></div>
-                <div class="mainImg">
+                <div class="mainImg" data-id = "${eventId}">
                     <div class="mainboxtop">
                         <div class="label">${tag}</div>
                         <div class="date">${month}月${day}日</div>
@@ -61,8 +61,7 @@ $('document').ready(function(){
                     http.post('/like/up',{
                         eid:this.dataset.id,
                         liketime: date
-                    },function(res){
-                      
+                    },function(res){    
                         if(that.dataset.like == "0"){//若初始状态为未点赞，那么点击改为点赞并且社交处增加一条点赞消息
                             that.dataset.like = "1";
                             // console.log(that.dataset.like);

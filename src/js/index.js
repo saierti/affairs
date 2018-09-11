@@ -16,14 +16,14 @@ http.login(function(res){
     console.log(err);
 });
 
-// http.post('/fnc/unclaimed',{
-//     eid:561543
-//     },function(res){
-//         console.log(res);
-//     },function(err){
-//         console.log(err);
-//     }
-// )
+http.post('/fnc/unclaimed',{
+    eid:561543
+    },function(res){
+        console.log(res);
+    },function(err){
+        console.log(err);
+    }
+)
 
 
     // $.get('http://192.168.1.11:3000/fnc/login',function(data){
