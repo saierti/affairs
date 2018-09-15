@@ -46,7 +46,7 @@
 /* 右边 */
 .card2-1-right{
     float: right;
-    display: inline-block;
+    /* display: inline-block; */
     width:28vw;
     height: 16vh;
     background-color:#2b3535;
