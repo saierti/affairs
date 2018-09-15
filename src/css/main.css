@@ -59,7 +59,7 @@
 }
 .blackbox{
     position: absolute;
-    background: url(/../img/test.jpg);
+    background: url(../img/test.jpg);
     background-size: cover;
     background-position: center;
     height: 45vw;
