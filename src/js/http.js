@@ -1,6 +1,6 @@
 var http = (function() {
 	var http = {};
-	var BASEURL = "http://47.106.21.195:3389";
+	var BASEURL = "http://192.168.1.7:3000";
 
 
 	function saveToken(auth) {
