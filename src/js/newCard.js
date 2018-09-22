@@ -145,6 +145,7 @@ $(function(){
             date:now,
             limited:$("#limited").val()
         },function(res){
+            console.log(111);
             $("#dark-cover").css("display","block");
             $(".reflect-message").css("display","block");
             $("#fabu").attr("src","img/fabu-happy.png");

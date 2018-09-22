@@ -1,13 +1,13 @@
 var http = (function() {
 	var http = {};
-	var BASEURL = "http://47.106.21.195:3389";
+	 var BASEURL = "http://192.168.43.30:3000";//47.106.21.195:3389
 
 
 	function saveToken(auth) {
 		var key = "auth";
 		window.localStorage.setItem(key, auth);
 	}
-	function getToken() {c
+	function getToken() {
 		console.log('gettoken');
 		return window.localStorage.getItem("auth");
 	}
@@ -25,6 +25,7 @@ var http = (function() {
 				dataType: "json",
 				success: function(res) {
 					sucCB(res);
+					console.log(url)
 				},
 				error: function(xhr, err, type) {
 					console.log(xhr);
