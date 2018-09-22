@@ -1,12 +1,14 @@
 $('document').ready(function(){
-    
+    console.log(1);
     http.post('/fnc/unclaimed',{
         
     },res => {
-        console.log('x',res);
+        
+        console.log(res);
+        //动态添加卡片
+        var flag1 = 0;
         res.Evn.forEach(e => {
             var time = new Date(parseInt(e.date));
-
             var cardbox = `
             <div class="mainbox">
                 <div class="blackbox"></div>
@@ -27,26 +29,28 @@ $('document').ready(function(){
                     <div class="btnDiscuss"></div>
                 </div>
             </div>`;
-        });
-        $('#mainbefore').after(cardbox);
-        console.log(eventId);
+            console.log(1);
+            $("#mainbefore").after(cardbox);
+        //    console.log(e.involve);   
         //获取刷新页面后点赞的初始值
-    //         if(res.Evns[i]){
-    //             switch(res.Evns[i].like){
-    //                 case 0: for(let j=0;j < res.Evn.length;j++){
-    //                         if($(this).dataset.id == res.Evns[i].eventId){
-    //                             $('.btnpick')[j].dataset.like = res.Evns[i].like.toString();
-    //                         }
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     pick();
+            // if(res.Evns[flag1]){
+            //     switch(res.Evns[flag1].like){
+            //         case 0: for(let j=0;j < res.Evn.length;j++){
+            //                 if($(this).dataset.id == res.Evns[i].eventId){
+            //                     $('.btnpick')[j].dataset.like = res.Evns[i].like.toString();
+            //                 }
+            //         }
+            //     }
+            // }
+        }); 
+        pick();
 
     },err => {
         console.log('xxxx',err)
     })
-    //交互
+
+    
+    // 交互
     // http.post('/fnc/unclaimed',{},function(res){
     //     for(let i=0;i < res.Evn.length;i++){
     //         var a = parseInt(res.Evn[i].date);
@@ -104,7 +108,7 @@ $('document').ready(function(){
 
                     var that = this;
                     console.log(this);
-                    var date =new Date();
+                    var date =new Date();   ``
                     http.post('/like/up',{
                         eid:this.dataset.id,
                         liketime: date
