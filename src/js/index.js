@@ -90,8 +90,58 @@ http.login(function(res){
         oDiv54.css('display','none');
         oCard2.css('display','none');
         oCard3.css('display','none');
-    })
+
+        //点击首页刷新卡片信息
+    http.post('/fnc/unclaimed',{
+        
+    },res => {
+        
+        console.log('x',res);
+        //动态添加卡片
+
+        res.Evn.forEach(e => {
+            var time = new Date(parseInt(e.date));
+            console.log(1);
+            var cardbox = `
+            <div class="mainbox">
+                <div class="blackbox"></div>
+                <div class="mainImg" data-id = "${e.eventId}">
+                    <div class="mainboxtop">
+                        <div class="label">${e.tag}</div>
+                        <div class="date">${time.getMonth()}月${time.getDay()}日</div>
+                        <div class="time">${time.getHours()}:${time.getMinutes()}</div>
+                    </div>
+                    <div class="mainboxmid">
+                        <p>${e.describe}</p>
+                    </div>
+                </div>
     
+                <div class="mainboxbottom">
+                    <div class="mainhead"><div class="headimg"></div><span>jio雯婷</span></span></div>
+                    <div class="btnPick" data-id = "${e.eventId}" data-like ="0"></div>
+                    <div class="btnDiscuss"></div>
+                </div>
+            </div>`;
+            $('mainbefore').after(cardbox);
+            console.log(eventId);
+        });    
+        //获取刷新页面后点赞的初始值
+    //         if(res.Evns[i]){
+    //             switch(res.Evns[i].like){
+    //                 case 0: for(let j=0;j < res.Evn.length;j++){
+    //                         if($(this).dataset.id == res.Evns[i].eventId){
+    //                             $('.btnpick')[j].dataset.like = res.Evns[i].like.toString();
+    //                         }
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     pick();
+
+    },err => {
+        console.log('xxxx',err)
+    });
+})
     
     $(aA[1]).click(function(){
         oDiv2.css('opacity','1')
@@ -349,8 +399,8 @@ http.login(function(res){
         }
     })
     /************************* */
-})
 
+})
 
 
 
