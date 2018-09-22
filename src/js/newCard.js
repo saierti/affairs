@@ -133,8 +133,8 @@ $(function(){
         if($("input[name$='tag']").val() == ""){
             alert("请选择一个标签");
         }
+        alert("123z");
         var now = new Date().getTime();
-        // alert($("#limited").val());
         http.post('/event/create',{
             title:$("#title").val(),
             describe:$("#describe").val(),
@@ -145,16 +145,17 @@ $(function(){
             date:now,
             limited:$("#limited").val()
         },function(res){
+            console.log(111);
+            $("#dark-cover").css("display","block");
+            $(".reflect-message").css("display","block");
             $("#fabu").attr("src","img/fabu-happy.png");
-            $("#dark-cover").css("display","block");
-            $(".reflect-message").css("display","block");
-            $("#fabu-word").html("耶！消息发布成功啦~");
+            $("#fabu-word").text("耶！消息发布成功啦~");
         },function(err){
-            alert("失败");
-            $("#fabu").attr("src","img/fabu-sad.png");
             $("#dark-cover").css("display","block");
             $(".reflect-message").css("display","block");
-            $("#fabu-word").html("啊哦，消息未发布。<br/>可进入草稿箱查看哦。");
+            $("#fabu").attr("src","img/fabu-sad.png");
+            $("#fabu-word").text("啊哦，消息未发布。可进入草稿箱查看哦。");
+            alert(1);
         })
     });
     // 作为提交状态反应的两只小熊猫的点击事件，点击消失
@@ -162,7 +163,7 @@ $(function(){
         $(".reflect-message").css("display","none");
         $("#dark-cover").css("display","none");
     });
-
+z
 
 
 
